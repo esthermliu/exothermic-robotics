@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> Exothermic Robotics Teams </title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="HeaderFooter.css">
+	<link rel="stylesheet" href="teamscss.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="icon" type="image/png" href="Favicon.png" size = "20x20"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+
+<body>
+<header class = "navbar">
+	<div class = "logoBox">
+		<a class = "homepageLogo" href = "index.html"><img src = "EXOLogo.png"></a>
+	</div>
+	<nav class = "secondBox">
+		<ul class = "headerList">
+			<li><a href = "index.html"> Home </a></li>
+			<div class = "dropDownAbout">
+				<button class = "dropButtonAbout" onclick="window.location.href = 'about-us.html'"> About Us </button>
+				<div class = "dropDownContentAbout">
+					<a href = "history.html"> History </a>
+					<a class = "active" href = "teams.html"> Teams </a>
+					<a href = "join.html"> Join Us </a>
+					<a href = "outreach.html"> Outreach </a>
+					<a href = "advisors.html"> Advisors </a>
+					<a href = "awards.html"> Awards </a>
+					<a href = "challenges.html"> Challenges </a>
+				</div>
+			</div>
+			<div class = "dropDownOverview">
+				<button class = "dropButtonOverview" onclick="window.location.href = 'overview.html'"> VEX Overview </button>
+				<div class = "dropDownContentOverview">
+					<a href = "competition.html"> Competitions </a>
+					<a href = "events.html"> Events </a>
+					<a href = "programs.html"> Programs </a>
+				</div>
+			</div>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = 'media.html'"> Media </button>
+				<div class = "dropDownContentMedia">
+					<a href = "news.html"> Publicity </a>
+					<a href = "gallery.html"> Gallery </a>
+					<a href = "website.html"> Website </a>
+					<a href = "social.html"> Social </a>
+				</div>
+			</div>
+			<li><a href = "blog.html"> Blog </a></li>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = 'resources.html'"> Resources </button>
+				<div class = "dropDownContentMedia">
+					<a href = "building-tips.html"> Building Tips </a>
+					<a href = "notebook-tips.html"> Notebook Tips </a>
+					<a href = "coding-tips.html"> Coding Tips</a>
+					<a href = "game-tips.html"> Game Tips</a>
+					<a href = "website-tips.html"> Website Tips</a>
+					<a href = "other-links.html"> Other Links</a>
+				</div>
+			</div>
+			<li><a class = "sponsors" href = "sponsors.html"> Sponsors </a></li>
+			<li><a class = "contactUs" href = "contact-us.html"> Contact Us </a></li>
+		</ul>
+	</nav>
+</header>
+
+<script>
+jQuery(document).ready(function($){
+	$('.navbar').css("background-color", "transparent");
+	if ($(this).scrollTop() < 270) {
+		$('.navbar').css("background-color", "transparent");
+		$('.dropDownContentAbout').css("background-color", "transparent");
+		$('.dropDownContentOverview').css("background-color", "transparent");
+		$('.dropDownContentMedia').css("background-color", "transparent");
+		
+		$('.dropDownContentAbout').css("box-shadow", "none");
+		$('.dropDownContentOverview').css("box-shadow", "none");
+		$('.dropDownContentMedia').css("box-shadow", "none");
+	} else {
+		$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+	}
+	$(window).scroll(function(){
+		if ($(this).scrollTop() < 270) {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+			
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		} else {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		}
+		
+		if ($(this).scrollTop() > 270) {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		} else {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+	
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		}
+		
+
+	});
+});
+</script>
+<a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+</script>
+<script type="text/javascript">
+	$("a[href='#']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+</script>
+<div class = "landing">
+	<div class = "landingBackground">
+		<div class = "titleHolder">
+			<img src = "EXOLogo.png" alt = "Exo logo">
+			<h1> Teams </h1>
+			<h2> Exothermic Robotics </h2>
+		</div>
+	</div>
+</div>
+<div class = "firstSection">
+<div class = "teamSection">
+	<div class = "teamTitleSection">
+		<h2> Exothermic Teams </h2>
+	</div>
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+	<div class = "teamA">
+		<div class = "pictureHolder">
+			<img src = "FillerPicture.jpg"/>
+		</div>
+		<div class = "textHolder">
+			<h3>10A</h3>
+			<p>Blah blah blah blah blah blah Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class = "learnMoreContainer">
+				<a href = "10A.html" class="learnMoreButton"><button>Learn More &rarr;</button></a>
+			</div>
+		</div>
+	</div>
+	<hr class = "separator">
+	<div class = "teamB">
+	<div class = "pictureHolder">
+			<img src = "LandingImage.jpg"/>
+		</div>
+		<div class = "textHolder">
+			<h3>10B</h3>
+			<p>Blah blah blah blah blah blah Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class = "learnMoreContainer">
+				<a href = "10B.html" class="learnMoreButton"><button>Learn More &rarr;</button></a>
+			</div>
+		</div>
+	</div>
+	<hr class = "separator">
+	<div class = "teamC">
+	<div class = "pictureHolder">
+			<img src = "LandingImage.jpg"/>
+		</div>
+		<div class = "textHolder">
+			<h3>10C</h3>
+			<p>Blah blah blah blah blah blah Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class = "learnMoreContainer">
+				<a href = "10C.html" class="learnMoreButton"><button>Learn More &rarr;</button></a>
+			</div>
+		</div>
+	</div>
+	<hr class = "separator">
+	<div class = "teamD">
+	<div class = "pictureHolder">
+			<img src = "LandingImage.jpg"/>
+		</div>
+		<div class = "textHolder">
+			<h3>10D</h3>
+			<p>Blah blah blah blah blah blah Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class = "learnMoreContainer">
+				<a href = "10D.html" class="learnMoreButton"><button>Learn More &rarr;</button></a>
+			</div>
+		</div>
+	</div>
+	<hr class = "separator">
+	<div class = "teamE">
+	<div class = "pictureHolder">
+			<img src = "LandingImage.jpg"/>
+		</div>
+		<div class = "textHolder">
+			<h3>10E</h3>
+			<p>Blah blah blah blah blah blah Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class = "learnMoreContainer">
+				<a href = "10E.html" class="learnMoreButton"><button>Learn More &rarr;</button></a>
+			</div>
+		</div>
+	</div>
+	<hr class = "separator">
+	<div class = "teamF">
+	<div class = "pictureHolder">
+			<img src = "LandingImage.jpg"/>
+		</div>
+		<div class = "textHolder">
+			<h3>10F</h3>
+			<p>Blah blah blah blah blah blah Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class = "learnMoreContainer">
+				<a href = "10F.html" class="learnMoreButton"><button>Learn More &rarr;</button></a>
+			</div>
+		</div>
+	</div>
+	<hr class = "separator">
+	<div class = "teamN">
+	<div class = "pictureHolder">
+			<img src = "LandingImage.jpg"/>
+		</div>
+		<div class = "textHolder">
+			<h3>10N</h3>
+			<p>Blah blah blah blah blah blah Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class = "learnMoreContainer">
+				<a href = "10N.html" class="learnMoreButton"><button>Learn More &rarr;</button></a>
+			</div>
+		</div>
+	</div>
+	<hr class = "separator">
+	<div class = "teamX">
+	<div class = "pictureHolder">
+			<img src = "LandingImage.jpg"/>
+		</div>
+		<div class = "textHolder">
+			<h3>10X</h3>
+			<p>Blah blah blah blah blah blah Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class = "learnMoreContainer">
+				<a href = "10X.html" class="learnMoreButton"><button>Learn More &rarr;</button></a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+<footer>
+	<div class = "leftSection">
+		<div class = "leftTopSection">
+			<div class = "footerLogoHolder">
+				<img src = "EXOLogo.png"/>
+			</div>
+			<div class = "wordsSection">
+				<h4>Exothermic Robotics</h4>
+				<h5>Redmond, Washington</h5>	
+				<a class = "social" href="https://www.facebook.com/" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+				<a class = "social" href="https://www.instagram.com/" target="_blank" ><i class="fab fa-instagram"></i></a>
+				<a class = "social" href="https://twitter.com/" target="_blank" ><i class="fab fa-twitter"></i></a>
+					<ul class="FooterLinks">
+					<li>
+						<p>&copy; 2019-2020 Exothermic Robotics Club </p>
+					  </li>
+					</ul>				  
+			</div>
+		</div>
+	</div>
+	<div class = "rightSection">
+		<div class = "blog">
+			<h5>The EXO Blog</h5>
+			<p>A blog featuring announcements and little blurbs about the newest and latest in the Exothermic club. </p>
+		</div>
+		<div class = "blogContainer">
+			<a href = "#" class="blogButton"><button>Check it Out &rarr;</button></a>
+		</div>
+	</div>
+</footer>
+</html>

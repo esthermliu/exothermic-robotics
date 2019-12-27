@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> About Us </title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="HeaderFooter.css">
+	<link rel="stylesheet" href="about-us-css.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="icon" type="image/png" href="Favicon.png" size = "20x20"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+
+<body>
+<header class = "navbar">
+	<div class = "logoBox">
+		<a class = "homepageLogo" href = "index.html"><img src = "EXOLogo.png"></a>
+	</div>
+	<nav class = "secondBox">
+		<ul class = "headerList">
+			<li><a href = "index.html"> Home </a></li>
+			<div class = "dropDownAbout">
+				<button id = "active" class = "dropButtonAbout" onclick="window.location.href = 'about-us.html'"> About Us </button>
+				<div class = "dropDownContentAbout">
+					<a href = "history.html"> History </a>
+					<a href = "teams.html"> Teams </a>
+					<a href = "join.html"> Join Us </a>
+					<a href = "outreach.html"> Outreach </a>
+					<a href = "advisors.html"> Advisors </a>
+					<a href = "awards.html"> Awards </a>
+					<a href = "challenges.html"> Challenges </a>
+				</div>
+			</div>
+			<div class = "dropDownOverview">
+				<button class = "dropButtonOverview" onclick="window.location.href = 'overview.html'">VEX Overview </button>
+				<div class = "dropDownContentOverview">
+					<a href = "competition.html"> Competitions </a>
+					<a href = "events.html"> Events </a>
+					<a href = "programs.html"> Programs </a>
+				</div>
+			</div>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = 'media.html'"> Media </button>
+				<div class = "dropDownContentMedia">
+					<a href = "news.html"> Publicity </a>
+					<a href = "gallery.html"> Gallery </a>
+					<a href = "website.html"> Website </a>
+					<a href = "social.html"> Social </a>
+				</div>
+			</div>
+			<li><a href = "blog.html"> Blog </a></li>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = 'resources.html'"> Resources </button>
+				<div class = "dropDownContentMedia">
+					<a href = "building-tips.html"> Building Tips </a>
+					<a href = "notebook-tips.html"> Notebook Tips </a>
+					<a href = "coding-tips.html"> Coding Tips</a>
+					<a href = "game-tips.html"> Game Tips</a>
+					<a href = "website-tips.html"> Website Tips</a>
+					<a href = "other-links.html"> Other Links</a>
+				</div>
+			</div>
+			<li><a class = "sponsors" href = "sponsors.html"> Sponsors </a></li>
+			<li><a class = "contactUs" href = "contact-us.html"> Contact Us </a></li>
+		</ul>
+	</nav>
+</header>
+
+<script>
+jQuery(document).ready(function($){
+	$('.navbar').css("background-color", "transparent");
+	if ($(this).scrollTop() < 270) {
+		$('.navbar').css("background-color", "transparent");
+		$('.dropDownContentAbout').css("background-color", "transparent");
+		$('.dropDownContentOverview').css("background-color", "transparent");
+		$('.dropDownContentMedia').css("background-color", "transparent");
+		
+		$('.dropDownContentAbout').css("box-shadow", "none");
+		$('.dropDownContentOverview').css("box-shadow", "none");
+		$('.dropDownContentMedia').css("box-shadow", "none");
+	} else {
+		$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+	}
+	$(window).scroll(function(){
+		if ($(this).scrollTop() < 270) {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+			
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		} else {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		}
+		
+		if ($(this).scrollTop() > 270) {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		} else {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+	
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		}
+		
+
+	});
+});
+</script>
+<a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+</script>
+<script type="text/javascript">
+	$("a[href='#']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+</script>
+<article>
+<div class = "landing">
+	<div class = "landingBackground">
+		<div class = "titleHolder">
+			<img src = "EXOLogo.png" alt = "Exo logo">
+			<h1> About Us </h1>
+			<h2> Who. What. When. Where.</h2>
+		</div>
+	</div>
+</div>
+<div class = "firstSection">
+	<div class = "aboutUsSection">
+		<div class = "titleSection">
+			<h2>Who Are We? </h2>
+			<h2 class = "definition"> <i>exothermic: a reaction or process that releases heat</i></h2>
+		</div>
+		<div class = "aboutUsArticle">
+			<p> We are a group of like-minded, self-motivated high school students from all around the Redmond, Washington area who are passionate about robotics. 
+			We have multiple teams of varying experience levels, and those that are more experienced typically help out the newer teams. 
+			Even with our different backgrounds, we all share a love for robotics!</p>
+		</div>
+		<div class = "imageHolder">
+			<img src = "FillerPicture.jpg"/>
+		</div>
+	</div>
+</div>
+<div class = "secondSection">
+<div class = "backgroundColor">
+	<h2> Our Values </h2>
+	<div class = "valuesSection">
+		<div class = "value">
+			<img src = "PassionIcon.png"/>
+			<div class = "wordHolder">
+				<h3>INSERT</h3>
+				<p>Blah blah blah blah Blah blah blah blah Blah blah blah blah </p>
+			</div>
+		</div>
+		<div class = "value">
+			<img src = "PassionIcon.png"/>
+			<div class = "wordHolder">
+				<h3>INSERT</h3>
+				<p>Blah blah blah blah Blah blah blah blah Blah blah blah blah </p>
+			</div>
+		</div>
+		<div class = "value2">
+			<img src = "PassionIcon.png"/>
+			<div class = "wordHolder">
+				<h3>INSERT</h3>
+				<p>Blah blah blah blah Blah blah blah blah Blah blah blah blah </p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class = "thirdSection">
+	<div class = "titleSection">
+		<h2>What Do We Do? </h2>
+	</div>
+	<div class = "aboutUsArticle">
+		<p> <b>We build robots!</b> Each team designs, builds, and programs their own robot for the current season. In fact, within a single season, EXO teams often rebuild multiple times, sometimes even creating a new 
+		robot altogether. Teams also enter into competitions. These include the local league competitions, the regional competitions, the state competition, and finally the VEX Robotics Worlds Championship. TSA and VEX also partner together, so teams interested in the VEX Robotics Competition at TSA also compete there.
+		The current game for the 2019 - 2020 season is Tower Takeover. To learn more, check out the competitions section under "VEX Overview".</p>
+		<p><b>...But we do more than build robots.</b> Through the interactive, hands-on platform VEX Robotics provides, we also develop teamwork and leadership skills. We learn how to work together with our 
+		different skill sets and personalities, and we learn how to lead a team. We also develop resilience and perseverance when things don't always go right in the process. </p>
+		<p> <b> And most importantly, we have fun! </b> Here at Exothermic Robotics, we believe that the experience and process is what matters the most. The results may not always turn out as expected, but
+		there's always another opportunity!</p>
+	</div>
+</div>
+<div id = "future" class = "fourthSection">
+<div id = "futureBackground" class = "backgroundColor">
+	<h2> Our Vision For The Future </h2>
+	<div class = "valuesSection">
+		<div class = "value">
+			<img src = "PassionIcon.png"/>
+			<div class = "wordHolder">
+				<h3>INSERT</h3>
+				<p>Blah blah blah blah Blah blah blah blah Blah blah blah blah </p>
+			</div>
+		</div>
+		<div class = "value">
+			<img src = "PassionIcon.png"/>
+			<div class = "wordHolder">
+				<h3>INSERT</h3>
+				<p>Blah blah blah blah Blah blah blah blah Blah blah blah blah </p>
+			</div>
+		</div>
+		<div class = "value2">
+			<img src = "PassionIcon.png"/>
+			<div class = "wordHolder">
+				<h3>INSERT</h3>
+				<p>Blah blah blah blah Blah blah blah blah Blah blah blah blah </p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div id = "when" class = "thirdSection">
+	<div class = "titleSection">
+		<h2>When Do We Meet? </h2>
+	</div>
+	<div class = "aboutUsArticle">
+		<p>Our official meetings are on Tuesday and Thursday, although often times, teams will meet 3-4 times a week and right before competitions. Each team is given 
+		their own key to the space so they more or less get to decide their own meeting schedules, creating a flexible environment. We also have a group chat that has
+		members from each team to communicate who is at the EXO house as well as other information, such as upcoming competitions, fees, etc.</p>
+	</div>
+</div>
+<div class = "thirdSection">
+	<div class = "titleSection">
+		<h2>Where Do We Work? </h2>
+	</div>
+	<div class = "aboutUsArticle">
+		<p>We have our own workspace located just off of Willows Road in Redmond, Washington. Inside, we've set up a raised practice field as well as tables for each team to work on. We also have 
+			various boxes that hold metal and other materials that may be needed to build the robot. </p>
+	</div>
+	<div class="mapouter">
+		<div class="gmap_canvas">
+			<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=14840%20NE%2095th%20St%2C%20Redmond%2C%20WA%2098052&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			<a href="https://ytify.com"></a>
+		</div>
+	</div>
+</div>
+<div class = "firstSection">
+	<div class = "aboutUsSection">
+		<div class = "titleSection">
+			<h2>What's Special About Us? </h2>
+		</div>
+		<div class = "aboutUsArticle">
+			<p> Blah blah blah blah blah blah blah blah blah blah blah Blah blah blah blah blah blah blah blah blah blah blah Blah blah blah blah blah blah blah blah blah blah blah Blah blah blah blah blah blah blah blah blah blah blah </p>
+		</div>
+	</div>
+</div>
+<div class = "lastSection">
+	<div class = "backgroundSection2">
+		<h2> Learn More About Us</h2>
+		<div class = "learnContainer">
+			<div class = "learnMoreContainer">
+			<a href = "history.html" class = "competitionLink"> 
+				<div class = "competition">
+					<div class = "Filter">
+						<h4>History</h4>
+					</div>
+				</div>
+			</a>
+			<a href = "teams.html" class = "eventsLink">
+				<div class = "events">
+					<div class = "Filter">
+						<h4>Teams</h4>
+					</div>
+				</div>
+			</a>
+			<a href = "join.html" class = "programsLink">
+				<div class = "programs">
+					<div class = "Filter">
+						<h4>Join Us</h4>
+					</div>
+				</div>
+			</a>
+			<a href = "outreach.html" class = "programsLink">
+				<div class = "programs">
+					<div class = "Filter">
+						<h4>Outreach</h4>
+					</div>
+				</div>
+			</a>
+			<a href = "advisors.html" class = "programsLink">
+				<div class = "programs">
+					<div class = "Filter">
+						<h4>Advisors</h4>
+					</div>
+				</div>
+			</a>
+			<a href = "awards.html" class = "programsLink">
+				<div class = "programs">
+					<div class = "Filter">
+						<h4>Awards</h4>
+					</div>
+				</div>
+			</a>
+			<a href = "challenges.html" class = "programsLink">
+				<div class = "programs">
+					<div class = "Filter">
+						<h4>Challenges</h4>
+					</div>
+				</div>
+			</a>
+			</div>
+		</div>
+	</div>
+</div>
+</article>
+<footer>
+	<div class = "leftSection">
+		<div class = "leftTopSection">
+			<div class = "footerLogoHolder">
+				<img src = "EXOLogo.png"/>
+			</div>
+			<div class = "wordsSection">
+				<h4>Exothermic Robotics</h4>
+				<h5>Redmond, Washington</h5>	
+				<a class = "social" href="https://www.facebook.com/" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+				<a class = "social" href="https://www.instagram.com/" target="_blank" ><i class="fab fa-instagram"></i></a>
+				<a class = "social" href="https://twitter.com/" target="_blank" ><i class="fab fa-twitter"></i></a>
+					<ul class="FooterLinks">
+					  <li>
+						<p>&copy; 2019-2020 Exothermic Robotics Club </p>
+					  </li>
+					</ul>				  
+			</div>
+		</div>
+	</div>
+	<div class = "rightSection">
+		<div class = "blog">
+			<h5>The EXO Blog</h5>
+			<p>A blog featuring announcements and little blurbs about the newest and latest in the Exothermic club. </p>
+		</div>
+		<div class = "blogContainer">
+			<a href = "#" class="blogButton"><button>Check it Out &rarr;</button></a>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

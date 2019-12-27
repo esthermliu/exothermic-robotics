@@ -1,0 +1,648 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> Exothermic Robotics Homepage </title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="indexCss.css">
+	<link rel="stylesheet" href="HeaderFooter.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="resources/jquery.js"></script>
+	<link rel="icon" type="image/png" href="Favicon.png" size = "20x20"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+
+<body>
+<header class = "navbar">
+	<div class = "logoBox">
+		<a class = "homepageLogo" href = "index.html"><img src = "EXOLogo.png"></a>
+	</div>
+	<nav class = "secondBox">
+		<ul class = "headerList">
+			<li><a class = "active" href = "index.html"> Home </a></li>
+			<div class = "dropDownAbout">
+				<button class = "dropButtonAbout" onclick="window.location.href = 'about-us.html'"> About Us </button>
+				<div class = "dropDownContentAbout">
+					<a href = "history.html"> History </a>
+					<a href = "teams.html"> Teams </a>
+					<a href = "join.html"> Join Us </a>
+					<a href = "outreach.html"> Outreach </a>
+					<a href = "advisors.html"> Advisors </a>
+					<a href = "awards.html"> Awards </a>
+					<a href = "challenges.html"> Challenges </a>
+				</div>
+			</div>
+			<div class = "dropDownOverview">
+				<button class = "dropButtonOverview" onclick="window.location.href = 'overview.html'"> VEX Overview </button>
+				<div class = "dropDownContentOverview">
+					<a href = "competition.html"> Competitions </a>
+					<a href = "events.html"> Events </a>
+					<a href = "programs.html"> Programs </a>
+				</div>
+			</div>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = 'media.html'"> Media </button>
+				<div class = "dropDownContentMedia">
+					<a href = "news.html"> Publicity </a>
+					<a href = "gallery.html"> Gallery </a>
+					<a href = "website.html"> Website </a>
+					<a href = "social.html"> Social </a>
+				</div>
+			</div>
+			<li><a href = "blog.html"> Blog </a></li>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = 'resources.html'"> Resources </button>
+				<div class = "dropDownContentMedia">
+					<a href = "building-tips.html"> Building Tips </a>
+					<a href = "notebook-tips.html"> Notebook Tips </a>
+					<a href = "coding-tips.html"> Coding Tips</a>
+					<a href = "game-tips.html"> Game Tips</a>
+					<a href = "website-tips.html"> Website Tips</a>
+					<a href = "other-links.html"> Other Links</a>
+				</div>
+			</div>
+			<li><a class = "sponsors" href = "sponsors.html"> Sponsors </a></li>
+			<li><a class = "contactUs" href = "contact-us.html"> Contact Us </a></li>
+		</ul>
+	</nav>
+</header>
+
+<script>
+jQuery(document).ready(function($){
+	$('.navbar').css("background-color", "transparent");
+	if ($(this).scrollTop() < 270) {
+		$('.navbar').css("background-color", "transparent");
+		$('.dropDownContentAbout').css("background-color", "transparent");
+		$('.dropDownContentOverview').css("background-color", "transparent");
+		$('.dropDownContentMedia').css("background-color", "transparent");
+		
+		$('.dropDownContentAbout').css("box-shadow", "none");
+		$('.dropDownContentOverview').css("box-shadow", "none");
+		$('.dropDownContentMedia').css("box-shadow", "none");
+	} else {
+		$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+	}
+	$(window).scroll(function(){
+		if ($(this).scrollTop() < 270) {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+			
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		} else {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		}
+		
+		if ($(this).scrollTop() > 270) {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		} else {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+	
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		}
+		
+
+	});
+});
+</script>
+
+<div class = "landing">
+	<div class = "landingBackground">
+		<video autoplay muted loop id = "landingVideo">
+			<source src = "LandingVideoEdited1.mp4" type = "video/mp4">
+		</video>
+		<div class = "titleHolder">
+			<img src = "EXOLogo.png" alt = "Exo logo">
+			<h1> Exothermic Robotics </h1>
+			<h2> Redmond, WA </h2>
+		</div>
+	</div>
+</div>
+
+<article>
+<div class = "firstSection">
+<div class = "aboutUsSection">
+	<div class = "aboutUsTitle">
+		<h2> Welcome </h2>
+	</div>
+	<div class = "aboutUsArticle">
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+	<p>Lorem ipsum dolor<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+	<p>Lorem ipsum dolor<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+	<p>Lorem ipsum dolor<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+	</div>
+</div>
+</div>
+<div class = "secondSection">
+<div class = "secondSectionBackground">
+	<div class = "quickStatSection">
+		<div class = "quickStatsTitle">
+			<h2> Quick Facts </h2>
+		</div>
+		<div class = "quickStatsArticle">
+			<div class = "randomInfoContainer">
+				<div class = "firstStart">
+					<h3> First Established </h3>
+					<h2>2006</h2>
+				</div>
+				<div class = "location">
+					<h3> Location </h3>
+					<h2> Redmond, Washington </h2>
+				</div>
+				<div class = "slogan">
+					<h3> Club Slogan </h3>
+					<h2> "It Was On Fire When We Got Here" </h2>
+				</div>
+			</div>
+			<div class = "circleContainer">
+				<div class = "Circle">
+					<h2>13</h2>
+					<h3>Years</h3>
+				</div>
+				<div class = "Circle">
+					<h2>8</h2>
+					<h3>Teams</h3>
+				</div>
+				<div class = "Circle">
+					<h2>BLANK</h2>
+					<h3>Competitions</h3>
+				</div>
+				<div class = "Circle">
+					<h2>BLANK</h2>
+					<h3>Awards</h3>
+				</div>
+			</div>
+			<div class = "teamLogoContainer">
+				<div class = "teamLogo">
+					<h3> Club Logo </h3>
+					<h2> A Cartoon-style Robot Drawn By Scott MacDonald, A Volunteer At LexisNexis </h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class = "thirdSection">
+<div class = "teamSection">
+	<div class = "teamTitleSection">
+		<h2> Exothermic Teams </h2>
+	</div>
+	<div class = "teamContainer">
+		<div class = "firstTeamContainer">
+			<a href = "10A.html" class = "TeamALink"> 
+				<div class = "TeamA">
+					<div class = "Filter">
+						<h4>10A</h4>
+					</div>
+				</div>
+			</a>
+			<a href = "10B.html" class = "TeamBLink">
+				<div class = "TeamB">
+					<div class = "Filter">
+						<h4>10B</h4>
+					</div>
+				</div>
+			</a>
+			<a href = "10C.html" class = "TeamCLink">
+				<div class = "TeamC">
+					<div class = "Filter">
+						<h4>10C</h4>
+					</div>
+				</div>
+			</a>
+			<a href = "10D.html" class = "TeamDLink">
+				<div class = "TeamD">
+					<div class = "Filter">
+						<h4>10D</h4>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class = "secondTeamContainer">
+		<a href = "10E.html" class = "TeamELink">
+			<div class = "TeamE">
+				<div class = "Filter">
+					<h4>10E</h4>
+				</div>
+			</div>
+		</a>
+		<a href = "10F.html" class = "TeamFLink">
+			<div class = "TeamF">
+				<div class = "Filter">
+					<h4>10F</h4>
+				</div>
+			</div>
+		</a>
+		<a href = "10N.html" class = "TeamNLink">
+			<div class = "TeamN">
+				<div class = "Filter">
+					<h4>10N</h4>
+				</div>
+			</div>
+		</a>
+		<a href = "10X.html" class = "TeamXLink">
+			<div class = "TeamX">
+				<div class = "Filter">
+					<h4>10X</h4>
+				</div>
+			</div>
+		</a>
+		</div>
+	</div>
+	</div>
+	<div class = "learnMoreContainer">
+	    <a href = "teams.html" class="learnMoreButton"><button>Learn More &rarr;</button></a>
+	</div>
+</div>
+<div class = "fourthSection">	
+	<div class = "boardMemberSection">
+		<div class = "boardTitle">
+			<h2>Board Members </h2>
+		</div>
+		<div class = "circleContainerBoard">
+		<div class = "circleHolder">
+			<button id = "Circle2" class = "Circle2">
+			</button>
+			<div class = "CircleText">
+				<h2> Vishwa KN </h2>
+				<h3> President </h3>
+			</div>
+		</div>
+		<div class = "circleHolder">
+			<button id = "Circle3" class = "Circle2">
+			</button>
+			<div class = "CircleText">
+				<h2> Amol Vaidya </h2>
+				<h3> Vice President </h3>
+			</div>
+		</div>
+		<div class = "circleHolder">
+			<button id = "Circle4" class = "Circle2">
+			</button>
+			<div class = "CircleText">
+				<h2> Arav Singh </h2>
+				<h3> Build Advisor </h3>
+			</div>
+		</div>
+		<div class = "circleHolder">
+			<button id = "Circle5" class = "Circle2">
+			</button>
+			<div class = "CircleText">
+				<h2> Thorsten Lannynd</h2>
+				<h3> Programming Advisor</h3>
+			</div>
+		</div>
+		<div class = "circleHolder">
+			<button id = "Circle6" class = "Circle2">
+			</button>
+			<div class = "CircleText">
+				<h2> Alex Evans</h2>
+				<h3> Public Relations</h3>
+			</div>
+		</div>
+		<div class = "circleHolder">
+			<button id = "Circle7" class = "Circle2">
+			</button>
+			<div class = "CircleText">
+				<h2> Aaryan Jain </h2>
+				<h3> Public Relations </h3>
+			</div>
+		</div>
+		<div class = "circleHolder">
+			<button id = "Circle8" class = "Circle2">
+			</button>
+			<div class = "CircleText">
+				<h2> Samir Patel </h2>
+				<h3> Parts Manager </h3>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+<div id = "modal" class = "modal">
+	<div class = "modalContent">
+		<div class = "pictureHolder">
+		</div>
+		<div class = "textModal">
+			<div class = "textHolder">
+				<h4>President</h4>
+				<h3>Vishwa KN</h3>
+				<p> Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah </p>
+			</div>
+			<span class = "close">&times;</span>
+		</div>
+	</div>
+</div>
+<div id = "modal2" class = "modal2">
+	<div class = "modalContent2">
+	<div class = "pictureHolder2">
+		</div>
+		<div class = "textModal2">
+			<div class = "textHolder2">
+				<h4>Vice President</h4>
+				<h3>Amol Vaidya</h3>
+				<p> Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah </p>
+			</div>
+		<span class = "close2">&times;</span>
+	</div>
+	</div>
+</div>
+<div id = "modal3" class = "modal3">
+	<div class = "modalContent3">
+	<div class = "pictureHolder3">
+		</div>
+		<div class = "textModal3">
+			<div class = "textHolder3">
+				<h4>Build Advisor</h4>
+				<h3>Arav Singh</h3>
+				<p> Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah </p>
+			</div>
+		<span class = "close3">&times;</span>
+	</div>
+	</div>
+</div>
+<div id = "modal4" class = "modal4">
+	<div class = "modalContent4">
+		<div class = "pictureHolder4">
+		</div>
+		<div class = "textModal4">
+			<div class = "textHolder4">
+				<h4>Programming Advisor</h4>
+				<h3>Thorsten Lannynd</h3>
+				<p> Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah </p>
+			</div>
+		<span class = "close4">&times;</span>
+	</div>
+	</div>
+</div>
+<div id = "modal5" class = "modal5">
+	<div class = "modalContent5">
+		<div class = "pictureHolder5">
+		</div>
+		<div class = "textModal5">
+			<div class = "textHolder5">
+				<h4>Public Relations</h4>
+				<h3>Alex Evans</h3>
+				<p> Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah </p>
+			</div>
+		<span class = "close5">&times;</span>
+	</div>
+	</div>
+</div>
+<div id = "modal6" class = "modal6">
+	<div class = "modalContent6">
+		<div class = "pictureHolder6">
+		</div>
+		<div class = "textModal6">
+			<div class = "textHolder6">
+				<h4>Public Relations</h4>
+				<h3>Aaryan Jain</h3>
+				<p> Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah </p>
+			</div>
+		<span class = "close6">&times;</span>
+	</div>
+	</div>
+</div>
+<div id = "modal7" class = "modal7">
+	<div class = "modalContent7">
+		<div class = "pictureHolder7">
+		</div>
+		<div class = "textModal7">
+			<div class = "textHolder7">
+				<h4>Parts Manager</h4>
+				<h3>Samir Patel</h3>
+				<p> Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah </p>
+			</div>
+		<span class = "close7">&times;</span>
+	</div>
+	</div>
+</div>
+
+<script>
+	var modal = document.getElementById("modal");
+	var modal2 = document.getElementById("modal2");
+	var modal3 = document.getElementById("modal3");
+	var modal4 = document.getElementById("modal4");
+	var modal5 = document.getElementById("modal5");
+	var modal6 = document.getElementById("modal6");
+	var modal7 = document.getElementById("modal7");
+	
+	var btn = document.getElementById("Circle2");
+	var btn2 = document.getElementById("Circle3");	
+	var btn3 = document.getElementById("Circle4");
+	var btn4 = document.getElementById("Circle5");
+	var btn5 = document.getElementById("Circle6");
+	var btn6 = document.getElementById("Circle7");
+	var btn7 = document.getElementById("Circle8");
+	
+	var span = document.getElementsByClassName("close")[0];
+	var span2 = document.getElementsByClassName("close2")[0];
+	var span3 = document.getElementsByClassName("close3")[0];
+	var span4 = document.getElementsByClassName("close4")[0];
+	var span5 = document.getElementsByClassName("close5")[0];
+	var span6 = document.getElementsByClassName("close6")[0];
+	var span7 = document.getElementsByClassName("close7")[0];
+	
+	btn.onclick = function() {
+		modal.style.display = "block";
+	}
+	
+	span.onclick = function() {
+		modal.style.display = "none";
+	}
+
+	btn2.onclick = function() {
+		modal2.style.display = "block";
+	}
+	
+	span2.onclick = function() {
+		modal2.style.display = "none";
+	}
+	
+	btn3.onclick = function() {
+		modal3.style.display = "block";
+	}
+
+	span3.onclick = function() {
+		modal3.style.display = "none";
+	}
+	
+	btn4.onclick = function() {
+		modal4.style.display = "block";
+	}
+	
+	span4.onclick = function() {
+		modal4.style.display = "none";
+	}
+	
+	btn5.onclick = function() {
+		modal5.style.display = "block";
+	}
+	
+	span5.onclick = function() {
+		modal5.style.display = "none";
+	}
+
+	btn6.onclick = function() {
+		modal6.style.display = "block";
+	}
+	
+	span6.onclick = function() {
+		modal6.style.display = "none";
+	}
+	
+	btn7.onclick = function() {
+		modal7.style.display = "block";
+	}
+	
+	span7.onclick = function() {
+		modal7.style.display = "none";
+	}
+	
+	window.onclick = function(event) {
+		if (event.target == modal || event.target == modal2 || event.target == modal3 || event.target == modal4|| event.target == modal5|| event.target == modal6|| event.target == modal7) {
+			modal.style.display = "none";
+			modal2.style.display = "none";
+			modal3.style.display = "none";
+			modal4.style.display = "none";
+			modal5.style.display = "none";
+			modal6.style.display = "none";
+			modal7.style.display = "none";
+		}
+	}
+	
+</script>
+<a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+</script>
+<script type="text/javascript">
+	$("a[href='#']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+</script>
+	
+<div class = "fifthSection">
+	<div class = "fifthSectionBackground">
+		<div class = "eventSection">
+			<div class = "eventTitle">
+				<h2> Upcoming Events </h2>
+			</div>
+			<div class = "eventArticle">
+				<div class = "event1">
+					<div class = "holder">
+						<h3>VRC Scrimmage at Robot Mesh</h3>
+					</div>
+					<div class = "eventBottom1">
+						<h4>Date: </h4>
+						<h3>December 4, 2019</h3>
+						<h4>Location: </h4>
+						<h3>Redmond, WA</h3>
+						<h4>Capacity: </h4>
+						<h3>12 Teams</h3>
+						<h4>Price: </h4>
+						<h3>FREE</h3>
+					</div>
+				</div>
+				<div class = "event2">
+					<div class = "holder">
+						<h3>VEX High Voltage</h3>
+					</div>
+					<div class = "eventBottom2">
+						<h4>Date: </h4>
+						<h3>December 7, 2019</h3>
+						<h4>Location: </h4>
+						<h3>Monroe, WA</h3>
+						<h4>Capacity: </h4>
+						<h3>32 Teams</h3>
+						<h4>Price: </h4>
+						<h3>$50</h3>
+					</div>
+				</div>
+				<div class = "event3">
+					<div class = "holder">
+						<h3>MTHS VEX Tower Takeover</h3>
+					</div>
+					<div class = "eventBottom3">
+						<h4>Date: </h4>
+						<h3>December 7, 2019</h3>
+						<h4>Location: </h4>
+						<h3>Mountlake Terrace, WA</h3>
+						<h4>Capacity: </h4>
+						<h3>34 Teams</h3>
+						<h4>Price: </h4>
+						<h3>$60</h3>
+					</div>
+				</div>
+			</div>
+		<div class = "moreEventsContainer">
+			<a href = "#" class="moreEventsButton"><button>More Events &rarr;</button></a>
+		</div>
+		</div>
+	</div>
+</div>
+</article>
+</body>
+<footer>
+	<div class = "leftSection">
+		<div class = "leftTopSection">
+			<div class = "footerLogoHolder">
+				<img src = "EXOLogo.png"/>
+			</div>
+			<div class = "wordsSection">
+				<h4>Exothermic Robotics</h4>
+				<h5>Redmond, Washington</h5>	
+				<a class = "social" href="https://www.facebook.com/" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+				<a class = "social" href="https://www.instagram.com/" target="_blank" ><i class="fab fa-instagram"></i></a>
+				<a class = "social" href="https://twitter.com/" target="_blank" ><i class="fab fa-twitter"></i></a>
+					<ul class="FooterLinks">
+					<li>
+						<p>&copy; 2019-2020 Exothermic Robotics Club </p>
+					  </li>
+					</ul>				  
+			</div>
+		</div>
+	</div>
+	<div class = "rightSection">
+		<div class = "blog">
+			<h5>The EXO Blog</h5>
+			<p>A blog featuring announcements and little blurbs about the newest and latest in the Exothermic club. </p>
+		</div>
+		<div class = "blogContainer">
+			<a href = "#" class="blogButton"><button>Check it Out &rarr;</button></a>
+		</div>
+	</div>
+</footer>
+</html>
