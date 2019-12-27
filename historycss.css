@@ -51,7 +51,7 @@
 .firstSection {
 	background-color: #f0f0f0;
 	font-family: Roboto, sans-serif;
-	padding: 8% 25% 8% 25%;
+	padding: 5% 25% 5% 25%;
 	color: #626262;
 }
 
@@ -62,12 +62,13 @@
 	padding-bottom: 3%;
 }
 
-#secondSection {
-	background-color: white;
+.firstSection p {
+	line-height: 30px;
+	margin-bottom: 15px;
 }
 
-.historyHolder {
-	background-color: orange;
+#secondSection {
+	background-color: white;
 }
 
 .arrowHolder {
@@ -78,12 +79,58 @@
 .arrowHolder a {
 	font-weight: 300;
 }
- #downbtn {
+
+
+.arrowHolder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	margin-top: 30px;
+}
+
+
+.textSection img {
+	width: 100%;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.imageHolder {
+	text-align: center;
+}
+
+#secondSection h2, #thirdSection h2, #fourthSection h2, #fifthSection h2  {
+	padding-bottom: 15px !important;
+	padding-top: 15px;
+}
+
+#secondSection h3, #thirdSection h3 , #fourthSection h3, #fifthSection h3  {
+	text-align: center;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+	padding-bottom: 3%;
+}
+
+.textSection h4 {
+	letter-spacing: 1.5px;
+	font-weight: normal;
+	line-height: 30px;
+}
+
+.nickname {
+	margin-bottom: 15px;
+}
+
+#thirdSection , #fifthSection, #seventhSection, #ninthSection, #eleventhSection, #thirteenthSection {
+	background-color: rgb(232, 245, 225);
+}
+
+#upbtn {
 	display: flex;
 	justify-content: center;
     align-items: center;
     transform: rotate(135deg);
-    box-shadow: 4px -4px 0 rgba(103, 156, 39,0.7);
+    box-shadow: -2px 2px 0 #626262;
     border: none;
     outline: none;
     cursor: pointer;
@@ -92,22 +139,65 @@
     background-color: rgba(255,255,255,0);
     -webkit-transition-duration: 0.3s; 
     transition-duration: 0.3s;
-	margin-top: 60px;
 }
 
-.arrowHolder {
+#upbtn:hover {
+	box-shadow: -2px 2px 0 rgb(213,220,59);
+}
+
+.eventButton button {
+  color: #dbb52f;
+  text-transform: uppercase;
+  background-color: rgba(25,25,25,0);
+  border: 2px solid rgb(51, 51, 51);
+  z-index: 2;
+  padding: 15px 15px;
+  color: rgb(51, 51, 51);
+    -webkit-transition-duration: 0.2s; 
+  transition-duration: 0.2s;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.eventButton:hover button {
+   color: rgb(213,220,59);
+}
+
+.eventButton:hover button {
+    border-color: rgb(213,220,59);
+ }
+
+ .toSectionButtons {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	flex-wrap: wrap;
+ }
+ 
+  .insideButtonContainer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-wrap: wrap;
+ }
+ 
+  #buttonContainer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-wrap: wrap;
+	padding-top: 80px;
+ }
+
+ #fourthSection {
+	background-color: white;
+ }
+ 
+.textSection ul {
+	list-style-type: square;
+	margin-left: 30px;
+	line-height: 30px;
+	margin-bottom: 15px;
 }
-
-#downbtn:hover {
-    box-shadow: 4px -4px 0 rgba(103, 156, 39,1);
-}
-
-
-
-
 
 
 
