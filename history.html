@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<header class = "navbar">
+<header id = "secondBox" class = "navbar">
 	<div class = "logoBox">
 		<a class = "homepageLogo" href = "index.html"><img src = "EXOLogo.png"></a>
 	</div>
@@ -140,16 +140,47 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
   return false;
 });
 </script>
+
 <div class = "landing">
 	<div class = "landingBackground">
 		<div class = "titleHolder">
 			<img src = "EXOLogo.png" alt = "Exo logo">
 			<h1> History </h1>
-			<h2> Blah blah </h2>
+			<h2> 13 Years Of Robotics </h2>
+		</div>
+	</div>
+</div>
+<div class = "firstSection">
+	<h2>The Journey Begins...</h2>
+	<div class = "historyHolder">
+		<div class = "textSection">
+			<p>Blah blah blah blah blah blah </p>
+		</div>
+		<div class = "arrowHolder">
+			<a href="#downbtn1"><button id="downbtn" title="Go to next section"></button></a>
+		</div>
+	</div>
+</div>
+<div id = "secondSection" class = "firstSection">
+	<h2>The Journey Begins...</h2>
+	<div class = "historyHolder">
+		<div class = "textSection">
+			<p>Blah blah blah blah blah blah </p>
+		</div>
+		<div class = "arrowHolder">
+			<a href="#downbtn2"><button id="downbtn" title="Go to next section"></button></a>
 		</div>
 	</div>
 </div>
 </body>
+<script type="text/javascript">
+$("a[href='#downbtn1']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#secondSection").offset().top - $("#secondBox").height()
+    }, 1000);
+});
+
+</script>
 <footer>
 	<div class = "leftSection">
 		<div class = "leftTopSection">

@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<header class = "navbar">
+<header id = "secondBox" class = "navbar">
 	<div class = "logoBox">
 		<a class = "homepageLogo" href = "index.html"><img src = "EXOLogo.png"></a>
 	</div>
@@ -396,9 +396,9 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 		</div>
 		</div>
 	</div>
-	<div class = "toSectionButtons">
+	<div id = "toSectionButtons" class = "toSectionButtons">
 		<div class = "buttonContainer" id = "buttonContainer">
-		<div class = "insideButtonContainer">
+		<div id = "heightButtonContainer" class = "insideButtonContainer">
 			<a href = "#Tower" class="eventButton"><button>Tower Takeover</button></a>
 			<a href = "#Turning" class="eventButton"><button>Turning Point</button></a>
 			<a href = "#Zone" class="eventButton"><button>In The Zone</button></a>
@@ -1371,62 +1371,62 @@ function myFunction() {
 <script type="text/javascript">
 $("a[href='#Tower']").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#Tower").offset().top
+        scrollTop: $("#Tower").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
     }, 1000);
 });
 
 $("a[href='#Turning']").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#Turning").offset().top
+        scrollTop: $("#Turning").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
     }, 1000);
 });
 
 $("a[href='#Zone']").click(function() {
     $([document.documentElement, document.body]).animate({
-	      scrollTop: $("#Zone").offset().top
+	      scrollTop: $("#Zone").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
     }, 1000);
 });
 
 $("a[href='#Star']").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#Star").offset().top
+        scrollTop: $("#Star").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
     }, 1000);
 });
 
 $("a[href='#Net']").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#Net").offset().top
+        scrollTop: $("#Net").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
     }, 1000);
 });
 
 $("a[href='#Sky']").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#Sky").offset().top
+        scrollTop: $("#Sky").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
     }, 1000);
 });
 $("a[href='#Sack']").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#Sack").offset().top
+        scrollTop: $("#Sack").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
     }, 1000);
 });
 $("a[href='#Gate']").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#Gate").offset().top
+        scrollTop: $("#Gate").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
     }, 1000);
 });
 $("a[href='#Round']").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#Round").offset().top
+        scrollTop: $("#Round").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
     }, 1000);
 });
 $("a[href='#Net']").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#Net").offset().top
+        scrollTop: $("#Net").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
     }, 1000);
 });
 $("a[href='#Clean']").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#Clean").offset().top
+        scrollTop: $("#Clean").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
     }, 1000);
 });
 </script>

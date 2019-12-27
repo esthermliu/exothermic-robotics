@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<header class = "navbar">
+<header id = "secondBox"  class = "navbar">
 	<div class = "logoBox">
 		<a class = "homepageLogo" href = "index.html"><img src = "EXOLogo.png"></a>
 	</div>
@@ -413,7 +413,7 @@ function myFunction() {
 <script type="text/javascript">
 $("a[href='#Tower']").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#Tower").offset().top
+        scrollTop: $("#Tower").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
     }, 1000);
 });
 
