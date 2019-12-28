@@ -184,7 +184,22 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 		</div>
 	</div>
 </div>
-
+<script>
+$(document).ready(function(){
+  $("#Hide").click(function(){ // When you click the words, it will toggle the actual text and the minus sign
+    $(".TurningPoint").toggle(500);
+	$(".verticalMinus").toggle(200);
+  });
+  $("#showMinus").click(function(){ // When you click the minus sign, it will toggle actual text and the minus sign 
+    $(".TurningPoint").toggle(500);
+	$(".verticalMinus").toggle(200);
+  });
+ $("#hideMinus").click(function(){ // When you click the vertical minus sign, it will toggle actual text and the minus sign
+    $(".TurningPoint").toggle(500);
+	$(".verticalMinus").toggle(200);
+  });
+});
+</script>
 <div id = "secondSection" class = "firstSection">
 	<div class = "arrowHolder">
 		<a href="#upbtn1"><button id="upbtn" title="Go to previous section"></button></a>
@@ -212,6 +227,7 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 			<p>The <b>mentors</b> for this first year were Bruce Haley, Rob Krasser, and Rick Tyler.</p>
 			<p>Our <b>primary sponsor</b> for this year was LexisNexis, which allowed us to use their facilities and provided sponsorship money. </p>
 			<p>Overall, the team only won <b>one award</b> that year: A Regional Finalist award won by The Goat.</p>
+			<iframe class = "towerTakeoverVideo" src="https://www.youtube.com/embed/rRxdf-4v6ME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	</div>
 </div>
@@ -247,6 +263,7 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 	</div>
 </div>
 <div id = "fourthSection" class = "firstSection">
+<div class = "notVideo">
 	<div class = "arrowHolder">
 		<a href="#upbtn3"><button id="upbtn" title="Go to previous section"></button></a>
 	</div>
@@ -342,6 +359,24 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 			<p>The technical mentors were Rick Tyler, Bruce Reynolds, Chris Culler and Haji Habibi. Non-engineering mentors included Heidi Lovett, Carolyn Davids, Jean, Shannon Nagamine, and Melinda Tyler.</p>
 		</div>
 	</div>
+	</div>
+		<div class = "videoHolder">
+		<div class = "buttonTopHolder">
+			<button id="Hide">2009 Videos</button>
+			<div class = "minusHolder">
+				<p id = "showMinus" class = "horizontalMinus">&minus;</p>
+				<p id = "hideMinus" class = "verticalMinus">&minus;</p>
+			</div>
+		</div>
+		<div class="TurningPoint">
+		<div class = "detailSection">
+		<a href = "https://www.youtube.com/user/rhtyler?fbclid=IwAR2aPGqyGC9u8f--7eVehu6nR6XtG5kTgQMhXHrpNdOtAP8Wyo-rA19x71M">Link To Youtube Channel with 2009 Videos</a>
+			<iframe class = "towerTakeoverVideo" src="https://www.youtube.com/embed/bIzlLrNY4x8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe class = "towerTakeoverVideo" src="https://www.youtube.com/embed/gWSwnNkj1cU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe class = "towerTakeoverVideo" src="https://www.youtube.com/embed/LWfVYteQMpg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		</div>
+		</div>
 </div>
 <div id = "fifthSection" class = "firstSection">
 	<div class = "arrowHolder">
@@ -358,7 +393,128 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 				<h4><b>TEAM NUMBERS:</b> FTC Teams 417, 418, 575, and VRC Team 10A, 10Q, 10C, 10D, 10E, 10F, 10X, 10Z</h4>
 				<h4><b>TEAM LOGO:</b> Bright neon yellow shirts with a cartoon robot and a lot of flames.</h4>
 			</div>
-			<p>ller and Haji Habibi. Non-engineering mentors included Heidi Lovett, Carolyn Davids, Jean, Shannon Nagamine, and Melinda Tyler.</p>
+			<p><b>FTC Team 417, Exothermic Blue Sun, Robot Whiffle Ball Tony (3rd year, was VEX FTC/FTC 417): </b>This team was a mixture of veterans and rookies, and was once again drawing on the expertise that led them to two regional finals and four trophies in 2009. They got to the semifinalists in the Bellevue 2009 competition. Their robot, called Whiffle Ball Tony was a holonomic drive robot with a front pickup, top storage, and single-wheel back-spin launcher. It could shoot at the outside baskets from maximum distance.</p>
+			<ul>
+			<li><b>Awards: </b></li>
+				<ul>
+					<li>Design Award, Bellevue 2009</li>
+				</ul>
+			</ul>
+			<p>FTC Teams 418 and 575 were on hiatus for the 2009 - 2010 season. </p>
+			<p><b>VRC Team 575, Team Haiku, Robot Gutwrench the Horrible: </b>With five team members returning from the successful 2008-9 season, this team went into the year with solid construction skills, a new driver, and a new programmer. Their leader and coach was David T. The drivers were Matthew and Micah, the programmer was Paul, and the scouts were Stefan and Ranjan.</p>
+			<p>Robot(s) Gutwrench I: holonomic drive, front scooper, innovative "fabric stretch" dumper, 4-motor drive (Jump Start) Gutwrench II: 6WD with dropped centers, belt lifter, big-box dumper, 4-motor drive (Vancouver Season Opener) Gutwrench III: 6WD with dropped centers, pitchfork lifter, big-box dumper, 4-motor drive (Vancouver Island) Gutwrench IV: 4WD, 2.75" wheels, 6-motor drive, roller feeding back dumper (Washington, BCIT, Worlds)</p>
+			<ul>
+			<li><b>Awards/Competition Results (44 Wins, 12 Losses before Worlds): </b></li>
+				<ul>
+					<li>Redmond Jump Start (Nov 2009): 1 Alliance Captain</li>
+					<li>Redmond Jump Start (Nov 2009): Semifinalist</li>
+					<li>Vancouver Season Opener (Dec. 2009): 1 Alliance</li>
+					<li>Vancouver Season Opener (Dec. 2009): Finalist</li>
+					<li>Vancouver Island (Jan. 2010): 2 Alliance</li>
+					<li>Vancouver Island (Jan. 2010): Finalist</li>
+					<li>Washington Championships (Feb. 2010): 1 Alliance Captain</li>
+					<li>Washington Championships (Feb. 2010): Winner</li>
+					<li>Washington Championships (Feb. 2010): Robot Skills Winner</li>
+					<li>Vancouver BCIT "A" Tournament (Mar. 2010): 1 Alliance</li>
+					<li>Vancouver BCIT "A" Tournament (Mar. 2010): Tournament Winner</li>
+					<li>Vancouver BCIT "A" Tournament (Mar. 2010): Excellence Award</li>
+					<li>Redmond Jump Start: Build Award</li>
+					<li>Vancouver Season Opener: Nov. 2009 Finalist Award</li>
+					<li>Vancouver Island: Dec. 2009 Innovate Award</li>
+					<li>Vancouver BCIT "A" Tournament (Mar. 2010): Jan. 2010 Excellence</li>
+				</ul>
+			</ul>
+			<p><i>Exothermic Robotics, Team 575, at 2010 VEX Worlds: </i></p>
+			<div class = "imageHolder">
+				<img src = "VEXWorlds2010.jpg"/>
+			</div>
+			<p><b>VRC Team 10A (was VRC 419): </b>With one returning member from the very successful 2009 419 team, 10A went into 2010 with enthusiasm and experience. The members of the team were Mercury H, 
+			Robin, Patrick, David L, and Matt. Their Robot(s) were unnamed, and consisted of a holonomic drive on 2.75" wheels, front scoop, "fabric stretch" dumper</p>
+			<ul>
+			<li><b>Awards/Competition Results (44 Wins, 12 Losses before Worlds): </b></li>
+				<ul>
+					<li>Vancouver Season Opener (Dec. 2009): Undefeated in qualifying, seeded second, and #2 alliance captain</li>
+				</ul>
+			</ul>
+			<p><b>VRC Team 10Q, Team Exothermic Salsa (was VRC 417): </b>In its third year as a mostly-girls team, this World Championships team started the year with an experienced programmer, talented mechanical skills, and the graduation of two-thirds of their drive team. Their goal for the year was to build another great robot and train up drivers to match. The members of this team were Tara, Maya, Raluca, Sophia, Kevin, and Edward.</p>
+			<p><b>VRC Team 10C: </b>10C was one of Exothermic's all-rookie teams, so they had to move fast in order to keep up. The members of the team were Cole, Tyler, Adam, Jan, Alex, and Tom.</p>
+			<p><b>VRC Team 10D: </b>10D was one of Exothermic's all-rookie teams as well, so they had to do some catch up work. The members of the team were Derek, Peter, Atanas, Kurt, Kevin Z, Maxine, Erin, and Ellie.</p>
+			<p><b>VRC Team 10E: </b>This all-female all-rookie team started this year knowing they have big shoes to fill after the results posted by the all-girls VRC 417 last year. The members of this team were
+			 Kavitha, Gabriela, Anna, Netania, and Kunjal.</p>
+			<p><b>VRC Team 10F (was VRC 420): </b>This team spent the fall as FTC 417 before switcihng to VRC for the rest of the year. Losing only a couple of members to graduation, they added some new faces but started the competition season with talent and experience. The members of this team were Zach, Brian, Jillian, Sam, Ricky, and Andrew.</p>
+			<p><b>VRC Team 10X (was 419): </b> Starting with three veterans from the 2009 419 team that went to World Championships, this team added some fresh blood to start the 2010 season. The members of this 
+			team were Tommy, John, Kevin, and three new members.</p>
+			<p><b>VRC Team 10Z (was VRC 418): </b>One of our oldest teams, and the only one to have gone to both FTC and VRC World Championship events, these students had a big challenge having lost all but one team member to graduation. Bettering last year's third-place finish at World Championship was their early-season goal. The members of this team were Tyler, Arjun, Ben, Chuong, Conor, and Pramad.</p>
+		</div>
+	</div>
+</div>
+<div id = "sixthSection" class = "firstSection">
+	<div class = "arrowHolder">
+		<a href="#upbtn5"><button id="upbtn" title="Go to previous section"></button></a>
+	</div>
+	<h2>Our Fifth Year</h2>
+	<h3>2010 - 2011 </h3>
+	<div class = "historyHolder">
+		<div class = "textSection">
+			<div class = "nickname">
+				<h4><b>GAME:</b> Clean Sweep (VRC)</h4>
+				<h4><b>CLUB NICKNAME:</b> Exothermic Robotics Club</h4>
+				<h4><b>CLUB SLOGAN:</b> It was on fire when we got here</h4>
+				<h4><b>TEAM NUMBERS:</b> FTC Teams 417, 418, 575, and VRC Team 10A, 10Q, 10C, 10D, 10E, 10F, 10X, 10Z</h4>
+				<h4><b>TEAM LOGO:</b> Bright neon yellow shirts with a cartoon robot and a lot of flames.</h4>
+			</div>
+			<p><b>FTC Team 417, Exothermic Blue Sun, Robot Whiffle Ball Tony (3rd year, was VEX FTC/FTC 417): </b>This team was a mixture of veterans and rookies, and was once again drawing on the expertise that led them to two regional finals and four trophies in 2009. They got to the semifinalists in the Bellevue 2009 competition. Their robot, called Whiffle Ball Tony was a holonomic drive robot with a front pickup, top storage, and single-wheel back-spin launcher. It could shoot at the outside baskets from maximum distance.</p>
+			<ul>
+			<li><b>Awards: </b></li>
+				<ul>
+					<li>Design Award, Bellevue 2009</li>
+				</ul>
+			</ul>
+			<p>FTC Teams 418 and 575 were on hiatus for the 2009 - 2010 season. </p>
+			<p><b>VRC Team 575, Team Haiku, Robot Gutwrench the Horrible: </b>With five team members returning from the successful 2008-9 season, this team went into the year with solid construction skills, a new driver, and a new programmer. Their leader and coach was David T. The drivers were Matthew and Micah, the programmer was Paul, and the scouts were Stefan and Ranjan.</p>
+			<p>Robot(s) Gutwrench I: holonomic drive, front scooper, innovative "fabric stretch" dumper, 4-motor drive (Jump Start) Gutwrench II: 6WD with dropped centers, belt lifter, big-box dumper, 4-motor drive (Vancouver Season Opener) Gutwrench III: 6WD with dropped centers, pitchfork lifter, big-box dumper, 4-motor drive (Vancouver Island) Gutwrench IV: 4WD, 2.75" wheels, 6-motor drive, roller feeding back dumper (Washington, BCIT, Worlds)</p>
+			<ul>
+			<li><b>Awards/Competition Results (44 Wins, 12 Losses before Worlds): </b></li>
+				<ul>
+					<li>Redmond Jump Start (Nov 2009): 1 Alliance Captain</li>
+					<li>Redmond Jump Start (Nov 2009): Semifinalist</li>
+					<li>Vancouver Season Opener (Dec. 2009): 1 Alliance</li>
+					<li>Vancouver Season Opener (Dec. 2009): Finalist</li>
+					<li>Vancouver Island (Jan. 2010): 2 Alliance</li>
+					<li>Vancouver Island (Jan. 2010): Finalist</li>
+					<li>Washington Championships (Feb. 2010): 1 Alliance Captain</li>
+					<li>Washington Championships (Feb. 2010): Winner</li>
+					<li>Washington Championships (Feb. 2010): Robot Skills Winner</li>
+					<li>Vancouver BCIT "A" Tournament (Mar. 2010): 1 Alliance</li>
+					<li>Vancouver BCIT "A" Tournament (Mar. 2010): Tournament Winner</li>
+					<li>Vancouver BCIT "A" Tournament (Mar. 2010): Excellence Award</li>
+					<li>Redmond Jump Start: Build Award</li>
+					<li>Vancouver Season Opener: Nov. 2009 Finalist Award</li>
+					<li>Vancouver Island: Dec. 2009 Innovate Award</li>
+					<li>Vancouver BCIT "A" Tournament (Mar. 2010): Jan. 2010 Excellence</li>
+				</ul>
+			</ul>
+			<p><i>Exothermic Robotics, Team 575, at 2010 VEX Worlds: </i></p>
+			<div class = "imageHolder">
+				<img src = "VEXWorlds2010.jpg"/>
+			</div>
+			<p><b>VRC Team 10A (was VRC 419): </b>With one returning member from the very successful 2009 419 team, 10A went into 2010 with enthusiasm and experience. The members of the team were Mercury H, 
+			Robin, Patrick, David L, and Matt. Their Robot(s) were unnamed, and consisted of a holonomic drive on 2.75" wheels, front scoop, "fabric stretch" dumper</p>
+			<ul>
+			<li><b>Awards/Competition Results (44 Wins, 12 Losses before Worlds): </b></li>
+				<ul>
+					<li>Vancouver Season Opener (Dec. 2009): Undefeated in qualifying, seeded second, and #2 alliance captain</li>
+				</ul>
+			</ul>
+			<p><b>VRC Team 10Q, Team Exothermic Salsa (was VRC 417): </b>In its third year as a mostly-girls team, this World Championships team started the year with an experienced programmer, talented mechanical skills, and the graduation of two-thirds of their drive team. Their goal for the year was to build another great robot and train up drivers to match. The members of this team were Tara, Maya, Raluca, Sophia, Kevin, and Edward.</p>
+			<p><b>VRC Team 10C: </b>10C was one of Exothermic's all-rookie teams, so they had to move fast in order to keep up. The members of the team were Cole, Tyler, Adam, Jan, Alex, and Tom.</p>
+			<p><b>VRC Team 10D: </b>10D was one of Exothermic's all-rookie teams as well, so they had to do some catch up work. The members of the team were Derek, Peter, Atanas, Kurt, Kevin Z, Maxine, Erin, and Ellie.</p>
+			<p><b>VRC Team 10E: </b>This all-female all-rookie team started this year knowing they have big shoes to fill after the results posted by the all-girls VRC 417 last year. The members of this team were
+			 Kavitha, Gabriela, Anna, Netania, and Kunjal.</p>
+			<p><b>VRC Team 10F (was VRC 420): </b>This team spent the fall as FTC 417 before switcihng to VRC for the rest of the year. Losing only a couple of members to graduation, they added some new faces but started the competition season with talent and experience. The members of this team were Zach, Brian, Jillian, Sam, Ricky, and Andrew.</p>
+			<p><b>VRC Team 10X (was 419): </b> Starting with three veterans from the 2009 419 team that went to World Championships, this team added some fresh blood to start the 2010 season. The members of this 
+			team were Tommy, John, Kevin, and three new members.</p>
+			<p><b>VRC Team 10Z (was VRC 418): </b>One of our oldest teams, and the only one to have gone to both FTC and VRC World Championship events, these students had a big challenge having lost all but one team member to graduation. Bettering last year's third-place finish at World Championship was their early-season goal. The members of this team were Tyler, Arjun, Ben, Chuong, Conor, and Pramad.</p>
 		</div>
 	</div>
 </div>

@@ -1,5 +1,5 @@
 .landing {
-	background-image: url("FillerPicture.jpg");
+	background-image: url("Volunteering1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -46,4 +46,192 @@
 	line-height: 42px;
 	letter-spacing: 6px;
 	text-transform: uppercase;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.column {
+	height: 200px;
+	width: 32%;
+	margin-bottom: 2%;
+}
+
+.hover-shadow {
+	width: 100%;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+	height: 100%;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 60%;
+  height: 500px;
+}
+
+.modal {
+   animation: opac 0.3s;
+ }
+ 
+ @keyframes opac {
+   from {
+     opacity: 0
+   }
+   to {
+     opacity: 1
+   }
+ }
+
+.download {
+	height: 30px;
+	width: 30px;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+
+.download:hover {
+	opacity: 0.7;
+}
+ 
+.close {
+  color: white;
+  position: absolute;
+  top: 90px;
+  right: 65px;
+  font-size: 70px;
+  font-weight: 300 !important;
+  z-index: 200 !important;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(213,220,59);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.mySlides {
+  display: none;
+  background-color: rgba(0,0,0,0); 
+  text-align: center;
+}
+
+.slidePicture {
+	height: 500px;
+	width: 100%;
+	object-fit: cover;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+	animation: opac 0.6s;
+}
+
+ @keyframes opac {
+   from {
+     opacity: 0
+   }
+   to {
+     opacity: 1
+   }
+ }
+
+.mySlides p {
+	font-family: Roboto, sans-serif;
+	color: white;
+	letter-spacing: 1.5px;
+	padding-top: 15px;
+	line-height: 20px;
+	padding-bottom: 15px;
+	font-size: 14px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  margin: 50px;
+  padding: 15px;
+  color: white;
+  font-weight: 300 !important;
+  font-size: 40px;
+  transition: 0.2s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  color: rgb(213,220,59) !important;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 1.5px;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.firstSection {
+	background-color: #f0f0f0;
+	padding: 8% 20% 8% 20%;
+	color: #626262;
+}
+
+.firstSection h2 {
+	font-family: Roboto, sans-serif;
+	text-align: center;
+	font-size: 45px;
+	font-weight: normal;
+	padding-bottom: 3%;
 }

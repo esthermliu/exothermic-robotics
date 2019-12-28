@@ -75,6 +75,8 @@
 
 .imageHolder img {
 	margin-bottom: 15px;
+	width: 40%;
+	margin-top: 15px;
 }
 
 .softwareResources {
@@ -89,3 +91,6 @@
 	color: rgb(148, 18, 20);
 }
 
+.lexisNexis {
+	color: rgb(235, 45, 45);
+}
