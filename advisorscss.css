@@ -47,3 +47,73 @@
 	letter-spacing: 6px;
 	text-transform: uppercase;
 }
+
+.firstSection {
+	background-color: #f0f0f0;
+	padding: 8% 25% 8% 25%;
+	color: #626262;
+	font-family: Roboto, sans-serif;
+}
+
+.firstSection h2 {
+	font-size: 45px;
+	font-weight: 300;
+	text-align: center;
+	padding-bottom: 3%;
+}
+
+.mentor  {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 5%;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.imageHolder img {
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.imageHolder {
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.textSection {
+	width: 60%;
+}
+
+.textSection h3 {
+	letter-spacing: 1.5px;
+	text-transform: none !important;
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 5px;
+}
+
+.textSection h4 {
+	font-family: Thick, sans-serif;
+	line-height: 30px;
+	font-weight: 50;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.textSection p {
+	line-height: 30px;
+}
+
+ .firstSection > p {
+	line-height: 30px;
+	margin-bottom: 15px;
+}
+
+
+
+
