@@ -92,16 +92,17 @@
 }
 
 .writtenSection {
-	width: 50%;
+	width: 52%;
 }
 
 .imageHolder {
 	text-align: center;
+	width: 45%;
 }
 
 .news img {
 	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-	width: 90%;
+	width: 100%;
 }
 
 .fixedNews {
@@ -162,6 +163,7 @@
 .learnMoreButton:hover button {
   border-color: rgb(46, 74, 7);
  }
+  
  
  .newsHolder {
 	width: 82%;
@@ -173,4 +175,8 @@
  
  .noDrop {
 	cursor: no-drop;
+ }
+ 
+ #noPicture {
+	width: 100%;
  }
