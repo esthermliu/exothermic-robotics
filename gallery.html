@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<header class = "navbar">
+<header id = "secondBox" class = "navbar">
 	<div class = "logoBox">
 		<a class = "homepageLogo" href = "index.html"><img src = "EXOLogo.png"></a>
 	</div>
@@ -66,7 +66,6 @@
 		</ul>
 	</nav>
 </header>
-
 <script>
 jQuery(document).ready(function($){
 	$('.navbar').css("background-color", "transparent");
@@ -124,7 +123,10 @@ jQuery(document).ready(function($){
 </script>
 <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
 <script>
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+	scrollFunction();
+	myFunction();
+};
 
 function scrollFunction() {
 if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -144,14 +146,19 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 // Open the Modal
 function openModal() {
   document.getElementById("myModal").style.display = "block";
+   document.documentElement.style.overflow = 'hidden';  // firefox, chrome
+   document.body.scroll = "no"; // ie only
 }
 
 // Close the Modal
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
+  document.documentElement.style.overflow = 'auto';  // firefox, chrome
+  document.body.scroll = "yes"; // ie only
 }
 
-var slideIndex = 1;
+
+var slideIndex = 0;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -182,7 +189,6 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
-
 <div class = "landing">
 	<div class = "landingBackground">
 		<div class = "titleHolder">
@@ -192,60 +198,1105 @@ function showSlides(n) {
 		</div>
 	</div>
 </div>
+<div id = "toSectionButtons" class = "toSectionButtons">
+		<div class = "buttonContainer" id = "buttonContainer">
+		<div id = "heightButtonContainer" class = "insideButtonContainer">
+			<a href = "#Tower" class="eventButton"><button>Tower Takeover</button></a>
+			<a href = "#Turning" class="eventButton"><button>Turning Point</button></a>
+			<a href = "#Zone" class="eventButton"><button>In The Zone</button></a>
+			<a href = "#Star" class="eventButton"><button>Starstruck</button></a>
+			<a href = "#Net" class="eventButton"><button>Nothing But Net</button></a>
+			<a href = "#Sky" class="eventButton"><button>Skyrise</button></a>
+			<a href = "#Sack" class="eventButton"><button>Sack Attack</button></a>
+			<a href = "#Gate" class="eventButton"><button>Gateway</button></a>
+			<a href = "#Clean" class="eventButton"><button>Clean Sweep</button></a>
+			</div>
+		</div>
+	</div>
+	<script>
+// When the user scrolls the page, execute myFunction 
+// Get the header
+var header = document.getElementById("buttonContainer");
+
+// Get the offset position of the navbar
+var sticky = buttonContainer.offsetTop;
+
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    buttonContainer.classList.add("sticky");
+  } else {
+    buttonContainer.classList.remove("sticky");
+  }
+}
+</script>
+
+
+<div id = "Tower" class = "firstSection">
+<h2 class = "gallery">Gallery</h2>
+	<h2 class = "galleryTitleFirst">Tower Takeover 2019 - 2020</h2>
+	<div class="row">
+	<div class="column">
+		<img src="Gallery108.jpg" onclick="openModal();currentSlide(105)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="Gallery107.jpeg" onclick="openModal();currentSlide(104)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="Gallery106.jpg" onclick="openModal();currentSlide(103)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="Gallery105.jpg" onclick="openModal();currentSlide(102)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="Gallery104.jpg" onclick="openModal();currentSlide(101)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="Gallery103.jpg" onclick="openModal();currentSlide(100)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="Gallery102.jpg" onclick="openModal();currentSlide(99)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="Gallery101.jpg" onclick="openModal();currentSlide(98)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="Gallery100.jpg" onclick="openModal();currentSlide(97)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="Gallery99.jpg" onclick="openModal();currentSlide(96)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="Gallery98.jpg" onclick="openModal();currentSlide(95)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="Gallery97.jpg" onclick="openModal();currentSlide(94)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="Gallery96.jpg" onclick="openModal();currentSlide(93)" class="hover-shadow">
+	  </div>
+	<div class="column">
+		<img src="Gallery95.jpg" onclick="openModal();currentSlide(92)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery58.jpeg" onclick="openModal();currentSlide(91)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery46.jpg" onclick="openModal();currentSlide(90)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery47.jpg" onclick="openModal();currentSlide(89)" class="hover-shadow">
+	  </div>
+	</div>
+</div>
+<div id = "Turning" class = "firstSection">
+	<h2 class = "galleryTitleFirst">Turning Point 2018 - 2019</h2>
+	<div class="row">
+	  <div class="column">
+    <img src="Gallery4.jpg" onclick="openModal();currentSlide(88)" class="hover-shadow">
+	</div>
+	 <div class="column">
+    <img src="Gallery5.jpg" onclick="openModal();currentSlide(87)" class="hover-shadow">
+	</div>
+	<div class="column">
+    <img src="Gallery6.jpg" onclick="openModal();currentSlide(86)" class="hover-shadow">
+	</div>
+	<div class="column">
+    <img src="Gallery9.jpg" onclick="openModal();currentSlide(85)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery10.jpg" onclick="openModal();currentSlide(84)" class="hover-shadow">
+  </div>
+   <div class="column">
+    <img src="Gallery11.jpg" onclick="openModal();currentSlide(83)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery12.jpg" onclick="openModal();currentSlide(82)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery13.jpg" onclick="openModal();currentSlide(81)" class="hover-shadow">
+  </div>
+ <div class="column">
+    <img src="Gallery14.jpg" onclick="openModal();currentSlide(80)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery15.jpeg" onclick="openModal();currentSlide(79)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery16.jpg" onclick="openModal();currentSlide(78)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery17.jpg" onclick="openModal();currentSlide(77)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery18.jpg" onclick="openModal();currentSlide(76)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery19.jpeg" onclick="openModal();currentSlide(75)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery20.jpg" onclick="openModal();currentSlide(74)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery21.jpg" onclick="openModal();currentSlide(73)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery22.jpg" onclick="openModal();currentSlide(72)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery23.jpg" onclick="openModal();currentSlide(71)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery24.jpg" onclick="openModal();currentSlide(70)" class="hover-shadow">
+  </div>
+	 <div class="column">
+    <img src="Gallery25.jpeg" onclick="openModal();currentSlide(69)" class="hover-shadow">
+	</div>
+  <div class="column">
+    <img src="Gallery26.jpg" onclick="openModal();currentSlide(68)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery27.jpg" onclick="openModal();currentSlide(67)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery28.jpg" onclick="openModal();currentSlide(66)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery29.jpg" onclick="openModal();currentSlide(65)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery30.jpg" onclick="openModal();currentSlide(64)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery31.jpg" onclick="openModal();currentSlide(63)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery32.jpg" onclick="openModal();currentSlide(62)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery33.jpg" onclick="openModal();currentSlide(61)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery34.jpg" onclick="openModal();currentSlide(60)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery35.jpg" onclick="openModal();currentSlide(59)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery36.jpg" onclick="openModal();currentSlide(58)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery37.jpg" onclick="openModal();currentSlide(57)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery38.jpg" onclick="openModal();currentSlide(56)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery39.jpg" onclick="openModal();currentSlide(55)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery40.jpg" onclick="openModal();currentSlide(54)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery41.jpg" onclick="openModal();currentSlide(53)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery42.jpg" onclick="openModal();currentSlide(52)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery43.jpg" onclick="openModal();currentSlide(51)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery44.jpg" onclick="openModal();currentSlide(50)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery45.jpg" onclick="openModal();currentSlide(49)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery48.jpg" onclick="openModal();currentSlide(48)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery49.jpg" onclick="openModal();currentSlide(47)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery50.jpg" onclick="openModal();currentSlide(46)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery51.jpg" onclick="openModal();currentSlide(45)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery52.jpg" onclick="openModal();currentSlide(44)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery53.jpg" onclick="openModal();currentSlide(43)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery54.jpg" onclick="openModal();currentSlide(42)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery55.jpg" onclick="openModal();currentSlide(41)" class="hover-shadow">
+  </div>
+	</div>
+</div>
 <div class = "firstSection">
-	<h2>Gallery</h2>
-<div class="row">
+<h2  id = "Zone" class = "galleryTitle">In The Zone 2017 - 2018</h2>
+<div class = "row">
   <div class="column">
-    <img src="FillerPicture.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    <img src="Gallery1.jpg" onclick="openModal();currentSlide(40)" class="hover-shadow">
   </div>
   <div class="column">
-    <img src="LandingImage.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    <img src="Gallery2.jpg" onclick="openModal();currentSlide(39)" class="hover-shadow">
   </div>
   <div class="column">
-    <img src="FillerPicture.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    <img src="Gallery3.jpg" onclick="openModal();currentSlide(38)" class="hover-shadow">
   </div>
   <div class="column">
-    <img src="FillerPicture.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    <img src="Gallery7.jpg" onclick="openModal();currentSlide(37)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery8.jpg" onclick="openModal();currentSlide(36)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery87.jpg" onclick="openModal();currentSlide(35)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery88.jpg" onclick="openModal();currentSlide(34)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery89.jpg" onclick="openModal();currentSlide(33)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery90.jpg" onclick="openModal();currentSlide(32)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery91.jpg" onclick="openModal();currentSlide(31)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery92.jpg" onclick="openModal();currentSlide(30)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery93.jpg" onclick="openModal();currentSlide(29)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Gallery94.jpg" onclick="openModal();currentSlide(28)" class="hover-shadow">
   </div>
 </div>
 <div id="myModal" class="modal">
 	<span class="close cursor" onclick="closeModal()">&times;</span>
-	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	<a class="prev" onclick="plusSlides(1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(-1)">&#10095;</a>
   <div class="modal-content">
-
+  
+  	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery69.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery59.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery66.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery65.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery61.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery60.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery70.jpg">
+		</div>
+    </div>
+	
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery68.jpg">
+		</div>
+    </div>
+  
+  	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery67.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery63.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery62.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery73.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery72.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery71.png">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery74.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery86.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery85.png">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery84.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery83.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery82.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery81.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery80.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery79.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery78.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery77.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery76.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery75.jpg">
+		</div>
+    </div>
+	
+  <div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery94.jpg">
+		</div>
+    </div>
+  
+  	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery93.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery92.jpg">
+		</div>
+    </div>
+	
     <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img class = "slidePicture" src="FillerPicture.jpg">
-	  <p> Blah blah blah </p>
-	  <a href = "FillerPicture.jpg" download= "Filler picture" target = "_blank"><img class = "download" src = "Download.png"/></a>
+	<div class = "slidePicture">
+		<img src="Gallery91.jpg">
+	  </div>
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img class = "slidePicture" src="LandingImage.jpg">
-	  <p> Blah blah blah </p>
-	  <a href = "FillerPicture.jpg" download= "Filler picture" target = "_blank"><img class = "download" src = "Download.png"/></a>
+	<div class = "slidePicture">
+      <img src="Gallery90.jpg">
+	</div>
+	</div>
+
+    <div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery89.jpg">
+	</div>
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img class = "slidePicture" src="FillerPicture.jpg">
-	  <p> Blah blah blah </p>
-	  <a href = "FillerPicture.jpg" download= "Filler picture" target = "_blank"><img class = "download" src = "Download.png"/></a>
+	<div class = "slidePicture">
+      <img src="Gallery88.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img  src="Gallery87.jpg">
+	 </div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery8.jpg">
+	 </div>
     </div>
 
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img class = "slidePicture" src="FillerPicture.jpg">
-	  <p> Blah blah blah </p>
-	  <a href = "FillerPicture.jpg" download= "Filler picture" target = "_blank"><img class = "download" src = "Download.png"/></a>
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery7.jpg">
+	 </div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery3.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery2.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery1.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery55.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery54.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery53.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery52.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery51.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery50.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery49.jpg">
+	 </div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery48.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery45.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery44.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery43.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery42.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery41.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery40.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery39.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery38.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery37.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery36.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery35.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery34.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery33.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery32.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery31.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery30.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery29.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery28.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery27.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery26.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery25.jpeg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery24.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery23.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery22.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery21.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery20.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery19.jpeg">
+	</div>
     </div>
 
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery18.jpg">
+	</div>
+    </div>
+
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery17.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery16.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="Gallery15.jpeg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery14.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery13.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery12.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery11.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery10.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery9.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery6.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery5.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery4.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery47.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery46.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery58.jpeg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery95.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery96.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery97.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery98.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery99.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery100.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery101.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery102.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery103.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery104.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery105.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery106.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery107.jpeg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="Gallery108.jpg">
+		</div>
+    </div>
+	
   </div>
 </div>
 </div>
+<div id = "Star" class = "firstSection">
+	<h2 class = "galleryTitleFirst">Starstruck 2016 - 2017</h2>
+	<div class="row">
+	  <div class="column">
+		<img src="Gallery75.jpg" onclick="openModal();currentSlide(27)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery76.jpg" onclick="openModal();currentSlide(26)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery77.jpg" onclick="openModal();currentSlide(25)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery78.jpg" onclick="openModal();currentSlide(24)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery79.jpg" onclick="openModal();currentSlide(23)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery80.jpg" onclick="openModal();currentSlide(22)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery81.jpg" onclick="openModal();currentSlide(21)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery82.jpg" onclick="openModal();currentSlide(20)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery83.jpg" onclick="openModal();currentSlide(19)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery84.jpg" onclick="openModal();currentSlide(18)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery85.png" onclick="openModal();currentSlide(17)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery86.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow">
+	  </div>
+	</div>
+</div>
+<div id = "Net" class = "firstSection">
+	<h2 class = "galleryTitleFirst">Nothing But Net 2015 - 2016</h2>
+	<div class="row">
+	  <div class="column">
+		<img src="Gallery74.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow">
+	  </div>
+	</div>
+</div>
+<div id = "Sky" class = "firstSection">
+	<h2 class = "galleryTitleFirst">Skyrise 2014 - 2015</h2>
+	<div class="row">
+	  <div class="column">
+		<img src="Gallery71.png" onclick="openModal();currentSlide(14)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery72.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery73.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+	  </div>
+	</div>
+</div>
+
+<div id = "Sack" class = "firstSection">
+	<h2 class = "galleryTitleFirst">Sack Attack 2012 - 2013</h2>
+	<div class="row">
+	  <div class="column">
+		<img src="Gallery62.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+	  </div>
+	 <div class="column">
+		<img src="Gallery63.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery67.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery68.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery70.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+	  </div>
+	</div>
+</div>
+<div id = "Gate" class = "firstSection">
+	<h2 class = "galleryTitleFirst">Gateway 2011 - 2012</h2>
+	<div class="row">
+	  <div class="column">
+		<img src="Gallery60.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery61.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery65.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery66.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	  </div>
+	</div>
+</div>
+<div id = "Clean" class = "firstSection">
+	<h2 class = "galleryTitleFirst">Clean Sweep 2009 - 2010</h2>
+	<div class="row">
+	  <div class="column">
+		<img src="Gallery59.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="Gallery69.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	  </div>
+	</div>
+</div>
 </body>
+<script type="text/javascript">
+$("a[href='#Tower']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Tower").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
+    }, 1000);
+});
+
+$("a[href='#Turning']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Turning").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
+    }, 1000);
+});
+
+$("a[href='#Zone']").click(function() {
+    $([document.documentElement, document.body]).animate({
+	      scrollTop: $("#Zone").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
+    }, 1000);
+});
+
+$("a[href='#Star']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Star").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
+    }, 1000);
+});
+
+$("a[href='#Net']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Net").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
+    }, 1000);
+});
+
+$("a[href='#Sky']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Sky").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
+    }, 1000);
+});
+$("a[href='#Sack']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Sack").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
+    }, 1000);
+});
+$("a[href='#Gate']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Gate").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
+    }, 1000);
+});
+$("a[href='#Round']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Round").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
+    }, 1000);
+});
+$("a[href='#Net']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Net").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
+    }, 1000);
+});
+$("a[href='#Clean']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Clean").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
+    }, 1000);
+});
+</script>
 <footer>
 	<div class = "leftSection">
 		<div class = "leftTopSection">

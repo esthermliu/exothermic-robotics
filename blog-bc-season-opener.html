@@ -4,6 +4,7 @@
 	<title> Exothermic Robotics Blog</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="HeaderFooter.css">
+	<link rel="stylesheet" href="blogcss.css">
 	<link rel="stylesheet" href="blogfirstcss.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -66,61 +67,6 @@
 		</ul>
 	</nav>
 </header>
-<script>
-jQuery(document).ready(function($){
-	$('.navbar').css("background-color", "transparent");
-	if ($(this).scrollTop() < 270) {
-		$('.navbar').css("background-color", "transparent");
-		$('.dropDownContentAbout').css("background-color", "transparent");
-		$('.dropDownContentOverview').css("background-color", "transparent");
-		$('.dropDownContentMedia').css("background-color", "transparent");
-		
-		$('.dropDownContentAbout').css("box-shadow", "none");
-		$('.dropDownContentOverview').css("box-shadow", "none");
-		$('.dropDownContentMedia').css("box-shadow", "none");
-	} else {
-		$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
-		$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
-		$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
-		$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
-	}
-	$(window).scroll(function(){
-		if ($(this).scrollTop() < 270) {
-			$('.navbar').css("background-color", "transparent");
-			$('.dropDownContentAbout').css("background-color", "transparent");
-			$('.dropDownContentOverview').css("background-color", "transparent");
-			$('.dropDownContentMedia').css("background-color", "transparent");
-			
-			$('.dropDownContentAbout').css("box-shadow", "none");
-			$('.dropDownContentOverview').css("box-shadow", "none");
-			$('.dropDownContentMedia').css("box-shadow", "none");
-		} else {
-			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
-		}
-		
-		if ($(this).scrollTop() > 270) {
-			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
-		} else {
-			$('.navbar').css("background-color", "transparent");
-			$('.dropDownContentAbout').css("background-color", "transparent");
-			$('.dropDownContentOverview').css("background-color", "transparent");
-			$('.dropDownContentMedia').css("background-color", "transparent");
-	
-			$('.dropDownContentAbout').css("box-shadow", "none");
-			$('.dropDownContentOverview').css("box-shadow", "none");
-			$('.dropDownContentMedia').css("box-shadow", "none");
-		}
-		
-
-	});
-});
-</script>
 <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
 <script>
 window.onscroll = function() {scrollFunction()};
@@ -139,27 +85,20 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
   return false;
 });
 </script>
-<div class = "landing">
-	<div class = "landingBackground">
-		<div class = "titleHolder">
-			<img src = "EXOLogo.png" alt = "Exo logo">
-			<h1>Blog</h1>
-			<h2>The Latest News In Exo</h2>
-		</div>
-	</div>
-</div>
 <div class = "firstSection">
-	<h2>Blog</h2>
-	<h3><a id = "seeRest" href = "blog-15.html"><i>See the rest of the blog &rarr;</i></a></h3>
+	<h3><a id = "seeRest" href = "blog-15.html"><i>&#10229; Back</i></a></h3>
 	<div class = "overallContainer">
 		<div class = "blogHolder">
-			<h3>INSERT TITLE</h3>
-			<h4>DATE</h4>
+		<h3>INSERT TITLE</h3>
+		<h4>DATE</h4>
 			<div class = "textSection">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class = "imageHolderInsideBlog">
+					<img id = "insideBlogPic" src = "FillerPicture.jpg"/>
+				</div>
 			</div>
 		</div>
-		<div class = "postLog"> <!--Recent and archive section-->
+		<div class = "postLog">
 			<div class = "recentPosts">
 				<h3>Recent Posts</h3>
 				<div class = "recentPostOverall">

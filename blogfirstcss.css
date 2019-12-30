@@ -1,3 +1,43 @@
+
+.blogHolder h3 {
+	font-size: 30px;
+	letter-spacing: 1.5px;
+	margin-bottom: 10px;
+}
+
+.blogHolder  h4 {
+	font-weight: normal;
+	padding-bottom: 3%;
+}
+
+.textSection p {
+	margin-bottom: 15px;
+}
+
+.firstSection a {
+	color: #626262;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+
+.firstSection a:hover {
+	color: rgb(96, 156, 14);
+}
+
+.firstSection > h3 {
+	font-weight: normal;
+	margin-bottom: 3%;
+	letter-spacing: 1.3px;
+}
+
+.textSection {
+	width: 100% !important;
+}
+
+#seeRest {
+	text-decoration: underline;
+}
+
 .landing {
 	background-image: url("FillerPicture.jpg");
 	background-repeat: no-repeat;
@@ -93,10 +133,7 @@
 	border-right: 1px solid #626262;
 	width: 78%;
  }
- 
- .navbar {
-	background-color: rgba(51,51,51,0.8);
- }
+
  
  .blogContainerActual {
 	display: flex;
@@ -106,10 +143,7 @@
 	padding-top: 3%;
 	border-bottom: 1px solid #626262;
  }
- 
- .textSection {
-	width: 52%;
- }
+
  
  .textSection p {
 	padding-right: 3%;
@@ -241,9 +275,4 @@
 #insideBlogPic {
 	width: 80%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-.dropDownContentAbout, .dropDownContentOverview, .dropDownContentMedia {
-	background-color: rgba(51,51,51,0.8) !important;
 }

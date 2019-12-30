@@ -4,7 +4,7 @@
 	<title> Exothermic Robotics Blog</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="HeaderFooter.css">
-	<link rel="stylesheet" href="blogfirstcss.css">
+	<link rel="stylesheet" href="blogcss.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -66,61 +66,6 @@
 		</ul>
 	</nav>
 </header>
-<script>
-jQuery(document).ready(function($){
-	$('.navbar').css("background-color", "transparent");
-	if ($(this).scrollTop() < 270) {
-		$('.navbar').css("background-color", "transparent");
-		$('.dropDownContentAbout').css("background-color", "transparent");
-		$('.dropDownContentOverview').css("background-color", "transparent");
-		$('.dropDownContentMedia').css("background-color", "transparent");
-		
-		$('.dropDownContentAbout').css("box-shadow", "none");
-		$('.dropDownContentOverview').css("box-shadow", "none");
-		$('.dropDownContentMedia').css("box-shadow", "none");
-	} else {
-		$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
-		$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
-		$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
-		$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
-	}
-	$(window).scroll(function(){
-		if ($(this).scrollTop() < 270) {
-			$('.navbar').css("background-color", "transparent");
-			$('.dropDownContentAbout').css("background-color", "transparent");
-			$('.dropDownContentOverview').css("background-color", "transparent");
-			$('.dropDownContentMedia').css("background-color", "transparent");
-			
-			$('.dropDownContentAbout').css("box-shadow", "none");
-			$('.dropDownContentOverview').css("box-shadow", "none");
-			$('.dropDownContentMedia').css("box-shadow", "none");
-		} else {
-			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
-		}
-		
-		if ($(this).scrollTop() > 270) {
-			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
-		} else {
-			$('.navbar').css("background-color", "transparent");
-			$('.dropDownContentAbout').css("background-color", "transparent");
-			$('.dropDownContentOverview').css("background-color", "transparent");
-			$('.dropDownContentMedia').css("background-color", "transparent");
-	
-			$('.dropDownContentAbout').css("box-shadow", "none");
-			$('.dropDownContentOverview').css("box-shadow", "none");
-			$('.dropDownContentMedia').css("box-shadow", "none");
-		}
-		
-
-	});
-});
-</script>
 <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
 <script>
 window.onscroll = function() {scrollFunction()};
@@ -139,27 +84,67 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
   return false;
 });
 </script>
-<div class = "landing">
-	<div class = "landingBackground">
-		<div class = "titleHolder">
-			<img src = "EXOLogo.png" alt = "Exo logo">
-			<h1>Blog</h1>
-			<h2>The Latest News In Exo</h2>
-		</div>
-	</div>
-</div>
 <div class = "firstSection">
 	<h2>Blog</h2>
-	<h3><a id = "seeRest" href = "blog-15.html"><i>See the rest of the blog &rarr;</i></a></h3>
 	<div class = "overallContainer">
 		<div class = "blogHolder">
-			<h3>INSERT TITLE</h3>
-			<h4>DATE</h4>
-			<div class = "textSection">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div id = "firstBlog" class = "blogContainerActual">
+				<div class = "imageHolder">
+					<img src = "FillerPicture.jpg"/>
+				</div>
+				<div class = "textSection">
+					<p>Blah blah blah </p>
+					<div class = "learnMoreContainer">
+						<a href = "blog.html" class="learnMoreButton"><button>Read More &rarr;</button></a>
+					</div>
+				</div>
+			</div>
+			<div class = "blogContainerActual">
+				<div class = "imageHolder">
+					<img src = "LandingImage.jpg"/>
+				</div>
+				<div class = "textSection">
+					<p>Blah blah blah </p>
+					<div class = "learnMoreContainer">
+						<a href = "blog-bc-season-opener.html" class="learnMoreButton"><button>Read More &rarr;</button></a>
+					</div>
+				</div>
+			</div>
+			<div class = "blogContainerActual">
+				<div class = "imageHolder">
+					<img src = "LandingImage.jpg"/>
+				</div>
+				<div class = "textSection">
+					<p>Blah blah blah </p>
+					<div class = "learnMoreContainer">
+						<a href = "https://www.vexrobotics.com/about-us/our-story/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+					</div>
+				</div>
+			</div>
+			<div class = "blogContainerActual">
+				<div class = "imageHolder">
+					<img src = "LandingImage.jpg"/>
+				</div>
+				<div class = "textSection">
+					<p>Blah blah blah </p>
+					<div class = "learnMoreContainer">
+						<a href = "https://www.vexrobotics.com/about-us/our-story/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+					</div>
+				</div>
+			</div>
+			<div id = "lastBlog" class = "blogContainerActual">
+				<div class = "imageHolder">
+					<img src = "FillerPicture.jpg"/>
+				</div>
+				<div class = "textSection">
+					<p>Blah blah blah </p>
+					<div class = "learnMoreContainer">
+						<a href = "https://www.vexrobotics.com/about-us/our-story/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class = "postLog"> <!--Recent and archive section-->
+		<div class = "postLog">
 			<div class = "recentPosts">
 				<h3>Recent Posts</h3>
 				<div class = "recentPostOverall">
@@ -209,6 +194,16 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class = "paginationHolder">
+		<div class = "pagination">
+			<a id = "activeBlog" class = "firstNumber" href = "blog-15.html">15</a>
+			<a href = "blog-2.html">14</a>
+			<a href = "blog-3.html">13</a>
+			<a href = "blog-4.html">12</a>
+			<a class = "nextButton" href = "#">></a>
+			<a href = "#">&raquo;</a>
 		</div>
 	</div>
 </div>
