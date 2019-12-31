@@ -37,5 +37,11 @@
 		margin-right: 3%;
 	}
 	
+	.horizontalMinus, .horizontalMinus2, .horizontalMinus3, .horizontalMinus4, .horizontalMinus5 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
 	
 }
