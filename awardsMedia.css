@@ -22,16 +22,9 @@
 	}
 	
 	#Hide, #Hide2, #Hide3, #Hide4, #Hide5, #Hide6, #Hide7, #Hide8, #Hide9, #Hide10, #Hide11, #Hide12, #Hide13, #Hide14 {
-		font-size: 15px;
+		line-height: 30px;
+		width: 90%;
 	}
 	
-	.minusHolder p {
-		font-size: 30px;
-	}
-	
-	.verticalMinus, .verticalMinus2, .verticalMinus3, .verticalMinus4, .verticalMinus5, .verticalMinus6, .verticalMinus7, .verticalMinus8, .verticalMinus9, .verticalMinus10, .verticalMinus11, .verticalMinus12, .verticalMinus13, .verticalMinus14 {
-		bottom: 1px !important;
-		left: 0px !important;
-	}
 	
 }

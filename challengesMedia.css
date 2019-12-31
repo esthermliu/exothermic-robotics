@@ -1,0 +1,37 @@
+@media screen and (max-width: 750px) {
+	.landing {
+		background-attachment: scroll !important;
+	}
+	
+	.firstSection {
+		padding: 25% 5% 0 5% !important;
+		margin: 0 !important;
+	}
+	
+	.firstSection h1 {
+		padding-bottom: 8%;
+	}
+	
+	.writtenSection {
+		padding-right: 0 !important;
+	}
+	
+	.pictureWebsite {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.secondSection {
+		margin: 8% 5% 0 5% !important;
+	}
+	
+	.towerTakeoverVideo {
+		height: 300px;
+	}
+	
+	#lastSecondSection {
+		padding-bottom: 25%;
+	}
+	
+	
+}
