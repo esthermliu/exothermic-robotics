@@ -282,7 +282,14 @@ footer {
 	margin-top: 3%;
 }
 
+#landingVideo {
+	position: fixed !important;
+}
 
+.secondSection, .fifthSection {
+	background-attachment: scroll !important;
+	background-position: center;
+}
 
 
 }	
