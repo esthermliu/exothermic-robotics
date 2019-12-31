@@ -1,0 +1,36 @@
+
+.aboutUsSection, .thirdSection, .backgroundSection2 {
+	margin: 0;
+	padding: 0;
+	padding: 25% 5% 25% 5%;
+}
+
+.titleSection {
+	padding-bottom: 10%;
+}
+
+.valuesSection {
+	flex-wrap: wrap;
+	padding-top: 10%;
+}
+
+.backgroundColor {
+	padding-top: 25%;
+	padding-bottom: 25%;
+}
+
+.value {
+	margin-bottom: 20%;
+}
+
+.backgroundColor h2 {
+	line-height: 45px;
+}
+
+.learnMoreContainer {
+	flex-wrap: wrap;
+}
+.competitionLink, .eventsLink, .programsLink {
+	width: 100%;
+	margin-bottom: 10%;
+}
