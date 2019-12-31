@@ -3,6 +3,10 @@
 		padding: 25% 5% 25% 5% !important;
 	}
 	
+	.landing {
+		background-attachment: scroll !important;
+	}
+	
 	.firstSection h2 {
 		padding-bottom: 8%;
 	}
