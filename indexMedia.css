@@ -62,40 +62,5 @@
 	margin-bottom: 10%;
 }
 
-footer {
-	flex-wrap: wrap;
-}
-
-.leftSection {
-	width: 100%;
-	margin: 0 !important;
-	margin-top: 10% !important;
-	flex-wrap: wrap !important;
-}
-
-.footerLogoHolder  img{
-	width: 100% ;
-}
-
-.leftTopSection {
-	background-color: blue;
-	width: 100%;
-}
-
-.wordsSection {
-	background-color: red;
-	width: 80%;
-}
-
-.rightSection {
-	width: 100%;
-	margin: 10% 5% 10% 5% !important;
-	
-}
-
-.FooterLinks {
-	margin-top: 8%;
-}
-
 
 } /*End of media query*/

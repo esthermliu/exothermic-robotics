@@ -83,7 +83,7 @@ header {
 
 .Hamburger {
   position: fixed;
-  z-index: 12;
+  z-index: 30;
   color: white;
   height: 80px;
   margin-left: 80%;
@@ -248,6 +248,40 @@ a:link {
 .titleHolder {
 	width: 60vw;
 }
+
+footer {
+	flex-wrap: wrap;
+}
+
+.leftSection {
+	width: 100%;
+	margin: 0 !important;
+	margin-top: 10% !important;
+	flex-wrap: wrap !important;
+}
+
+.footerLogoHolder  img{
+	width: 100% ;
+}
+
+.leftTopSection {
+	width: 100%;
+}
+
+.wordsSection {
+	width: 80%;
+}
+
+.rightSection {
+	width: 100%;
+	margin: 10% 5% 10% 5% !important;
+	
+}
+
+.FooterLinks {
+	margin-top: 8%;
+}
+
 
 
 
