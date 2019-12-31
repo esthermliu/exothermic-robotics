@@ -83,7 +83,7 @@ header {
 
 .Hamburger {
   position: fixed;
-  z-index: 30;
+  z-index: 500000;
   color: white;
   height: 80px;
   margin-left: 80%;
