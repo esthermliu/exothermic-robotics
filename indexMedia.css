@@ -70,6 +70,16 @@ footer {
 	width: 100%;
 	margin: 0 !important;
 	margin-top: 10% !important;
+	flex-wrap: wrap !important;
+}
+
+.leftTopSection {
+	background-color: blue;
+	width: 100%;
+}
+
+.wordsSection {
+	background-color: red;
 }
 
 .rightSection {
