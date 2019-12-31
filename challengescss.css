@@ -1,5 +1,5 @@
 .landing {
-	background-image: url("FillerPicture.jpg");
+	background-image: url("OnlineChallengeBackground.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -78,7 +78,7 @@
 	line-height: 30px;
 }
 
-.firstSection p, .TurningPoint p, .theZone p, .starStruck p, .net p {
+.firstSection p, .TurningPoint p, .theZone p, .challenge11 p, .challenge12 p {
 	padding-bottom: 15px;
 }
 
@@ -137,7 +137,7 @@ td {
 	padding-top: 45px;
 }
 
-#Hide, #Hide2, #Hide3, #Hide4 {
+#Hide, #Hide2, #Hide3, #Hide4, #Hide5 {
 	border: none;
 	color: rgb(98,98,98);
 	background-color: rgba(255,255,255,0);
@@ -154,15 +154,15 @@ td {
 	text-align: left;
 }
 
-#Hide:focus, #Hide2:focus, #Hide3:focus, #Hide4:focus {
+#Hide:focus, #Hide2:focus, #Hide3:focus, #Hide4:focus, #Hide5:focus {
 	outline: 0;
 }
 
- #Hide:hover, #Hide2:hover, #Hide3:hover, #Hide4:hover {
+ #Hide:hover, #Hide2:hover, #Hide3:hover, #Hide4:hover,  #Hide5:hover {
   color: rgb(175, 181, 49);
  }
  
- .TurningPoint, .theZone, .starStruck, .net {
+ .TurningPoint, .theZone, .challenge14, .challenge11, .challenge12 {
    display: none;
    margin-top: 15px;
  }
@@ -200,13 +200,13 @@ td {
 	justify-content: center;
 }
 
-.horizontalMinus, .horizontalMinus2, .horizontalMinus3, .horizontalMinus4 {
+.horizontalMinus, .horizontalMinus2, .horizontalMinus3, .horizontalMinus4, .horizontalMinus5 {
 	position: absolute;
 	cursor: pointer;
 	transition-duration: 0.2s;
 }
 
-.verticalMinus, .verticalMinus2, .verticalMinus3,  .verticalMinus4 {
+.verticalMinus, .verticalMinus2, .verticalMinus3,  .verticalMinus4, .verticalMinus5 {
 	position: relative;
 	transform: rotate(-90deg);
 	left: 1px;
@@ -214,7 +214,7 @@ td {
 	transition-duration: 0.2s;
 }
 
-.horizontalMinus:hover, .horizontalMinus2:hover, .horizontalMinus3:hover, .horizontalMinu4:hover {
+.horizontalMinus:hover, .horizontalMinus2:hover, .horizontalMinus3:hover, .horizontalMinus4:hover, .horizontalMinus5:hover {
   color: rgb(175, 181, 49);
 }
 
@@ -239,12 +239,12 @@ td {
 }
 
 .writtenSection ul li a {
-	color: #626262 !important;
+	color:  rgb(96, 156, 14) !important;
 	transition-duration: 0.2s;
 }
 
 .writtenSection ul li a:hover {
-	color: rgb(96, 156, 14) !important;
+	color: rgb(46, 74, 7) !important;
 }
 
 #website2016 {
@@ -253,6 +253,10 @@ td {
 
 .towerTakeoverVideo {
 	padding-top: 45px;
+}
+
+#secondOverview {
+	padding-top: 8%;
 }
 
 

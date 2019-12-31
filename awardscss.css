@@ -1,5 +1,5 @@
 .landing {
-	background-image: url("FillerPicture.jpg");
+	background-image: url("Gallery104.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -233,4 +233,20 @@
 	flex-wrap: wrap;
 }
 
+.imageGroupHolder {
+	margin-top: 3%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
+.imageGroupHolder img {
+	height: 500px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.groupHolder h3 {
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}

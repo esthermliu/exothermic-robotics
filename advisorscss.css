@@ -1,5 +1,5 @@
 .landing {
-	background-image: url("FillerPicture.jpg");
+	background-image: url("Gallery73.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -65,9 +65,14 @@
 .mentor  {
 	display: flex;
 	justify-content: space-evenly;
-	margin-bottom: 5%;
+	padding-bottom: 5%;
 	flex-wrap: wrap;
-	align-items: center;
+	padding-top: 5%;
+	border-bottom: 1px solid #626262;
+}
+
+#lastMentor {
+	border-bottom: 0px solid white;
 }
 
 .imageHolder img {
@@ -114,6 +119,17 @@
 	margin-bottom: 15px;
 }
 
+
+.textSection p a {
+	color: rgb(96, 156, 14);
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+
+
+.textSection p a:hover {
+	color: rgb(46, 74, 7);
+}
 
 
 
