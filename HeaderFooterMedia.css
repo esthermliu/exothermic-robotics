@@ -87,13 +87,12 @@ header {
   color: white;
   height: 80px;
   margin-left: 80%;
-  display: block !important;
-  /*display: flex !important;
-  align-items: center;*/
+  display: flex !important;
+  align-items: center;
+  background-color: orange !important;
 }
 
 .hamburgerHolder {
-	background-color: orange;
 	display: flex !important;
 	justify-content: center;
 }
