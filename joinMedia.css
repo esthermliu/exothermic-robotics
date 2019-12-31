@@ -1,3 +1,4 @@
+@media screen and (max-width: 800px) {
 .landing {
 	background-attachment: scroll !important;
 }
@@ -8,4 +9,5 @@
 
 .firstSection h2 {
 	padding-bottom: 8%;
+}
 }
