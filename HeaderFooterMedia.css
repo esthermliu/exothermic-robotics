@@ -14,7 +14,6 @@
 
 header {
   width: 100%;
-  background-color: orange !important;
 }
 
 .logo-box {
@@ -228,9 +227,7 @@ a:link {
     display: none !important;
   }
 
-.secondBox {
-	background-color: orange;
-}
+
 
 #landingVideo {
 	overflow: hidden !important;
