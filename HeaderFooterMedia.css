@@ -131,6 +131,7 @@ header {
   z-index: 30 !important;
   margin-top: 80px;
   padding: 0 !important;
+  display: none;
 }
 
 
