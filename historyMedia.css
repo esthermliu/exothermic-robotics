@@ -1,0 +1,26 @@
+@media screen and (max-width: 750px) {
+	.firstSection {
+		padding: 25% 5% 25% 5% !important;
+	}
+	
+	.towerTakeoverVideo {
+		height: 300px;
+	}
+	
+	.notVideo {
+		padding: 25% 5% 25% 5% !important;
+	}
+	
+	.videoHolder {
+		margin: 0 5% 25% 5%;
+	}
+
+	.verticalMinus {
+		left: 1px;
+	}
+	
+	.landingBackground {
+		background-image: linear-gradient(rgba(67, 90, 165, 0.6), rgba(165, 103, 67, 0.6));
+	}
+
+}
