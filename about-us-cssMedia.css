@@ -35,6 +35,6 @@
 	margin-bottom: 10%;
 }
 
-.landingBackground, .secondSection, .fourthSection {
+.landing, .secondSection, .fourthSection {
 	background-attachment: scroll !important;
 }
