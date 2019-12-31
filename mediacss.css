@@ -1,5 +1,5 @@
 .landing {
-	background-image: url("FillerPicture.jpg");
+	background-image: url("SocialMediaBackground.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -14,7 +14,7 @@
 .landingBackground {
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(rgba(67, 90, 165, 0.4), rgba(165, 67, 95, 0.4));
+	background-image: linear-gradient(rgba(67, 90, 165, 0.6), rgba(165, 67, 95, 0.6));
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -89,6 +89,22 @@
 	object-fit: cover;
 	transition: transform 0.2s;
 	background-position: center;
+}
+
+.competitionLink {
+	background-image: url("Gallery39.jpg");
+}
+
+.eventsLink {
+	background-image: url("Gallery100.jpg");
+}
+
+.programsLink {
+	background-image: url("WebsiteBackgroundImage.jpg");
+}
+
+#social {
+	background-image: url("InstagramBackground.jpeg");
 }
 
 .competitionLink:hover, .eventsLink:hover, .programsLink:hover {

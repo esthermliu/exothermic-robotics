@@ -227,6 +227,34 @@
 	background-position: center;
 }
 
+.competitionLink {
+	background-image: url("Gallery30.jpg");
+}
+
+.eventsLink {
+	background-image: url("Gallery106.jpg");
+}
+
+.programsLink {
+	background-image: url("JoinUsBackground.jpg");
+}
+
+#outreach {
+	background-image: url("Volunteering1.jpg");
+}
+
+#advisors {
+	background-image: url("Gallery73.jpg");
+}
+
+#awards {
+	background-image: url("Gallery104.jpg");
+}
+
+#challenges {
+	background-image: url("OnlineChallengeBackground.jpg");
+}
+
 .competitionLink:hover, .eventsLink:hover, .programsLink:hover {
 	-ms-transform: scale(1.5); /* IE 9 */
 	-webkit-transform: scale(1.5); /* Safari 3-8 */

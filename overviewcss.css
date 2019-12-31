@@ -166,6 +166,18 @@
 	background-position: center;
 }
 
+.competitionLink {
+	background-image: url("Gallery107.jpeg");
+}
+
+.eventsLink {
+	background-image: url("Gallery52.jpg");
+}
+
+.programsLink {
+	background-image: url("Volunteering7.jpg");
+}
+
 .competitionLink:hover, .eventsLink:hover, .programsLink:hover {
 	-ms-transform: scale(1.5); /* IE 9 */
 	-webkit-transform: scale(1.5); /* Safari 3-8 */
