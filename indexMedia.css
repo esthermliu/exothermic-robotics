@@ -1,0 +1,86 @@
+@media screen and (max-width: 750px) {
+
+.aboutUsSection {
+	padding: 25% 5% 25% 5%;
+	margin: 0 !important;
+}
+
+.quickStatSection, .teamSection, .boardMemberSection, .eventSection {
+	padding-top: 25%;
+	padding-bottom: 25%;
+}
+
+.randomInfoContainer {
+	flex-wrap: wrap !important;
+}
+
+.firstStart, .location, .slogan, .teamLogo {
+	width: 80%;
+	margin-bottom: 10%;
+}
+
+.slogan {
+	margin-bottom: 0 !important;
+}
+
+.aboutUsTitle, .quickStatsTitle, .teamTitleSection, .boardTitle, .eventTitle {
+	padding-bottom: 8%;
+}
+
+.Circle {
+	margin-bottom: 10%;
+}
+
+.teamLogo {
+	width: 80% !important;
+}
+
+.firstTeamContainer, .secondTeamContainer {
+	flex-wrap: wrap;
+}
+
+.TeamALink, .TeamBLink, .TeamCLink, .TeamDLink, .TeamELink, .TeamFLink, .TeamNLink, .TeamXLink {
+	width: 100%;
+	margin-bottom: 10%;
+	margin-right: 3%;
+}
+
+.TeamXLink, .TeamDLink {
+	margin-right: 3% !important; 
+}
+
+.teamTitleSection, .boardTitle, .eventTitle {
+	text-align: center;
+}
+
+.eventArticle {
+	flex-wrap: wrap;
+}
+
+.event1, .event2, .event3 {
+	width: 100%;
+	margin-bottom: 10%;
+}
+
+footer {
+	flex-wrap: wrap;
+}
+
+.leftSection {
+	width: 100%;
+	margin: 0 !important;
+	margin-top: 10% !important;
+}
+
+.rightSection {
+	width: 100%;
+	margin: 10% 5% 10% 5% !important;
+	
+}
+
+.FooterLinks {
+	margin-top: 8%;
+}
+
+
+} /*End of media query*/
