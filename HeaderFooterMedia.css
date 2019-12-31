@@ -106,7 +106,7 @@ header {
   padding-bottom: 15%;
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+ 
 }
 
 .overlay a {
@@ -128,7 +128,6 @@ header {
   position: absolute !important;
   font-size: 60px !important;
   z-index: 30 !important;
- margin-top: 80px !important;
 }
 
 
