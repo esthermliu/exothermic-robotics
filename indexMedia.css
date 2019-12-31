@@ -73,6 +73,10 @@ footer {
 	flex-wrap: wrap !important;
 }
 
+.footerLogoHolder  img{
+	width: 100% ;
+}
+
 .leftTopSection {
 	background-color: blue;
 	width: 100%;
@@ -80,6 +84,7 @@ footer {
 
 .wordsSection {
 	background-color: red;
+	width: 80%;
 }
 
 .rightSection {
