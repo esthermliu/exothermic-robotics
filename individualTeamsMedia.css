@@ -1,7 +1,7 @@
 @media screen and (max-width: 750px) {
 
 .firstSection, .statSection  {
-	padding: 25% 0 25% 0 !important;
+	padding: 25% 0 0 0 !important;
 	width: 100% !important;
 	margin: 0;
 }
@@ -31,6 +31,10 @@
 	width: 100%;
 }
 
+.statArticle {
+	margin-right: 0 !important;
+}
+
 #buttonContainer {
 	width: 100%;
 	padding-top: 60px !important;
@@ -54,6 +58,22 @@
 
 .eventList, .rankingsList, .skills, .turningList, .rankingsList2 {
 	margin: 0 5% 0 5% !important;
+}
+
+.rightSectionEventRanking p, .rightSectionEventRankingTitle p {
+	font-size: 13px !important;
+	line-height: 20px;
+}
+
+.towerSection, .turningSection, .zoneSection, .netSection, .sackSection, .roundSection, .starSection, .skySection, .gateSection, .cleanSection {
+	padding-top: 25%;
+	padding-bottom: 25%;
+}
+
+.rightSectionFooter {
+	width: 100%;
+	margin: 10% 5% 10% 5% !important;
+	
 }
 
 @media screen and (max-width: 415px) {

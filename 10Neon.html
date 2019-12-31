@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="HeaderFooter.css">
 	<link rel="stylesheet" href="10Ncss.css"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="HeaderFooterMedia.css">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="individualTeamsMedia.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<link rel="icon" type="image/png" href="Favicon.png" size = "20x20"/>
@@ -64,6 +66,64 @@
 			<li><a class = "contactUs" href = "contact-us.html"> Contact Us </a></li>
 		</ul>
 	</nav>
+	<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+ <div id="myNav" class="overlay">
+   <span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <div class = "overlayHolder">
+    <a href="index.html">Home</a>
+    <a href="about-us.html">About Us</a>
+		<div class="phoneDropdown">
+		    <a href="history.html">History</a>
+			<a class = "active" href="teams.html">Teams</a>
+			<a href="join.html">Join Us</a>
+			<a href="outreach.html">Outreach</a>
+			<a href="advisors.html">Advisors</a>
+			<a href="awards.html">Awards</a>
+			<a href="challenges.html">Challenges</a>
+		</div>
+	<a href="overview.html">VEX Overview</a>
+		<div class="phoneDropdown">
+		    <a href="competition.html">Competitions</a>
+			<a href="events.html">Events</a>
+			<a href="programs.html">Programs</a>
+		</div>
+	<a href="media.html">Media</a>
+		  <div class="phoneDropdown">
+		    <a href="news.html">Publicity</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="website.html">Website</a>
+			<a href="social.html">Social</a>
+		  </div>
+	<a href="blog.html">Blog</a>
+	<a href="resources.html">Resources</a>
+		<div class="phoneDropdown">
+		    <a href="building-tips.html">Building Tips</a>
+			<a href="notebook-tips.html">Notebook Tips</a>
+			<a href="coding-tips.html">Coding Tips</a>
+			<a href="game-tips.html">Game Tips</a>
+			<a href="website-tips.html">Website Tips</a>
+			<a href="other-links.html">Other Links</a>
+		  </div>
+		<a href="sponsors.html">Sponsors</a>
+		<a href="contact-us.html">Contact Us</a>
+	</div>
+	</div>
+  </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
 </header>
 
 <script>
