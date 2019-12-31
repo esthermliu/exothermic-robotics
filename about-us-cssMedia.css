@@ -1,4 +1,4 @@
-
+@media screen and (max-width: 750px) {
 .aboutUsSection, .thirdSection, .backgroundSection2 {
 	margin: 0;
 	padding: 0;
@@ -6,7 +6,7 @@
 }
 
 .titleSection {
-	padding-bottom: 10%;
+	padding-bottom: 8%;
 }
 
 .valuesSection {
@@ -42,4 +42,11 @@
 
 .landingBackground {
 	background-image: linear-gradient(rgba(67, 90, 165, 0.6), rgba(165, 103, 67, 0.6)) !important;
+}
+
+.backgroundSection2 h2 {
+	padding-top: 0 !important;
+	padding-bottom: 6%;
+}
+
 }

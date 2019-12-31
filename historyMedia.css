@@ -26,5 +26,22 @@
 	.landing {
 		background-attachment: scroll !important;
 	}
-
+	
+	.firstSection h2 {
+		padding-bottom: 8% !important;
+	}
+	
+	#secondSection h3, #thirdSection h3, #fourthSection h3, #fifthSection h3, #sixthSection h3{
+		padding-bottom: 8%;
+	}
+	
+	#buttonContainer {
+		padding-top: 0;
+	}
+	
+	
+	
+	
+	
+	
 }
