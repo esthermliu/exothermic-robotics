@@ -23,6 +23,7 @@
 	line-height: 42px;
 	letter-spacing: 6px;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .firstSection {
@@ -77,6 +78,11 @@
 	width: 30vw;
 	justify-content: center;
 	align-items: center;
+}
+
+.titleHolder h1 {
+	display: flex;
+	text-align: center;
 }
 
 #landingVideo {

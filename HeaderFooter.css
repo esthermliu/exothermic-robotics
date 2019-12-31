@@ -298,3 +298,14 @@ footer {
 	align-items: center;
 }
  
+.overlay {
+	display: none;
+}
+
+.Hamburger {
+	display: none;
+}
+
+.hamburgerHolder {
+	display: none;
+}
