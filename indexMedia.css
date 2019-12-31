@@ -43,7 +43,10 @@
 	width: 100%;
 	margin-bottom: 10%;
 	margin-right: 3%;
+	background-repeat: no-repeat;
 }
+
+
 
 .TeamXLink, .TeamDLink {
 	margin-right: 3% !important; 

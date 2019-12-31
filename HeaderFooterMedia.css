@@ -319,5 +319,16 @@ footer {
 	width: 100%;
 }
 
+.Hamburger {
+  position: fixed;
+  z-index: 500000;
+  color: white;
+  height: 80px;
+  margin-left: 80%;
+  display: block;
+  display: flex !important;
+  align-items: center;
+}
+
 
 }	
