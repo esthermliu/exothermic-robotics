@@ -1,4 +1,9 @@
 @media screen and (max-width: 750px) {
+	.landing {
+		background-image: url("BuildingBackground.jpg");
+		background-attachment: scroll;
+	}
+	
 	.firstSection {
 		padding: 25% 5% 25% 5%;
 	}
@@ -15,7 +20,4 @@
 		padding-bottom: 8%;
 	}
 	
-	.landing {
-		background-attachment: scroll;
-	}
 }
