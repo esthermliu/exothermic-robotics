@@ -1,6 +1,11 @@
 @media screen and (max-width: 750px) {
-	.landing {
+	.landing, .secondSection {
 		background-attachment: scroll;
+	}
+	
+	.secondSection {
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	
 	.firstSection , .secondSectionColor {
