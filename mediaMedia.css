@@ -24,4 +24,8 @@
 		margin-bottom: 0 !important;
 	}
 	
+	.titleHolder  h2{
+		line-height: 30px;
+	}
+	
 }
