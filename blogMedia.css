@@ -3,8 +3,14 @@
 		background-attachment: scroll;
 	}
 	
-	.recentPostHolder a img {
-		height: 100%;
+	.recentPostHolder  img {
+		width: 100%;
+		margin-bottom: 5%;
+	}
+	
+	.recentPostHolder  a{
+		display: flex;
+		flex-wrap: wrap;
 	}
 	
 	.firstSection {
