@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="newscss.css">
 	<link rel="stylesheet" href="pastnewscss.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="HeaderFooterMedia.css">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="newsMedia.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="icon" type="image/png" href="Favicon.png" size = "20x20"/>
@@ -66,6 +68,63 @@
 			<li><a class = "contactUs" href = "contact-us.html"> Contact Us </a></li>
 		</ul>
 	</nav>
+	<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+ <div id="myNav" class="overlay">
+   <span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <div class = "overlayHolder">
+    <a href="index.html">Home</a>
+    <a href="about-us.html">About Us</a>
+		<div class="phoneDropdown">
+		    <a href="history.html">History</a>
+			<a href="teams.html">Teams</a>
+			<a href="join.html">Join Us</a>
+			<a href="outreach.html">Outreach</a>
+			<a href="advisors.html">Advisors</a>
+			<a href="awards.html">Awards</a>
+			<a href="challenges.html">Challenges</a>
+		</div>
+	<a href="overview.html">VEX Overview</a>
+		<div class="phoneDropdown">
+		    <a href="competition.html">Competitions</a>
+			<a href="events.html">Events</a>
+			<a href="programs.html">Programs</a>
+		</div>
+	<a href="media.html">Media</a>
+		  <div class="phoneDropdown">
+		    <a class = "active"  href="news.html">Publicity</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="website.html">Website</a>
+			<a href="social.html">Social</a>
+		  </div>
+	<a href="blog.html">Blog</a>
+	<a href="resources.html">Resources</a>
+		<div class="phoneDropdown">
+		    <a href="building-tips.html">Building Tips</a>
+			<a href="notebook-tips.html">Notebook Tips</a>
+			<a href="coding-tips.html">Coding Tips</a>
+			<a href="game-tips.html">Game Tips</a>
+			<a href="website-tips.html">Website Tips</a>
+			<a href="other-links.html">Other Links</a>
+		  </div>
+		<a href="sponsors.html">Sponsors</a>
+		<a href="contact-us.html">Contact Us</a>
+	</div>
+	</div>
+  </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
 </header>
 <script>
 jQuery(document).ready(function($){
@@ -143,8 +202,24 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 <div class = "firstSection">
 	<h2> 2015 News </h2>
 	<div class = "overallSection">
+	<div class = "fixedNewsPhone">
+			<p> <b>Years</b> </p>
+			<p><a href = "news.html">2020</a></p>
+			<p><a href = "news-2019.html">2019</a></p>
+			<p><a href = "news-2018.html">2018</a></p>
+			<p><a href = "news-2017.html">2017</a></p>
+			<p><a href = "news-2016.html">2016</a></p>
+			<p><a class = "currentYear" href = "news-2015.html">&rarr; 2015</a></p>
+			<p><a href = "news-2014.html">2014</a></p>
+			<p><a href = "news-2013.html">2013</a></p>
+			<p><a href = "news-2012.html">2012</a></p>
+			<p><a href = "news-2011.html">2011</a></p>
+			<p><a href = "news-2010.html">2010</a></p>
+			<p><a href = "news-2009.html">2009</a></p>
+			<p id = "lastYear" ><a href = "news-2008.html">2008</a></p>
+	</div>
 		<div class = "newsHolder">
-			<div id = "lastNews" class = "news">
+			<div class = "news">
 			<div class = "imageHolder">
 				<img src = "10QRobot.jpg"/>
 			</div>

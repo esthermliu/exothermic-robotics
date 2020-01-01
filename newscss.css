@@ -123,6 +123,10 @@
 	color: rgb(96, 156, 14);
 }
 
+.fixedNewsPhone {
+	display: none !important;
+}
+
 .writtenSection h4, .writtenSection h3 {
 	font-weight: 300;
 	line-height: 25px !important;
