@@ -49,4 +49,10 @@
 	padding-bottom: 6%;
 }
 
+.value, .value2 {
+	margin-right: 0 !important;
+}
+
+
+
 }
