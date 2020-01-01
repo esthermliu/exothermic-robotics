@@ -87,6 +87,7 @@
 .secondSection { 
 	background-image: url("WebsiteBackground.jpeg") !important;
 	background-attachment: fixed;
+	background-position: center;
 	color: white !important;
 	padding: 0 !important;
 }
