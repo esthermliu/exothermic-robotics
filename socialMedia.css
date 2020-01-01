@@ -24,4 +24,8 @@
 		align-items: center;
 	}
 	
+	.towerTakeoverVideo {
+		height: 300px;
+	}
+	
 }
