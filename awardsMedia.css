@@ -26,18 +26,14 @@
 		width: 90%;
 	}
 	
-	
-	
 	.buttonTopHolder {
 		padding-right: 3%;
-		background-color: orange;
 	}
 	
 	.horizontalMinus, .horizontalMinus2, .horizontalMinus3, .horizontalMinus4, .horizontalMinus5, .horizontalMinus6, .horizontalMinus7, .horizontalMinus8, .horizontalMinus9, .horizontalMinus10, .horizontalMinus11, .horizontalMinus12, .horizontalMinus13, .horizontalMinus14 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: red;
 	}
 	
 	
