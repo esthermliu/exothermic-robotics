@@ -1,0 +1,17 @@
+@media screen and (max-width: 750px) {
+	.firstSection {
+		padding: 25% 5% 25% 5%;
+	}
+	
+	.firstSection h2 {
+		padding-bottom: 8%;
+	}
+
+	.secondSectionBackground {
+		padding: 25% 5% 25% 5%;
+	}
+	
+	.secondSectionBackground h2 {
+		padding-bottom: 8%;
+	}
+}

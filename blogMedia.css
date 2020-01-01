@@ -1,0 +1,36 @@
+@media screen and (max-width: 750px) {
+	.firstSection {
+		padding: 25% 5% 25% 5%;
+	}	
+	
+	.firstSection h2 {
+		padding-bottom: 8%;
+	}
+	
+	.postLog {
+		width: 100%;
+	}
+	
+	.blogHolder {
+		border-right: 0px solid white;
+		width: 100%
+	}
+	
+	.overallContainer {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.recentPostHolder a p {
+		width: 55%;
+	}
+	
+	.textSection {
+		padding-bottom: 8%;
+	}
+	
+	.pagination {
+		width: 80%;
+	}
+
+}
