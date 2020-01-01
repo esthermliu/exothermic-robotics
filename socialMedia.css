@@ -1,0 +1,14 @@
+@media screen and (max-width: 750px) { 
+	.landing {
+		background-attachment: scroll;
+	}
+	
+	.socialMediaSection {
+		padding: 25% 5% 25% 5%;
+	}
+	
+	.firstSection {
+		margin: 25% 5% 25% 5%;
+	}
+	
+}
