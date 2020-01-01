@@ -164,3 +164,13 @@
 .textSectionRubric {
 	margin-bottom: 30px;
 }
+
+.textSectionRubric p a {
+		color: rgb(96, 156, 14);
+		transition-duration: 0.2s;
+		-webkit-transition-duration: 0.2s;
+	}
+	
+	.textSectionRubric p a:hover {
+		color: rgb(46, 74, 7)
+	}

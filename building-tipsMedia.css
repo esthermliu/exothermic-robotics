@@ -14,4 +14,8 @@
 	.secondSectionBackground h2 {
 		padding-bottom: 8%;
 	}
+	
+	.landing {
+		background-attachment: scroll;
+	}
 }

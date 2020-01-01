@@ -1,14 +1,17 @@
 @media screen and (max-width: 750px) {
+	.landing {
+		background-attachment: scroll;
+	}
+	
+	.titleHolder h2 {
+		line-height: 30px !important;
+	}
+	
 	.firstSection {
 		padding: 25% 5% 25% 5%;
 	}
 	
 	.firstSection h2 {
 		padding-bottom: 8%;
-	}	
-	
-	.landing {
-		background-attachment: scroll;
 	}
-
 }
