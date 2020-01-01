@@ -1,4 +1,12 @@
 @media screen and (max-width: 750px) {
+	.landing {
+		background-attachment: scroll;
+	}
+	
+	.recentPostHolder a img {
+		height: 100%;
+	}
+	
 	.firstSection {
 		padding: 25% 5% 25% 5%;
 	}	
