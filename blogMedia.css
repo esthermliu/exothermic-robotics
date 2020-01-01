@@ -43,10 +43,44 @@
 	
 	.textSection {
 		padding-bottom: 8%;
+		width: 100%;
 	}
 	
 	.pagination {
 		width: 80%;
 	}
+	
+	.blogContainerActual {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.imageHolder {
+		width: 100%;
+	}
+	
+	.textSection {
+		padding: 0 !important;
+	}
+	
+	.learnMoreContainer {
+		margin-top: 3%;
+		margin-bottom: 0;
+	}
+	
+	.postLog {
+		margin-top: 10%;
+	}
+	
+	.recentPostHolder p {
+		font-size: 16px !important;
+	}
+	
+	.imageHolderArticle img {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		width: 100%;
+	}
+
+	
 
 }
