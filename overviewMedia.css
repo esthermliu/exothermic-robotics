@@ -40,5 +40,11 @@
 	.titleHolder h2 {
 		line-height: 30px;
 	}
+	
+	.secondSection {
+		background-attachment: scroll;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
 
 }
