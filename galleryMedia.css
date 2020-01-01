@@ -33,4 +33,8 @@
 		object-fit: contain;
 	}
 	
+	.close {
+		right: 20px;
+	}
+	
 }

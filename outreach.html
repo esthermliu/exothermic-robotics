@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="HeaderFooter.css">
 	<link rel="stylesheet" href="outreachcss.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="HeaderFooterMedia.css">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="outreachMedia.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="icon" type="image/png" href="Favicon.png" size = "20x20"/>
@@ -65,6 +67,63 @@
 			<li><a class = "contactUs" href = "contact-us.html"> Contact Us </a></li>
 		</ul>
 	</nav>
+	<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+ <div id="myNav" class="overlay">
+   <span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <div class = "overlayHolder">
+    <a href="index.html">Home</a>
+    <a href="about-us.html">About Us</a>
+		<div class="phoneDropdown">
+		    <a href="history.html">History</a>
+			<a href="teams.html">Teams</a>
+			<a href="join.html">Join Us</a>
+			<a class = "active" href="outreach.html">Outreach</a>
+			<a href="advisors.html">Advisors</a>
+			<a href="awards.html">Awards</a>
+			<a href="challenges.html">Challenges</a>
+		</div>
+	<a href="overview.html">VEX Overview</a>
+		<div class="phoneDropdown">
+		    <a href="competition.html">Competitions</a>
+			<a href="events.html">Events</a>
+			<a href="programs.html">Programs</a>
+		</div>
+	<a href="media.html">Media</a>
+		  <div class="phoneDropdown">
+		    <a href="news.html">Publicity</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="website.html">Website</a>
+			<a href="social.html">Social</a>
+		  </div>
+	<a href="blog.html">Blog</a>
+	<a href="resources.html">Resources</a>
+		<div class="phoneDropdown">
+		    <a href="building-tips.html">Building Tips</a>
+			<a href="notebook-tips.html">Notebook Tips</a>
+			<a href="coding-tips.html">Coding Tips</a>
+			<a href="game-tips.html">Game Tips</a>
+			<a href="website-tips.html">Website Tips</a>
+			<a href="other-links.html">Other Links</a>
+		  </div>
+		<a href="sponsors.html">Sponsors</a>
+		<a href="contact-us.html">Contact Us</a>
+	</div>
+	</div>
+  </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
 </header>
 
 <script>
@@ -274,152 +333,273 @@ function showSlides(n) {
   <div class="modal-content">
 
     <div class="mySlides">
-      <img class = "slidePicture" src="Volunteering1.jpg">
-	  <p> From left to right, Elizabeth Chen, Helena Zheng, and Ann Li are at Redmond library presenting their journey through VEX IQ. Hovering over a laptop, they look over their PowerPoint one more time before it's time to present. They are currently members of 10C.</p>
-	  <a href = "Volunteering1.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+		<div class = "Holder">
+		<div class = "innerHolder">
+		<div class = "mostInnerHolder">
+		  <img class = "slidePicture" src="Volunteering1.jpg">
+		  <p> From left to right, Elizabeth Chen, Helena Zheng, and Ann Li are at Redmond library presenting their journey through VEX IQ. Hovering over a laptop, they look over their PowerPoint one more time before it's time to present. They are currently members of 10C.</p>
+	  </div>
+	  </div>
+    </div>
     </div>
 
     <div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering2.jpg">
 	  <p> From left to right, Kelly, Helena, Elizabeth, and Ann present to parents and children about their experience in VEX IQ. </p>
-	  <a href = "Volunteering2.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
     </div>
+	</div>
+	</div>
+	</div>
 
     <div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering3.jpg">
 	  <p> Elizabeth Chen from 10C talks about their journey through VEX IQ and the things they have learned. </p>
-	  <a href = "Volunteering3.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
     </div>
+	</div>
+	</div>
+	</div>
 
     <div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering4.jpg">
 	  <p> Elizabeth Chen from 10C talks about their success in the club. </p>
-	  <a href = "Volunteering4.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering5.jpg">
 	  <p> Helena Zheng from 10C introduces a picture of her team attending a competition. </p>
-	  <a href = "Volunteering5.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering6.jpg">
 	  <p>A parent interested in VEX takes a picture of 10C's (VEX IQ 47G) slides. </p>
-	  <a href = "Volunteering6.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+			<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering7.jpg">
 	  <p> Ann Li shows their robot and explains how it works to a group of curious children. </p>
-	  <a href = "Volunteering7.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering8.jpg">
 	  <p> 47G (currently 10C) shows their robot to a crowd of children and parents. </p>
-	  <a href = "Volunteering8.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering9.jpg">
 	  <p> A group of excited and interested girls take pictures and watch as 47G shows off their robot. </p>
-	  <a href = "Volunteering9.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 
 	<div class="mySlides">
-      <img class = "slidePicture" src="Volunteering10.jpg">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
+      <img class = "slidePicture" src="Volunteering10.jpg"/>
 	  <p> 47G sets up a table where they explain how they make their robot. </p>
-	  <a href = "Volunteering10.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering11.jpg">
 	  <p> Ann Li and Helena Zheng from 47G (10C) talk more about robots. </p>
-	  <a href = "Volunteering11.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering12.jpg">
 	  <p> Ann Li and Helena Zheng supervise as the kids try building for themselves. Di Mao, sitting down on the right of Helena, joined 10C a year later! </p>
-	  <a href = "Volunteering12.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering13.jpg">
 	  <p> Kelly, Ann, and Elizabeth show how their robot maneuvers on the field. </p>
-	  <a href = "Volunteering13.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering14.jpg">
 	  <p>A boy leans forward to get a better view of the robot. </p>
-	  <a href = "Volunteering14.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering15.jpg">
 	  <p> Elizabeth Chen from 47G (10C) glances at the camera. They are volunteering at another local library.</p>
-	  <a href = "Volunteering15.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering16.jpg">
 	  <p> Elizabeth Chen from 47G (10C) shows some kids how to drive a robot. </p>
-	  <a href = "Volunteering16.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering17.jpg">
 	  <p> Elizabeth Chen from 47G (10C) shows some kids how to drive a robot.</p>
-	  <a href = "Volunteering17.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering18.jpg">
 	  <p> Helena Zheng from 47G (10C) watches and helps a kid drive a robot. </p>
-	  <a href = "Volunteering18.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+				</div>
+		</div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering19.jpg">
 	  <p> Helena Zheng supervises as a kid drives a robot. </p>
-	  <a href = "Volunteering19.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering20.jpg">
 	  <p> Helena Zheng directs a kid driving a robot.</p>
-	  <a href = "Volunteering20.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering21.jpg">
 	  <p> Di Mao shows off her creation to a group of children. </p>
-	  <a href = "Volunteering21.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+				<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering22.jpg">
 	  <p> 10C member, Elizabeth Chen (in pink), volunteers at a VEX competition. </p>
-	  <a href = "Volunteering22.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+		<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering23.jpg">
 	  <p> 10C member, Elizabeth Chen (in pink), volunteers at a VEX competition. </p>
-	  <a href = "Volunteering23.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
 	<div class="mySlides">
+	<div class = "Holder">
+		<div class = "innerHolder">
+		<div class = "mostInnerHolder">
       <img class = "slidePicture" src="Volunteering24.jpg">
 	  <p>Elizabeth and Ann (10C) teach about how to drive a robot. </p>
-	  <a href = "Volunteering24.jpg" download target = "_blank"><img class = "download" src = "Download.png"/></a>
+    </div>
+    </div>
+    </div>
     </div>
 	
-  </div>
+  
 </div>
 </div>
+</div> <!--End of first section-->
 </body>
 <footer>
 	<div class = "leftSection">

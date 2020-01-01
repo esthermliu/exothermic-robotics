@@ -68,7 +68,7 @@
 .modal {
   display: none;
   position: fixed;
-  z-index: 200;
+  z-index: 9999999999999999;
   left: 0;
   top: 0;
   width: 100%;
@@ -161,7 +161,7 @@
 .slidePicture img {
 	height: 100%;
 	max-width: 100%;
-	object-fit: cover;
+	object-fit: contain;
 	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -171,7 +171,6 @@
 	letter-spacing: 1.5px;
 	padding-top: 15px;
 	line-height: 30px;
-	padding-bottom: 15px;
 }
 
 /* Next & previous buttons */
@@ -241,9 +240,6 @@ img.hover-shadow {
 	font-weight: normal;
 }
 
-.slidePictureHolder {
-	background-color: pink;
-}
 
 .galleryTitle {
 	font-size: 24px !important;
