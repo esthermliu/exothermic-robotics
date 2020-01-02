@@ -104,12 +104,10 @@
 	}
 	
 	.imageHolder img {
-		margin-top: 3%;
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
 	}
 	
-	.recentPostHolder {
-		height: auto;
-	}
 	
 	.recentPostHolder img {
 		height: auto;
