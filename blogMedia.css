@@ -109,6 +109,7 @@
 	
 	.recentPostHolder img {
 		height: auto;
+		object-fit: fill !important;
 	}
 	
 	.recentPostHolder h3 {
