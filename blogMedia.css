@@ -103,5 +103,22 @@
 		display: none;
 	}
 	
+	.imageHolder img {
+		margin-top: 3%;
+	}
+	
+	.recentPostHolder img {
+		height: auto;
+	}
+	
+	.recentPostHolder h3 {
+		font-size: 1.17em;
+		letter-spacing: 1.5px;
+		font-family: Roboto, sans-serif;
+		margin-left: 0;
+		line-height: 30px;
+		font-weight: 700;
+	}
+	
 
 }
