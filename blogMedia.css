@@ -111,7 +111,10 @@
 	
 	.recentPostHolder img {
 		width: 100%;
-		height: auto;
+	}
+	
+	.recentPostHolder {
+		height: 25%;
 	}
 	
 	.recentPostHolder h3 {
