@@ -93,5 +93,15 @@
 		margin-bottom: 3%;
 	}
 	
+	#paginationHolderPhone {
+		display: flex;
+		width: 100%;
+		margin-top: 8%;
+	}
+	
+	.paginationHolder {
+		display: none;
+	}
+	
 
 }
