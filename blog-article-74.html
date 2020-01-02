@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="blogcss.css">
 	<link rel="stylesheet" href="blogfirstcss.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="blogMedia.css">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="HeaderFooterMedia.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="icon" type="image/png" href="Favicon.png" size = "20x20"/>
@@ -66,6 +68,63 @@
 			<li><a class = "contactUs" href = "contact-us.html"> Contact Us </a></li>
 		</ul>
 	</nav>
+	<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+ <div id="myNav" class="overlay">
+   <span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <div class = "overlayHolder">
+    <a href="index.html">Home</a>
+    <a href="about-us.html">About Us</a>
+		<div class="phoneDropdown">
+		    <a href="history.html">History</a>
+			<a href="teams.html">Teams</a>
+			<a href="join.html">Join Us</a>
+			<a href="outreach.html">Outreach</a>
+			<a href="advisors.html">Advisors</a>
+			<a href="awards.html">Awards</a>
+			<a href="challenges.html">Challenges</a>
+		</div>
+	<a href="overview.html">VEX Overview</a>
+		<div class="phoneDropdown">
+		    <a href="competition.html">Competitions</a>
+			<a href="events.html">Events</a>
+			<a href="programs.html">Programs</a>
+		</div>
+	<a href="media.html">Media</a>
+		  <div class="phoneDropdown">
+		    <a href="news.html">Publicity</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="website.html">Website</a>
+			<a href="social.html">Social</a>
+		  </div>
+	<a class = "active" href="blog.html">Blog</a>
+	<a href="resources.html">Resources</a>
+		<div class="phoneDropdown">
+		    <a href="building-tips.html">Building Tips</a>
+			<a href="notebook-tips.html">Notebook Tips</a>
+			<a href="coding-tips.html">Coding Tips</a>
+			<a href="game-tips.html">Game Tips</a>
+			<a href="website-tips.html">Website Tips</a>
+			<a href="other-links.html">Other Links</a>
+		  </div>
+		<a href="sponsors.html">Sponsors</a>
+		<a href="contact-us.html">Contact Us</a>
+	</div>
+	</div>
+  </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
 </header>
 <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
 <script>
@@ -89,13 +148,11 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 	<h3><a id = "seeRest" href = "blog-15.html"><i>&#10229; Back</i></a></h3>
 	<div class = "overallContainer">
 		<div class = "blogHolder">
-		<h3>INSERT TITLE</h3>
-		<h4>DATE</h4>
+		<h3>Robot House Makeover</h3>
+		<h4>December 12, 2019</h4>
 			<div class = "textSection">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<div class = "imageHolderInsideBlog">
-					<img id = "insideBlogPic" src = "FillerPicture.jpg"/>
-				</div>
+				<p>Hey everyone! Starting Saturday, we are going to be making some pretty big changes to the robot house so we are going to have a full cleaning weekend to make space for the new field risers. This means that everyone will have to pack up their tables into their tool box so we can shuffle around tables. The field will be out of commission starting Saturday morning and until probably Monday or Tuesday night and no one will have a table for most of Saturday and Sunday. We need as many people to come as possible to help with this massive move so every team is expected to come help. We will figure out new table assignments after everything is setup so probably on Monday night or Tuesday. </p>
+				
 			</div>
 		</div>
 		<div class = "postLog">
