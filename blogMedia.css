@@ -116,6 +116,12 @@
 	
 	.recentPostHolder {
 		height: 50%;
+		background-color: orange;
+	}
+	
+	.recentPostHolder a {
+		height: auto;
+		background-color: purple;
 	}
 	
 	.recentPostHolder h3 {
