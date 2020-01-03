@@ -111,17 +111,16 @@
 	.recentPostHolder img {
 		width: 100%;
 		height: auto;
-		object-fit: contain !important;
 	}
 	
 	.recentPostHolder {
-		height: auto;
+		height: auto !important;
 		background-color: orange;
 	}
 	
 	.recentPostHolder a {
-		height: auto;
-		background-color: orange;
+		height: auto !important;
+		background-color: blue;
 	}
 	
 	.recentPostHolder h3 {
