@@ -184,7 +184,11 @@
  
  .nextButton {
 	font-size: 12px !important;
-	padding-top: 3px;
+ }
+ 
+ .nextButtonFirst {
+	border-left: 1px solid #626262;
+	font-size: 12px !important;
  }
  
  .firstNumber {
@@ -243,6 +247,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.imageHolderInsideBlog img {
+	background-color: white;
 }
 
 #insideBlogPic {
