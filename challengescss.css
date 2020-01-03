@@ -78,7 +78,7 @@
 	line-height: 30px;
 }
 
-.firstSection p, .TurningPoint p, .theZone p, .challenge11 p, .challenge12 p {
+.firstSection p, .TurningPoint p, .theZone p, .challenge11 p, .challenge12 p , .challenge14 p {
 	padding-bottom: 15px;
 }
 
@@ -137,7 +137,7 @@ td {
 	padding-top: 45px;
 }
 
-#Hide, #Hide2, #Hide3, #Hide4, #Hide5 {
+#Hide, #Hide2, #Hide3, #Hide4, #Hide5,  #Hide6 {
 	border: none;
 	color: rgb(98,98,98);
 	background-color: rgba(255,255,255,0);
@@ -154,15 +154,15 @@ td {
 	text-align: left;
 }
 
-#Hide:focus, #Hide2:focus, #Hide3:focus, #Hide4:focus, #Hide5:focus {
+#Hide:focus, #Hide2:focus, #Hide3:focus, #Hide4:focus, #Hide5:focus, #Hide6:focus {
 	outline: 0;
 }
 
- #Hide:hover, #Hide2:hover, #Hide3:hover, #Hide4:hover,  #Hide5:hover {
+ #Hide:hover, #Hide2:hover, #Hide3:hover, #Hide4:hover,  #Hide5:hover, #Hide6:hover {
   color: rgb(175, 181, 49);
  }
  
- .TurningPoint, .theZone, .challenge14, .challenge11, .challenge12 {
+ .TurningPoint, .theZone, .challenge14, .challenge11, .challenge12, .challenge14 {
    display: none;
    margin-top: 15px;
  }
@@ -200,13 +200,13 @@ td {
 	justify-content: center;
 }
 
-.horizontalMinus, .horizontalMinus2, .horizontalMinus3, .horizontalMinus4, .horizontalMinus5 {
+.horizontalMinus, .horizontalMinus2, .horizontalMinus3, .horizontalMinus4, .horizontalMinus5, .horizontalMinus6 {
 	position: absolute;
 	cursor: pointer;
 	transition-duration: 0.2s;
 }
 
-.verticalMinus, .verticalMinus2, .verticalMinus3,  .verticalMinus4, .verticalMinus5 {
+.verticalMinus, .verticalMinus2, .verticalMinus3,  .verticalMinus4, .verticalMinus5, .verticalMinus6 {
 	position: relative;
 	transform: rotate(-90deg);
 	left: 1px;
@@ -214,7 +214,7 @@ td {
 	transition-duration: 0.2s;
 }
 
-.horizontalMinus:hover, .horizontalMinus2:hover, .horizontalMinus3:hover, .horizontalMinus4:hover, .horizontalMinus5:hover {
+.horizontalMinus:hover, .horizontalMinus2:hover, .horizontalMinus3:hover, .horizontalMinus4:hover, .horizontalMinus5:hover, .horizontalMinus6:hover {
   color: rgb(175, 181, 49);
 }
 
