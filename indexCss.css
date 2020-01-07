@@ -63,6 +63,10 @@
 	margin-bottom: 15px;
 }
 
+.aboutUsArticle p {
+	color: #626262;
+}
+
 .landingBackground {
 	background-image: linear-gradient(rgba(67, 90, 165, 0.3), rgba(165, 67, 95, 0.3));
 	width: 100%;
@@ -312,8 +316,6 @@
 }
 
 .Circle2 {
-	background-image: url("FillerPicture.jpg");
-	object-fit:cover;
 	background-position: center;
 	height: 250px;
 	width: 250px;;
@@ -322,7 +324,19 @@
 	border: 3px solid transparent;
 	-webkit-transition-duration: 0.2s;
 	transition-duration: 0.2s;
+	cursor: pointer;
 } 
+
+.Circle2 img {
+	height: 250px;
+	width: 250px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+#Circle3 {
+	background-image: url("FillerPicture.jpg");
+}
 
 .Circle2:hover {
 	border: 3px solid rgb(213,220,59);;
@@ -471,8 +485,9 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	overflow: visible;
 	background-color: rgba(0,0,0,0.4);
+	justify-content: center;
+	align-items: center;
  }
 
  .modalContent, .modalContent2, .modalContent3, .modalContent4, .modalContent5, .modalContent6, .modalContent7 {
@@ -485,9 +500,9 @@
 	color: #648058;
 	font-size: 40px;
 	font-weight: bold;
-	height: 50px;
 	padding-right: 20px;
 	padding-top: 20px;
+	height: 50px;
 	-webkit-transition-duration: 0.2s;
 	transition-duration: 0.2s;
  }
@@ -500,16 +515,26 @@
 
 .pictureHolder, .pictureHolder2, .pictureHolder3, .pictureHolder4, .pictureHolder5, .pictureHolder6, .pictureHolder7 {
 	width: 50%;
-	height: 300px;
 	background-image: url("FillerPicture.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
+}
+
+.pictureHolder {
+	background-image: url("Vishwa.jpg");
+}
+
+.pictureHolder3 {
+	background-image: url("Arav.jpg");
 }
 
 .textModal, .textModal2, .textModal3, .textModal4, .textModal5, .textModal6, .textModal7 {
 	display: flex;
 	width: 50%;
 	justify-content: space-between;
+	overflow: auto;
+	height: 65vh;
 }
 
 .textHolder, .textHolder2, .textHolder3, .textHolder4, .textHolder5, .textHolder6, .textHolder7 {
@@ -519,6 +544,7 @@
 	padding-right: 0!important;
 	color: #53614c;
 }
+
 
 .textHolder h4, .textHolder2 h4, .textHolder3 h4, .textHolder4 h4, .textHolder5 h4, .textHolder6 h4, .textHolder7 h4   {
 	font-family: Thick, sans-serif;
@@ -538,7 +564,7 @@
 
 .textHolder p, .textHolder2 p, .textHolder3 p, .textHolder4 p, .textHolder5 p, .textHolder6 p, .textHolder7 p {
 	font-family: "Roboto", sans-serif;
-	line-height: 20px;
+	line-height: 30px;
 	padding-top: 15px;
 }
 

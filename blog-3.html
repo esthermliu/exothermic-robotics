@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> Exothermic Robotics Blog</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="HeaderFooter.css">
+	<link rel="stylesheet" href="blogcss.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="HeaderFooterMedia.css">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="blogMedia.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="icon" type="image/png" href="Favicon.png" size = "20x20"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+
+<body>
+<header class = "navbar">
+	<div class = "logoBox">
+		<a class = "homepageLogo" href = "index.html"><img src = "EXOLogo.png"></a>
+	</div>
+	<nav class = "secondBox">
+		<ul class = "headerList">
+			<li><a href = "index.html"> Home </a></li>
+			<div class = "dropDownAbout">
+				<button class = "dropButtonAbout" onclick="window.location.href = 'about-us.html'"> About Us </button>
+				<div class = "dropDownContentAbout">
+					<a href = "history.html"> History </a>
+					<a href = "teams.html"> Teams </a>
+					<a href = "join.html"> Join Us </a>
+					<a href = "outreach.html"> Outreach </a>
+					<a href = "advisors.html"> Advisors </a>
+					<a href = "awards.html"> Awards </a>
+					<a href = "challenges.html"> Challenges </a>
+				</div>
+			</div>
+			<div class = "dropDownOverview">
+				<button class = "dropButtonOverview" onclick="window.location.href = 'overview.html'"> VEX Overview </button>
+				<div class = "dropDownContentOverview">
+					<a href = "competition.html"> Competitions </a>
+					<a href = "events.html"> Events </a>
+					<a href = "programs.html"> Programs </a>
+				</div>
+			</div>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = 'media.html'"> Media </button>
+				<div class = "dropDownContentMedia">
+					<a href = "news.html"> Publicity </a>
+					<a href = "gallery.html"> Gallery </a>
+					<a href = "website.html"> Website </a>
+					<a href = "social.html"> Social </a>
+				</div>
+			</div>
+			<li><a class = "active" href = "blog.html"> Blog </a></li>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = 'resources.html'"> Resources </button>
+				<div class = "dropDownContentMedia">
+					<a href = "building-tips.html"> Building Tips </a>
+					<a href = "notebook-tips.html"> Notebook Tips </a>
+					<a href = "coding-tips.html"> Coding Tips</a>
+					<a href = "game-tips.html"> Game Tips</a>
+					<a href = "website-tips.html"> Website Tips</a>
+					<a href = "other-links.html"> Other Links</a>
+				</div>
+			</div>
+			<li><a class = "sponsors" href = "sponsors.html"> Sponsors </a></li>
+			<li><a class = "contactUs" href = "contact-us.html"> Contact Us </a></li>
+		</ul>
+	</nav>
+	<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+ <div id="myNav" class="overlay">
+   <span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <div class = "overlayHolder">
+    <a href="index.html">Home</a>
+    <a href="about-us.html">About Us</a>
+		<div class="phoneDropdown">
+		    <a href="history.html">History</a>
+			<a href="teams.html">Teams</a>
+			<a href="join.html">Join Us</a>
+			<a href="outreach.html">Outreach</a>
+			<a href="advisors.html">Advisors</a>
+			<a href="awards.html">Awards</a>
+			<a href="challenges.html">Challenges</a>
+		</div>
+	<a href="overview.html">VEX Overview</a>
+		<div class="phoneDropdown">
+		    <a href="competition.html">Competitions</a>
+			<a href="events.html">Events</a>
+			<a href="programs.html">Programs</a>
+		</div>
+	<a href="media.html">Media</a>
+		  <div class="phoneDropdown">
+		    <a href="news.html">Publicity</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="website.html">Website</a>
+			<a href="social.html">Social</a>
+		  </div>
+	<a class = "active" href="blog.html">Blog</a>
+	<a href="resources.html">Resources</a>
+		<div class="phoneDropdown">
+		    <a href="building-tips.html">Building Tips</a>
+			<a href="notebook-tips.html">Notebook Tips</a>
+			<a href="coding-tips.html">Coding Tips</a>
+			<a href="game-tips.html">Game Tips</a>
+			<a href="website-tips.html">Website Tips</a>
+			<a href="other-links.html">Other Links</a>
+		  </div>
+		<a href="sponsors.html">Sponsors</a>
+		<a href="contact-us.html">Contact Us</a>
+	</div>
+	</div>
+  </div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+<a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+</script>
+<script type="text/javascript">
+	$("a[href='#']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+</script>
+<div class = "firstSection">
+	<h2>Blog</h2>
+	<div class = "overallContainer">
+		<div class = "blogHolder">
+			<div id = "firstBlog" class = "blogContainerActual">
+			<div class = "imageHolder">
+					<img src = "BridgeBattleField.png"/>
+			</div>
+				<div class = "textSection">
+					<h3>2007-2008 VRC Game: Bridge Battle</h3>
+					<h4>2007</h4>
+					<p>This year, we will be participating in VRC along with FVC. The VRC Game this year is called Bridge Battle. Bridge Battle is played on a 12'x12' square field...</p>
+					<div class = "learnMoreContainer">
+						<a href = "blog-article-15.html" class="learnMoreButton"><button>Read More &rarr;</button></a>
+					</div>
+				</div>
+			</div>
+			<div class = "blogContainerActual">
+			<div class = "imageHolder">
+					<img src = "QuadQuandaryLogo.png"/>
+			</div>
+				<div class = "textSection">
+					<h3>2007-2008 FVC Game: Quad Quandary </h3>
+					<h4>2007</h4>
+					<p>Quad Quandary is a game that consists of small rings and movable goal posts. The size of the robot cannot exceed 18"x18"x18", and the teams cannot introduce new robots in the middle of the match. Additionally, identical robots...</p>
+					<div class = "learnMoreContainer">
+						<a href = "blog-article-14.html" class="learnMoreButton"><button>Read More &rarr;</button></a>
+					</div>
+				</div>
+			</div>
+			<div class = "blogContainerActual">
+				<div id = "noPictureBlogPost" class = "textSection">
+					<h3>Robothon Scrimmage</h3>
+					<h4>2007</h4>
+					<p>This is the second year we hosted the Robothon Scrimmage. This time, 12 robots attended the competition, including the three robots from EXO. Team 575 and 417 teamed up to win the finals...</p>
+					<div class = "learnMoreContainer">
+						<a href = "blog-article-13.html" class="learnMoreButton"><button>Read More &rarr;</button></a> 
+					</div>
+				</div>
+			</div>
+			<div class = "blogContainerActual">
+				<div id = "noPictureBlogPost" class = "textSection">
+					<h3>Bellevue FIRST VEX Challenge Competition</h3>
+					<h4>2007</h4>
+					<p>Our three teams competed at the Bellevue FIRST VEX Challenge Competition and did extremely well! Team 417 built a robot which they dubbed "Captain Hook"...</p>
+					<div class = "learnMoreContainer">
+						<a href = "blog-article-12.html" class="learnMoreButton"><button>Read More &rarr;</button></a>
+					</div>
+				</div>
+			</div>
+			<div id = "lastBlog" class = "blogContainerActual">
+				<div id = "noPictureBlogPost" class = "textSection">
+					<h3>Making Our Own Competition Field!</h3>
+					<h4>2007</h4>
+					<p>We've finally bought our own floor tiles to practice on! We couldn't afford to buy an actual competition field...</p>
+					<div class = "learnMoreContainer">
+						<a href = "blog-article-11.html" class="learnMoreButton"><button>Read More &rarr;</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div id = "paginationHolderPhone" class = "paginationHolder">
+		<div class = "pagination">
+			<a class = "firstNumber" href = "blog-15.html">&laquo;</a>
+			<a class = "nextButton" href = "blog-2.html"> < </a>
+			<a href = "blog-13.html">4</a>
+			<a id = "activeBlog" href = "blog-3.html">3</a>
+			<a href = "blog-2.html">2</a>
+			<a href = "blog-1.html">1</a>
+			<a class = "nextButton" href = "blog-2.html"> > </a>
+		</div>
+	</div>
+		<div class = "postLog">
+			<div class = "recentPosts">
+				<h3>Recent Posts</h3>
+				<div class = "recentPostOverall">
+					<div class = "recentPostHolder">
+						<a href = "blog.html">	
+							<img src = "RaisedField.jpg"/>
+							<h3>New Changes Going Into Winter Break</h3>
+						</a>
+					</div>
+					<div class = "recentPostHolder">	
+						<a href = "blog-article-74.html">
+							<img src = "NoImageIcon.png"/>
+							<h3>Robot House Makeover</h3>
+						</a>
+					</div>
+					<div class = "recentPostHolder">
+						<a href = "blog-article-73.html">
+							<img src = "Gallery108.jpg"/>
+							<h3>Mattawa Warrior Bash Ties Up the First Half of the Season</h3>
+						</a>
+					</div>
+					<div class = "recentPostHolder">
+						<a href = "blog-article-72.html">
+							<img src = "Gallery110.jpg"/>
+							<h3>EXO Teams Shine At Weekend Tournaments</h3>
+						</a>
+					</div>
+					<div class = "recentPostHolder">
+						<a href = "blog-article-71.html">
+							<img src = "NoImageIcon.png"/>
+							<h3>Mandatory EXO Clean Up</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class = "archive">
+				<h3>Archive</h3>
+				<div id = "archiveLink" class = "recentPostOverall">
+					<div class = "archiveHolder">
+						<a href = "#">BLAH BLAH </a>
+					</div>
+					<div class = "archiveHolder">
+						<a href = "#">BLAH BLAH </a>
+					</div>
+					<div class = "archiveHolder">
+						<a href = "#">BLAH BLAH </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class = "paginationHolder">
+		<div class = "pagination">
+			<a class = "firstNumber" href = "blog-15.html">&laquo;</a>
+			<a class = "nextButton" href = "blog-3.html"> < </a>
+			<a href = "blog-13.html">4</a>
+			<a id = "activeBlog" href = "blog-3.html">3</a>
+			<a href = "blog-2.html">2</a>
+			<a href = "blog-1.html">1</a>
+			<a class = "nextButton" href = "blog-2.html"> > </a>
+		</div>
+	</div>
+</div>
+</body>
+<footer>
+	<div class = "leftSection">
+		<div class = "leftTopSection">
+			<div class = "footerLogoHolder">
+				<img src = "EXOLogo.png"/>
+			</div>
+			<div class = "wordsSection">
+				<h4>Exothermic Robotics</h4>
+				<h5>Redmond, Washington</h5>	
+				<a class = "social" href="https://www.facebook.com/" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+				<a class = "social" href="https://www.instagram.com/" target="_blank" ><i class="fab fa-instagram"></i></a>
+				<a class = "social" href="https://twitter.com/" target="_blank" ><i class="fab fa-twitter"></i></a>
+					<ul class="FooterLinks">
+					<li>
+						<p>&copy; 2019-2020 Exothermic Robotics Club </p>
+					  </li>
+					</ul>				  
+			</div>
+		</div>
+	</div>
+	<div class = "rightSection">
+		<div class = "blog">
+			<h5>The EXO Blog</h5>
+			<p>A blog featuring announcements and little blurbs about the newest and latest in the Exothermic club. </p>
+		</div>
+		<div class = "blogContainer">
+			<a href = "#" class="blogButton"><button>Check it Out &rarr;</button></a>
+		</div>
+	</div>
+</footer>
+</html>

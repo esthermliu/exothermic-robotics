@@ -117,12 +117,60 @@
 
 .iconHolder {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
+}
+
+.iconHolder a {
+	color: white;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+
+.iconHolder a:hover {
+	color: rgb(213,220,59);
 }
 
 .imageHolder {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.buildingTipSection {
+	padding: 8% 25% 8% 25%;
+	font-family: Roboto, sans-serif;
+	color: #626262;
+}
+
+.buildingTipSection p {
+	margin-bottom: 15px;
+}
+
+.buildingTipSection h2 {
+	font-size: 45px;
+	font-weight: normal;
+	text-align: center;
+	padding-bottom: 3%;
+}
+
+.textSection {
+	line-height: 30px;
+}
+
+.textSection ul {
+	list-style-type: square;
+	margin-left: 30px;
+}
+
+#Bearings {
+	background-color: rgb(232, 245, 225);
+}
+
+
+.textSection img {
+	float: right;
+	margin-left: 3%;
+	width: 40%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

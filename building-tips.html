@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<header class = "navbar">
+<header id = "secondBox" class = "navbar">
 	<div class = "logoBox">
 		<a class = "homepageLogo" href = "index.html"><img src = "EXOLogo.png"></a>
 	</div>
@@ -233,24 +233,30 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 	<div class = "secondSectionBackground">
 		<h2>A VEX Robotics Parts Guide</h2>
 	<div class = "iconHolder">
-		<div class = "icon">
-			<div class = "imageHolder">
-				<img src = "Nut.png"/>
+		<a href = "#Nut">
+			<div class = "icon">
+				<div class = "imageHolder">
+					<img src = "Nut.png"/>
+				</div>
+				<h3>Nuts</h3>
 			</div>
-			<h3>Nuts</h3>
-		</div>
-		<div class = "icon">
-			<div class = "imageHolder">
-				<img src = "Bearings.png"/>
+		</a>
+		<a href = "#Bearings">
+			<div class = "icon">
+				<div class = "imageHolder">
+					<img src = "Bearings.png"/>
+				</div>
+				<h3>Bearings</h3>
 			</div>
-			<h3>Bearings</h3>
-		</div>
+		</a>
+		<a href = "#standoffs">
 		<div class = "icon">
 			<div class = "imageHolder">
 				<img src = "Standoff.png"/>
 			</div>
 			<h3>Standoffs</h3>
 		</div>
+		</a>
 		<div class = "icon">
 			<div class = "imageHolder">
 				<img src = "GearsIcon.png"/>
@@ -278,6 +284,34 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 	</div>
 	</div>
 </div>
+<div id = "Nut" class = "buildingTipSection">
+	<h2>Nuts</h2>
+</div>
+<div id = "Bearings" class = "buildingTipSection">
+	<h2>Bearings </h2>
+	<div class = "textSection">
+		<p>Another important part to a stable robot is the bearing. The main purposes of bearings are to reduce friction between moving parts and to constrain the motion. There are five main types of bearings for Vex EDR that mostly differ on the type of center hole it has, and the thickness of the bearing. Each different bearing serves a different purpose. The types of bearings are: </p>
+			<img src = "BearingFlat.jpg"/>
+		<p><b>Bearing Flats:</b> Bearing flats are the most common bearings and consist of three circular holes of equal sizes. They can be mounted directly on a VEX structure, and a shaft can be strung through it perpendicularly. It is typically recommended that bearing flats are used along with 0.5" screws and keps nuts. </p>
+		<p>Bearing flats are useful as they help reduce friction and allow shafts to spin more smoothly. If you put your shaft in the motor and through a C-channel, it will still work, although it definitely won't be ideal. The shaft will move around, make noises, and wear out your parts quicker. Additionally, less power will be transferred from the motor to where you need it. This is where bearing flats come in. Their round holes allow the shaft to spin around in it and keep it centered without making weird noises and wearing out the metal. If you are using a shaft that goes through a C-channel completely, you will have to use two bearing flats, one on each side.</p>
+			<img src = "HighStrengthBearing.jpg"/>
+		<p><b>High Strength Shaft Bearings:</b>High Strength Shaft Bearings are essentially the same as Flat Bearings, but with the center hole slightly raised, and large enough to fit a high strength axle. and large enough to fit a high strength axle. and large enough to fit a high strength axle. and large enough to fit a high strength axle.  </p>
+	</div>
+</div>
+<script type="text/javascript">
+$("a[href='#Nut']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Nut").offset().top  -  $("#secondBox").height()
+    }, 1000);
+});
+
+$("a[href='#Bearings']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Bearings").offset().top  -  $("#secondBox").height()
+    }, 1000);
+});
+
+</script>
 </body>
 <footer>
 	<div class = "leftSection">
