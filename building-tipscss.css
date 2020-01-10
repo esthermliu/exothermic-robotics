@@ -135,7 +135,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
+
 
 .buildingTipSection {
 	padding: 8% 25% 8% 25%;
@@ -163,7 +165,7 @@
 	margin-left: 30px;
 }
 
-#Bearings {
+#Bearings, #Gears, #Axle {
 	background-color: rgb(232, 245, 225);
 }
 
@@ -174,3 +176,43 @@
 	width: 40%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.pillowLock {
+	float: left !important;
+	margin-right: 3%;
+	margin-left: 0 !important;
+}
+
+.gearRatios {
+	margin-bottom: 3%;
+}
+
+.pdfRubric {
+	width: 100%;
+	height: 700px;
+}
+
+.textSection ul {
+	margin-bottom: 15px;
+}
+
+.textSection ul li a {
+	color:  rgb(96, 156, 14) !important;
+	transition-duration: 0.2s;
+}
+
+.textSection ul li a:hover {
+	color: rgb(46, 74, 7) !important;
+}
+
+.youtubeVid {
+	display: flex;
+	justify-content: center;
+}
+
+.towerTakeoverVideo {
+	padding-top: 45px;
+	width: 100%;
+	height: 500px;
+}
+

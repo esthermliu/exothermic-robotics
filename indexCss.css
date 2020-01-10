@@ -334,12 +334,8 @@
 	border-radius: 50%;
 }
 
-#Circle3 {
-	background-image: url("FillerPicture.jpg");
-}
-
 .Circle2:hover {
-	border: 3px solid rgb(213,220,59);;
+	background-color: rgb(213,220,59);;
 }
 
 
@@ -525,8 +521,28 @@
 	background-image: url("Vishwa.jpg");
 }
 
+.pictureHolder2 {
+	background-image: url("Amol.jpg");
+}
+
 .pictureHolder3 {
 	background-image: url("Arav.jpg");
+}
+
+.pictureHolder4 {
+	background-image: url("Thorsten.jpg");
+}
+
+.pictureHolder5 {
+	background-image: url("AlexEvans.jpg") !important;
+}
+
+.pictureHolder6 {
+	background-image: url("Aaryan.jpg");
+}
+
+.pictureHolder7 {
+	background-image: url("Samir.jpg");
 }
 
 .textModal, .textModal2, .textModal3, .textModal4, .textModal5, .textModal6, .textModal7 {
@@ -566,6 +582,7 @@
 	font-family: "Roboto", sans-serif;
 	line-height: 30px;
 	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
  .modal, .modal2, .modal3, .modal4, .modal5, .modal6, .modal7 {

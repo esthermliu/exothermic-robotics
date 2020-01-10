@@ -249,7 +249,7 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 				<h3>Bearings</h3>
 			</div>
 		</a>
-		<a href = "#standoffs">
+		<a href = "#Standoffs">
 		<div class = "icon">
 			<div class = "imageHolder">
 				<img src = "Standoff.png"/>
@@ -257,30 +257,38 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 			<h3>Standoffs</h3>
 		</div>
 		</a>
+		<a href = "#Gears">
 		<div class = "icon">
 			<div class = "imageHolder">
 				<img src = "GearsIcon.png"/>
 			</div>
 			<h3>Gears</h3>
 		</div>
+		</a>
+		<a href = "#Channel">
 		<div class = "icon">
 			<div class = "imageHolder">
 				<img src = "MetalIcon.png"/>
 			</div>
 			<h3>C-Channels</h3>
 		</div>
+		</a>
+		<a href = "#Axle">
 		<div class = "icon">
 			<div class = "imageHolder">
 				<img src = "Axle.png"/>
 			</div>
 			<h3>Axles</h3>
 		</div>
+		</a>
+		<a href = "#Spacer">
 		<div class = "icon">
 			<div class = "imageHolder">
 				<img src = "Spacer.png"/>
 			</div>
 			<h3>Spacers</h3>
 		</div>
+		</a>
 	</div>
 	</div>
 </div>
@@ -295,8 +303,48 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 		<p><b>Bearing Flats:</b> Bearing flats are the most common bearings and consist of three circular holes of equal sizes. They can be mounted directly on a VEX structure, and a shaft can be strung through it perpendicularly. It is typically recommended that bearing flats are used along with 0.5" screws and keps nuts. </p>
 		<p>Bearing flats are useful as they help reduce friction and allow shafts to spin more smoothly. If you put your shaft in the motor and through a C-channel, it will still work, although it definitely won't be ideal. The shaft will move around, make noises, and wear out your parts quicker. Additionally, less power will be transferred from the motor to where you need it. This is where bearing flats come in. Their round holes allow the shaft to spin around in it and keep it centered without making weird noises and wearing out the metal. If you are using a shaft that goes through a C-channel completely, you will have to use two bearing flats, one on each side.</p>
 			<img src = "HighStrengthBearing.jpg"/>
-		<p><b>High Strength Shaft Bearings:</b>High Strength Shaft Bearings are essentially the same as Flat Bearings, but with the center hole slightly raised, and large enough to fit a high strength axle. and large enough to fit a high strength axle. and large enough to fit a high strength axle. and large enough to fit a high strength axle.  </p>
+		<p><b>High Strength Shaft Bearings:</b> High Strength Shaft Bearings are essentially the same as Flat Bearings, but with the center hole slightly raised. They are large enough to hold 1/4 inch High Strength Shafts, and do not fit 1/8 inch shafts. They mount directly onto VEX structures and allow shafts to turn smoothly by lowering friction.  </p>
+			<img class = "pillowLock" src = "PillowLock.jpg"/>
+		<p><b>Pillow Block Bearings:</b> Pillow Block Bearings have two flat, circular holes on each side and the center hole perpendicular to the side holes. They support a shaft which is offset above, below, or located to the side of the structure. Typically, when high strength shafts are used, you would have to drill your metal, cut the shafts, or solve the spacing issues that the shaft would cause. This is where Pillow Block Bearings become useful as they solve the aforementioned issues and allow you to mount the shafts off of a piece of metal. </p>
+		<p><b>Lock Bar Bearings:</b> Lock Bar Bearings have the same flat holes on the side as a Pillow Block Bearing, but the center hole consists of a rotatable square hole that fits axles. Lock Bars lock any VEX parts to a shaft so that they will spin with the shaft.</p>
+		<p>These different types of bearings are used in very different types of situations, but all serve the same purpose of stabilizing or reducing friction on a joint. </p>
 	</div>
+</div>
+<div id = "Standoffs" class = "buildingTipSection">
+	<h2>Standoffs</h2>
+	<div class = "textSection">
+	<ul>
+		<li><a target = "_blank" href = "http://challenges.robotevents.com/uploads/0001136_original.pdf">Standoffs: An Explanation by 10V (PDF) </a></li>
+		<li><a target = "_blank" href = "https://www.youtube.com/watch?v=kDyJ9v0M6oo">Standoffs: An Educational Video by 10V </a></li>
+	</ul>
+		<iframe class = "pdfRubric" src = "StandoffPDF.pdf"> Sorry, your browser does not support PDFs. Please download the PDF to view it. </iframe>
+		<div class = "youtubeVid">
+			<iframe class = "towerTakeoverVideo" width="560" height="315" src="https://www.youtube.com/embed/kDyJ9v0M6oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
+<div id = "Gears" class = "buildingTipSection">
+	<h2>Gears</h2>
+		<div class = "textSection">
+		<p>Gears are another crucial part of the robot. Gears have several purposes including rotating several components at once, allowing two components to rotate in opposite directions, and most importantly, adding more speed or torque to the motor rotation.</p>
+		<p>There are four sizes of gears that are used in VEX EDR: 1, 3, 5, and 7. They are named by the number of dozens of teeth they have (so size 1 has 12, size 3 has 36, etc.).</p>
+		<div class = "imageHolder">
+			<img class = "gearRatios" src = "GearRatios.jpg"/>
+			<img class = "gearRatios" src = "GearRatiosPic.jpeg"/>
+		</div>
+		<p>Different combinations of sizes of gears leads to either more speed or more torque. If the gear the motor is directly spinning (the leading gear) is larger than the gear it leads to, than there will be more torque, or force. If the leading gear is smaller than the gear it leads to, than the component will spin faster. If you want two components to rotate at the same speed, use gears of the same size. </p>
+		<p>The ratios are named by the size of the gears, for example, a 1:3 gear ratio would be a gear ratio that provides more torque. Additionally, make sure to keep track of the number of gears used. If the number is odd, the two components will rotate in the same direction, which is useful for drivetrains. On the other hand, if the number is even, then the two components will rotate in opposite directions, which is useful for claws and DR4Bs. </p>
+		<p>Overall, gears are an important component for a great robot. </p>
+	</div>
+</div>
+<div id = "Channel" class = "buildingTipSection">
+	<h2>C-Channels</h2>
+</div>
+<div id = "Axle" class = "buildingTipSection">
+	<h2>Axles</h2>
+</div>
+<div id = "Spacer" class = "buildingTipSection">
+	<h2>Spacers</h2>
 </div>
 <script type="text/javascript">
 $("a[href='#Nut']").click(function() {
@@ -311,6 +359,35 @@ $("a[href='#Bearings']").click(function() {
     }, 1000);
 });
 
+$("a[href='#Standoffs']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Standoffs").offset().top  -  $("#secondBox").height()
+    }, 1000);
+});
+
+$("a[href='#Gears']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Gears").offset().top  -  $("#secondBox").height()
+    }, 1000);
+});
+
+$("a[href='#Channel']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Channel").offset().top  -  $("#secondBox").height()
+    }, 1000);
+});
+
+$("a[href='#Axle']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Axle").offset().top  -  $("#secondBox").height()
+    }, 1000);
+});
+
+$("a[href='#Spacer']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Spacer").offset().top  -  $("#secondBox").height()
+    }, 1000);
+});
 </script>
 </body>
 <footer>
@@ -339,7 +416,7 @@ $("a[href='#Bearings']").click(function() {
 			<p>A blog featuring announcements and little blurbs about the newest and latest in the Exothermic club. </p>
 		</div>
 		<div class = "blogContainer">
-			<a href = "#" class="blogButton"><button>Check it Out &rarr;</button></a>
+			<a href = "blog.html" class="blogButton"><button>Check it Out &rarr;</button></a>
 		</div>
 	</div>
 </footer>
