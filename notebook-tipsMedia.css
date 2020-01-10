@@ -10,5 +10,9 @@
 	.landing {
 		background-attachment: scroll;
 	}
+	
+	.pdfRubric {
+		display: none;
+	}
 
 }
