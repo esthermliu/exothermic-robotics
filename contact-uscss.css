@@ -122,3 +122,13 @@
 	font-size: 40px;
 	color: rgb(213,220,59) !important;
  }
+ 
+ .firstSection p a {
+	color: rgb(96, 156, 14);
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+ }
+ 
+ .firstSection p a:hover {
+	color: rgb(46, 74, 7);
+ }
