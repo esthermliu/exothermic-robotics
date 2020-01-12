@@ -21,6 +21,11 @@
 
 .value {
 	margin-bottom: 20%;
+	width: 100%;
+}
+
+.value2 {
+	width: 100%;
 }
 
 .backgroundColor h2 {
