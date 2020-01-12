@@ -441,6 +441,10 @@
 	border: 1px solid white;
 }
 
+#tooBig h3 {
+	font-size: 20px !important;
+}
+
 .event1 h3, .event2 h3, .event3 h3 {
 	background-color: rgba(51,51,51,0) !important;
 	text-align: center;
