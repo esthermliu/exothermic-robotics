@@ -1,5 +1,5 @@
 .landing {
-	background-image: url("FillerPicture.jpg");
+	background-image: url("10DLogo.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -14,7 +14,7 @@
 .landingBackground {
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(rgba(38, 92, 84, 0.5), rgba(179, 235, 96, 0.5));
+	background-image: linear-gradient(rgba(38, 92, 84, 0.5), rgba(38, 92, 84, 0.5));
 	display: flex;
 	justify-content: center;
 	align-items: center;

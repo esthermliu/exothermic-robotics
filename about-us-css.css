@@ -125,6 +125,7 @@
 .value, .value2 {
 	text-align: center;
 	margin-right: 10%;
+	width: 32%;
 }
 
 .value img, .value2 img {
