@@ -76,6 +76,11 @@
 	
 }
 
+.nameHolder {
+	text-align: center;
+	width: 100%;
+}
+
 @media screen and (max-width: 415px) {
 	.eventButton button {
 		padding: 8px 8px;

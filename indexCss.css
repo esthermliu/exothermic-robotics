@@ -225,9 +225,42 @@
 }
 
 .TeamALink, .TeamBLink, .TeamCLink, .TeamDLink, .TeamELink, .TeamFLink, .TeamNLink, .TeamXLink {
-	background-image: url("FillerPicture.jpg");
-	object-fit: cover;
+	background-size: cover;
+	background-position: center;
 	transition: transform 0.2s;
+}
+
+.TeamALink {
+	background-image: url("10ALogo.jpg");
+	object-fit: contain;
+}
+
+.TeamBLink {
+	background-image: url("10BLogo.png");
+}
+
+.TeamCLink {
+	background-image: url("10CLogo.png");
+}
+
+.TeamDLink {
+	background-image: url("10DLogo.jpg");
+}
+
+.TeamELink {
+	background-image: url("10ELogo.jpg");
+}
+
+.TeamFLink {
+	background-image: url("EXOLogoBlack.png");
+}
+
+.TeamNLink {
+	background-image: url("10NLogo.png");
+}
+
+.TeamXLink {
+	background-image: url("10XLogo.jpg");
 }
 
 .TeamALink:hover, .TeamBLink:hover, .TeamCLink:hover, .TeamDLink:hover, .TeamELink:hover, .TeamFLink:hover, .TeamNLink:hover, .TeamXLink:hover {
@@ -542,7 +575,7 @@
 }
 
 .pictureHolder7 {
-	background-image: url("Samir.jpg");
+	background-image: url("Patel.jpg");
 }
 
 .textModal, .textModal2, .textModal3, .textModal4, .textModal5, .textModal6, .textModal7 {

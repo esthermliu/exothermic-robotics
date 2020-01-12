@@ -58,7 +58,7 @@
 	height: 100%;
 	padding-top: 8%;
 	padding-bottom: 8%;
-	margin: 0 15% 0 15%;
+	margin: 0 20% 0 20%;
 }
 
 .titleSection h2 {
@@ -73,7 +73,7 @@
 
 .memberBox, .memberBox2, .memberBox3, .memberBox4, .memberBox5, .memberBox6 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }	
 
 .memberBox, .memberBox2, .memberBox3, .memberBox4, .memberBox5, .memberBox6 {
@@ -98,8 +98,12 @@
 
 .writtenSection {
 	padding-left: 4%;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", sans-serif; 	
+	width: 100%;
+	display: flex;
+	align-items: center;
 }
+
 
 .writtenSection p {
 	padding-right: 15px;
