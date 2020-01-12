@@ -75,6 +75,15 @@
 	margin-bottom: 15px;
 }
 
+.wordSection a {
+	color: rgb(96, 156, 14);
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+
+.wordSection a:hover {
+	color: rgb(46, 74, 7);
+}
 
 
 
