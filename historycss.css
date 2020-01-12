@@ -99,12 +99,12 @@
 	text-align: center;
 }
 
-#secondSection h2, #thirdSection h2, #fourthSection h2, #fifthSection h2 , #sixthSection h2, #seventhSection h2, #eighthSection h2, #ninthSection h2, #tenthSection h2 , #eleventhSection h2 , #twelvethSection h2, #thirteenthSection h2       {
+#secondSection h2, #thirdSection h2, #fourthSection h2, #fifthSection h2 , #sixthSection h2, #seventhSection h2, #eighthSection h2, #ninthSection h2, #tenthSection h2 , #eleventhSection h2 , #twelvethSection h2, #thirteenthSection h2 ,  #fourteenthSection h2, #fifteenthSection h2  {
 	padding-bottom: 15px !important;
 	padding-top: 15px;
 }
 
-#secondSection h3, #thirdSection h3 , #fourthSection h3, #fifthSection h3, #sixthSection h3 , #seventhSection h3, #eighthSection h3 , #ninthSection h3, #tenthSection h3 , #eleventhSection h3 , #twelvethSection h3 , #thirteenthSection h3               {
+#secondSection h3, #thirdSection h3 , #fourthSection h3, #fifthSection h3, #sixthSection h3 , #seventhSection h3, #eighthSection h3 , #ninthSection h3, #tenthSection h3 , #eleventhSection h3 , #twelvethSection h3 , #thirteenthSection h3, #fourteenthSection h3, #fifteenthSection h3     {
 	text-align: center;
 	font-weight: 300;
 	letter-spacing: 1.5px;
@@ -121,11 +121,11 @@
 	margin-bottom: 15px;
 }
 
-#thirdSection , #fifthSection, #seventhSection, #ninthSection, #eleventhSection, #thirteenthSection {
+#thirdSection , #fifthSection, #seventhSection, #ninthSection, #eleventhSection, #thirteenthSection, #fifteenthSection {
 	background-color: rgb(232, 245, 225);
 }
 
-#eighthSection {
+#eighthSection, #tenthSection, #twelvethSection, #fourteenthSection {
 	background-color: white;	
 }
 
