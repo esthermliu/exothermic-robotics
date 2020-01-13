@@ -21,7 +21,8 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 5%;
+	margin-left: 7%;
+	margin-right: 2%;
 }
 
 .logoBox a {
@@ -29,16 +30,16 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 100%;
 }
 
 .logoBox a img {
 	object-fit: contain;
-	height: 80%;
-	width: 60%;
+	height: 100%;
 }
 
 .secondBox {
-	width: 90%;
+	width: 85%;
 	margin-right: 5%;
 }
 
@@ -309,4 +310,19 @@ footer {
 
 .hamburgerHolder {
 	display: none;
+}
+
+.titleHolder img {
+	padding-bottom: 3vh;
+	height: 121px;
+	width: 120px;
+}
+
+.footerLogoHolder img {
+	height: 121px;
+	width: 120px;
+}
+
+.footerLogoHolder {
+	margin-right: 2%;
 }

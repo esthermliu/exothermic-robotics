@@ -21,9 +21,8 @@ header {
   width: 20%;
 }
 
-.logo-box img {
-  height: 100%;
-  width: 100% !important;
+.logoBox a img {
+  height: 80%;
   margin-left: 20%;
 }
 
@@ -261,6 +260,10 @@ footer {
 	width: 100% ;
 }
 
+.footerLogoHolder {
+	margin-left: 3%;
+}
+
 .leftTopSection {
 	width: 100%;
 }
@@ -277,6 +280,11 @@ footer {
 
 .FooterLinks {
 	margin-top: 3%;
+}
+
+.footerLogoHolder img {
+	height: 121px;
+	width: 120px;
 }
 
 
