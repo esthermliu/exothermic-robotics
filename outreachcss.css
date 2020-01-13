@@ -51,7 +51,7 @@
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
 .column {
@@ -61,7 +61,7 @@
 }
 
 .hover-shadow {
-	width: 100%;
+	width: 98%;
 	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 	height: 100%;
 	object-fit: cover;
@@ -261,4 +261,17 @@ img.hover-shadow {
 
 .mostInnerHolder {
 	height: 70%;
+}
+
+.firstSection h3 {
+	font-family: "Roboto", sans-serif;
+	font-weight: normal;
+	margin-bottom: 3%;
+	letter-spacing: 1.5px;
+	margin-left: 1%;
+	text-transform: uppercase;
+}
+
+#white {
+	background-color: white;
 }
