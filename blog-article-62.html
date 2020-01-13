@@ -1,13 +1,14 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title> Exothermic Robotics Sponsors </title>
+	<title> Exothermic Robotics Blog</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="HeaderFooter.css">
-	<link rel="stylesheet" href="sponsorscss.css">
+	<link rel="stylesheet" href="blogcss.css">
+	<link rel="stylesheet" href="blogfirstcss.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="blogMedia.css">
 	<link rel="stylesheet" media="screen and (max-width: 750px)" href="HeaderFooterMedia.css">
-	<link rel="stylesheet" media="screen and (max-width: 750px)" href="sponsorsMedia.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="icon" type="image/png" href="Favicon.png" size = "20x20"/>
@@ -51,7 +52,7 @@
 					<a href = "social.html"> Social </a>
 				</div>
 			</div>
-			<li><a href = "blog.html"> Blog </a></li>
+			<li><a class = "active" href = "blog.html"> Blog </a></li>
 			<div class = "dropDownMedia">
 				<button class = "dropButtonMedia" onclick="window.location.href = 'resources.html'"> Resources </button>
 				<div class = "dropDownContentMedia">
@@ -63,7 +64,7 @@
 					<a href = "other-links.html"> Other Links</a>
 				</div>
 			</div>
-			<li><a id = "active" class = "sponsors" href = "sponsors.html"> Sponsors </a></li>
+			<li><a class = "sponsors" href = "sponsors.html"> Sponsors </a></li>
 			<li><a class = "contactUs" href = "contact-us.html"> Contact Us </a></li>
 		</ul>
 	</nav>
@@ -98,7 +99,7 @@
 			<a href="website.html">Website</a>
 			<a href="social.html">Social</a>
 		  </div>
-	<a href="blog.html">Blog</a>
+	<a class = "active" href="blog.html">Blog</a>
 	<a href="resources.html">Resources</a>
 		<div class="phoneDropdown">
 		    <a href="building-tips.html">Building Tips</a>
@@ -108,7 +109,7 @@
 			<a href="website-tips.html">Website Tips</a>
 			<a href="other-links.html">Other Links</a>
 		  </div>
-		<a class = "active" href="sponsors.html">Sponsors</a>
+		<a href="sponsors.html">Sponsors</a>
 		<a href="contact-us.html">Contact Us</a>
 	</div>
 	</div>
@@ -125,62 +126,6 @@ function closeNav() {
 }
 </script>
 </header>
-
-<script>
-jQuery(document).ready(function($){
-	$('.navbar').css("background-color", "transparent");
-	if ($(this).scrollTop() < 270) {
-		$('.navbar').css("background-color", "transparent");
-		$('.dropDownContentAbout').css("background-color", "transparent");
-		$('.dropDownContentOverview').css("background-color", "transparent");
-		$('.dropDownContentMedia').css("background-color", "transparent");
-		
-		$('.dropDownContentAbout').css("box-shadow", "none");
-		$('.dropDownContentOverview').css("box-shadow", "none");
-		$('.dropDownContentMedia').css("box-shadow", "none");
-	} else {
-		$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
-		$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
-		$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
-		$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
-	}
-	$(window).scroll(function(){
-		if ($(this).scrollTop() < 270) {
-			$('.navbar').css("background-color", "transparent");
-			$('.dropDownContentAbout').css("background-color", "transparent");
-			$('.dropDownContentOverview').css("background-color", "transparent");
-			$('.dropDownContentMedia').css("background-color", "transparent");
-			
-			$('.dropDownContentAbout').css("box-shadow", "none");
-			$('.dropDownContentOverview').css("box-shadow", "none");
-			$('.dropDownContentMedia').css("box-shadow", "none");
-		} else {
-			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
-		}
-		
-		if ($(this).scrollTop() > 270) {
-			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
-			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
-		} else {
-			$('.navbar').css("background-color", "transparent");
-			$('.dropDownContentAbout').css("background-color", "transparent");
-			$('.dropDownContentOverview').css("background-color", "transparent");
-			$('.dropDownContentMedia').css("background-color", "transparent");
-	
-			$('.dropDownContentAbout').css("box-shadow", "none");
-			$('.dropDownContentOverview').css("box-shadow", "none");
-			$('.dropDownContentMedia').css("box-shadow", "none");
-		}
-		
-
-	});
-});
-</script>
 <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
 <script>
 window.onscroll = function() {scrollFunction()};
@@ -199,49 +144,64 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
   return false;
 });
 </script>
-<div class = "landing">
-	<div class = "landingBackground">
-		<div class = "titleHolder">
-			<img src = "EXOLogo.png" alt = "Exo logo">
-			<h1>Sponsors</h1>
-			<h2>A Special Shoutout </h2>
-		</div>
-	</div>
-</div>
 <div class = "firstSection">
-	<h2>Our Sponsors</h2>
-	<p>We'd like to give a <b>HUGE </b>shoutout to our current sponsors. Thank you so much for supporting us throughout the years! We are forever grateful for your
-		guys' contributions. Additionally, if any other companies are interested in sponsoring us, we would greatly welcome and appreciate
-		the added support!</p>
-	<h3 class = "softwareResources"><b>Software Resources, Inc.</b></h3>
-	<p> Software Resources, Inc trains and consults various organizations in the Seattle area. Specifically, they zone in on the improvement of software process and development in industries that 
-		need to have high accuracy and consistency.</p>
-	<p>Software Resources, Inc has sponsored Exothermic Robotics since 2009 (although they do not sponsor us anymore). We are extremely grateful for their support!</p>
-	<div class = "imageHolder">
-		<img src = "SoftwareResources.png"/>
-	</div>
-	<h3 class = "robotMesh"><b>Robot Mesh </b></h3>
-	<p>Each year, we host the Exothermic Winter Challenge, which is sponsored by Robot Mesh and Northwest Tech Inc. Robot Mesh provides
-	one free VRC Qualifying Event Trophy Pack for our event, and we also get a $100 store credit at Robot Mesh's website which can be used to buy any robot products. Robot Mesh also
-	sends us Robot Mesh stickers for the competition and our club, which many of our teams use to decorate their robots. In return for what Robot Mesh does for us, we have to include the Robot Mesh 
-	logo on the event's sponsors list, and we also have to award their trophies at the Winter Challenge. Additionally, we also have to hand out Robot Mesh stickers to all of the teams, and send a list of the 
-	participating teams after the event.</p>
-	<p>	Robot Mesh has sponsored our club for many years. We'd like to give a huge thank you to them for everything they've done!</p>
-	<div class = "imageHolder">
-		<img src = "RobotMesh.png"/>
-	</div>
-	<h3 class = "northwestTech"><b>Northwest Technical Products Inc.</b></h3>
-	<p>Northwest Technical Products is an educational consultant in Kitsap County, Washington. Along with Robot Mesh, they have sponsored the Exothermic Winter Challenge which we host. </p>
-	<p>	We are greatly appreciative of their help and contributions!</p>
-	<div class = "imageHolder">
-		<img src = "northwestTech.png"/>
-	</div>
-	<h3 class = "lexisNexis"><b>LexisNexis</b></h3>
-	<p>Lexis Nexis is a company that deals with legal research, business research, and risk management through providing computer services. LexisNexis was our first sponsor and helped us even when 
-	we were only a tiny, no-name club. They allowed us to use their facilities
-	and also gave us sponsorship money. We are extremely grateful for their help! </p>
-	<div class = "imageHolder">
-		<img src = "LexisNexis.png"/>
+	<h3><a id = "seeRest" href = "blog-13.html"><i>&#10229; Back</i></a></h3>
+	<div class = "overallContainer">
+		<div class = "blogHolder">
+		<h3>Exothermic 10N Participates in Vex Worlds 2018  </h3>
+		<h4>April 28, 2018</h4>
+			<div class = "textSection">
+				<p>Exothermic Robotics team 10N participated at the 2018 Vex Robotics World Championship and was a semifinalist in the math division. Congratulations to them! They won 119-116 during the quarterfinals, with their alliance team 3018A. Overall, they placed 29th in their division. What an exciting end to the 2017-2018 season and we cannot wait for the 2018-2019 Turning Point season! </p>
+				<div class = "imageHolderInsideBlog">
+					<img id = "insideBlogPic" src = "Gallery92.jpg"/>
+				</div>
+			</div>
+		</div>
+		<div class = "postLog">
+			<div class = "recentPosts">
+				<h3>Recent Posts</h3>
+				<div class = "recentPostOverall">
+					<div class = "recentPostHolder">
+						<a href = "blog.html">	
+							<img src = "RaisedField.jpg"/>
+							<h3>New Changes Going Into Winter Break</h3>
+						</a>
+					</div>
+					<div class = "recentPostHolder">	
+						<a href = "blog-article-74.html">
+							<img src = "NoImageIcon.png"/>
+							<h3>Robot House Makeover</h3>
+						</a>
+					</div>
+					<div class = "recentPostHolder">
+						<a href = "blog-article-73.html">
+							<img src = "Gallery108.jpg"/>
+							<h3>Mattawa Warrior Bash Ties Up the First Half of the Season</h3>
+						</a>
+					</div>
+					<div class = "recentPostHolder">
+						<a href = "blog-article-72.html">
+							<img src = "Gallery110.jpg"/>
+							<h3>EXO Teams Shine At Weekend Tournaments</h3>
+						</a>
+					</div>
+					<div class = "recentPostHolder">
+						<a href = "blog-article-71.html">
+							<img src = "NoImageIcon.png"/>
+							<h3>Mandatory EXO Clean Up</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class = "archive">
+				<h3>Archive</h3>
+				<div id = "archiveLink" class = "recentPostOverall">
+					<div class = "archiveHolder">
+						<a href = "#">Archive Coming Soon! <br>Our Blog Is Still Under Construction </a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 </body>
