@@ -249,4 +249,9 @@
 	font-weight: normal;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
+	line-height: 42px;
+}
+
+.groupHolder p {
+	line-height: 30px;
 }

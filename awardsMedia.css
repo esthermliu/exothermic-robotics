@@ -18,6 +18,7 @@
 	
 	.imageGroupHolder img {
 		width: 100%;
+		height: auto !important;
 		margin-bottom: 8%;
 	}
 	
@@ -34,6 +35,10 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+	
+	.groupHolder p {
+		width: 100%;
 	}
 	
 	
