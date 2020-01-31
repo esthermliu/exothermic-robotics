@@ -168,6 +168,10 @@
 	line-height: 30px;
 }
 
+.rightSectionStats {
+	text-align: right;
+}
+
 .statboxFirst, .statboxFirst2 {
 	border-top: 3px solid #3d3939;
 	padding-top: 10px;
