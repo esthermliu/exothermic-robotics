@@ -50,7 +50,7 @@
 
 .firstSection {
 	background-color: #f0f0f0;
-	padding: 8% 25% 8% 25%;
+	padding: 8% 23% 8% 23%;
 	color: #626262;
 	font-family: Roboto, sans-serif;
 }
@@ -90,7 +90,8 @@
 }
 
 .textSection {
-	width: 60%;
+	width: 58%;
+	margin-left: 2%;
 }
 
 .textSection h3 {

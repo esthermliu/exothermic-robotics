@@ -268,10 +268,15 @@ img.hover-shadow {
 	font-weight: normal;
 	margin-bottom: 3%;
 	letter-spacing: 1.5px;
-	margin-left: 1%;
 	text-transform: uppercase;
 }
 
 #white {
 	background-color: white;
+}
+
+.wordOutreachSection {
+	padding-bottom: 5%;
+	font-family: Roboto, sans-serif;
+	line-height: 30px;
 }
