@@ -103,5 +103,34 @@
 	width: 100%;
 }
 
+.leftNewSection, .rightNewSection {
+	width: 100%;
+}
+
+.overallNewSection {
+	flex-wrap: wrap;
+}
+
+.teamSection {
+	margin: 0 5% 0 5% !important;
+}
+
+.box2Holder {
+	flex-wrap: wrap;
+}
+
+.newsBox2 {
+	margin: 0 !important;
+	width: 100%;
+}
+
+.rightNewSection {
+	height: 400px;
+}
+
+#tooBig h3 {
+	line-height: 25px;
+}
+
 
 } /*End of media query*/

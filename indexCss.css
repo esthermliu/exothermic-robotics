@@ -26,7 +26,7 @@
 	text-align: center;
 }
 
-.firstSection {
+.firstSection, .sixthSection {
 	background-color: #f0f0f0;
 }
 
@@ -649,8 +649,140 @@
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
- 
+.overallNewSection {
+	display: flex;
+	justify-content: space-between;
+}
 
+.overallNewSectionEvent {
+	display: flex;
+	justify-content: space-between;
+}
+
+.overallHolder {
+	padding-top: 5%;
+}
+
+.leftNewSection {
+	width: 58%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.rightNewSection {
+	width: 40.5%;
+}
+
+.box2Holder {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.newsImageBackground:hover, .newsImageBackground2:hover {
+	transform: scale(1.1);
+}
+
+.leftNewSection h4, .rightNewSection h4 {
+	position: relative;
+	bottom: 12%;
+	left: 5%;
+	font-family: "Segoe UI", Roboto, sans-serif;
+	color: white;
+	text-transform: uppercase;
+}
+
+
+.rightNewSection h4 {
+	bottom: 6vh;
+	width: 95%;
+}
+
+.newsBoxInner1, .newsBoxInner2 {
+	overflow: hidden;
+	z-index: 3 !important;
+}
+
+.newsBoxInner2 {
+	height: 97.5%;
+}
+
+
+.filterInside {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0), rgba(0,0,0,0.9));
+}
+
+.topSection {
+	background-color: #f0f0f0;
+	height: 400px;	
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.5%;
+}
+
+.innerTopLeft, .innerTopRight {
+	height: 100%;
+	width: 58%;
+}
+
+.innerTopRight {
+	width: 42% !important;
+}
+
+.newsImageBackground, .newsImageBackground2 {
+	background-image: url("Gallery131.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 400px;
+	transition-duration: 0.3s;
+	z-index: 1;
+}
+
+.newsImageBackground2 {
+	height: 100%;
+}
+
+
+.newsBox1 {
+	overflow: hidden;
+	width: 100%;
+}
+
+.newsBox2 {
+	overflow: hidden;
+	width: 49%;
+	overflow: hidden;
+}
+
+.newsBox3 {
+	overflow: hidden;
+	height: 97.5% !important;
+	overflow: hidden;
+}
+
+.newsBox4 {
+	overflow: hidden;
+	height: 100% !important;
+	overflow: hidden;
+}
+
+#marginRight {
+	margin-right: 3%;
+}
+
+#news4 {
+	background-image: url("Gallery10.jpg") !important;
+}
+ 
+#news2 {
+	background-image: url("Gallery46.jpg") !important;
+}
+
+#news3 {
+	background-image: url("FillerPicture.jpg") !important;
+}
  
  
  
