@@ -652,7 +652,6 @@
 .overallNewSection {
 	display: flex;
 	justify-content: space-between;
-	background-color: purple;
 }
 
 .overallNewSectionEvent {
