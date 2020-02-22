@@ -132,5 +132,10 @@
 	line-height: 25px;
 }
 
+.newsBox2 {
+	margin-bottom: 8% !important;
+}
+
+
 
 } /*End of media query*/

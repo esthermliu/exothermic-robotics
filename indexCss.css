@@ -686,7 +686,8 @@
 .leftNewSection h4, .rightNewSection h4 {
 	position: relative;
 	bottom: 12%;
-	left: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
 	font-family: "Segoe UI", Roboto, sans-serif;
 	color: white;
 	text-transform: uppercase;
@@ -701,10 +702,11 @@
 .newsBoxInner1, .newsBoxInner2 {
 	overflow: hidden;
 	z-index: 3 !important;
+	height: 400px;
 }
 
 .newsBoxInner2 {
-	height: 97.5%;
+	height: 100%;
 }
 
 
@@ -732,7 +734,7 @@
 }
 
 .newsImageBackground, .newsImageBackground2 {
-	background-image: url("Gallery131.jpg");
+	background-image: url("WebsiteThumbnail.png");
 	background-position: center;
 	background-size: cover;
 	height: 400px;
@@ -754,11 +756,12 @@
 	overflow: hidden;
 	width: 49%;
 	overflow: hidden;
+	height: 400px;
 }
 
 .newsBox3 {
 	overflow: hidden;
-	height: 97.5% !important;
+	height: 100% !important;
 	overflow: hidden;
 }
 
@@ -773,15 +776,15 @@
 }
 
 #news4 {
-	background-image: url("Gallery10.jpg") !important;
+	background-image: url("Gallery120.png") !important;
 }
  
 #news2 {
-	background-image: url("Gallery46.jpg") !important;
+	background-image: url("Volunteering25.JPG") !important;
 }
 
 #news3 {
-	background-image: url("FillerPicture.jpg") !important;
+	background-image: url("Gallery130.jpg") !important;
 }
  
  
