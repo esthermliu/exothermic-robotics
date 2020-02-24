@@ -734,7 +734,7 @@
 }
 
 .newsImageBackground, .newsImageBackground2 {
-	background-image: url("WebsiteThumbnail.png");
+	background-image: url("Gallery133.JPG");
 	background-position: center;
 	background-size: cover;
 	height: 400px;
@@ -776,15 +776,15 @@
 }
 
 #news4 {
-	background-image: url("Gallery120.png") !important;
+	background-image: url("Volunteering25.JPG") !important;
 }
  
 #news2 {
-	background-image: url("Volunteering25.JPG") !important;
+	background-image: url("Gallery132.JPG") !important;
 }
 
 #news3 {
-	background-image: url("Gallery130.jpg") !important;
+	background-image: url("WebsiteThumbnail.png") !important;
 }
  
  
