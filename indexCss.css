@@ -44,6 +44,17 @@
 	padding-bottom: 3%;
 }
 
+.eventTitle {
+	flex-direction: column;
+	align-items: center;
+}
+
+.eventTitle h3 {
+	font-weight: 300 !important;
+	font-size: 25px;
+	line-height: 50px;
+}
+
 .aboutUsTitle h2, .teamTitleSection h2, .boardTitle h2 {
 	font-weight: normal;
 	color: #626262;
