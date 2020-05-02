@@ -126,7 +126,16 @@ function closeNav() {
 }
 </script>
 </header>
-
+<div class="popup" onclick="myFunction()">Are you interested in joining VEX? Click here to learn more!
+  <div class="popuptext" id="myPopup"><a href = "https://forms.gle/ArSyr6bgaADLMj6y6" target = "_blank"><img src = "RecruitmentFlyer.jpg"/></a></div>
+</div>
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
 <script>
 jQuery(document).ready(function($){
 	$('.navbar').css("background-color", "transparent");
@@ -196,6 +205,7 @@ jQuery(document).ready(function($){
 		</div>
 	</div>
 </div>
+
 
 <article>
 <div class = "firstSection">
@@ -341,19 +351,19 @@ jQuery(document).ready(function($){
 		<div class = "circleContainerBoard">
 		<div class = "circleHolder">
 			<button id = "Circle2" class = "Circle2">
-				<img src = "Vishwa.jpg"/>
+				<img src = "Amol.jpg"/>
 			</button>
 			<div class = "CircleText">
-				<h2> Vishwa KN </h2>
+				<h2> Amol Vaidya </h2>
 				<h3> President </h3>
 			</div>
 		</div>
 		<div class = "circleHolder">
 			<button id = "Circle3" class = "Circle2">
-				<img src = "Amol.jpg"/>
+				<img src = "Pascal.png"/>
 			</button>
 			<div class = "CircleText">
-				<h2> Amol Vaidya </h2>
+				<h2> Pascal Stevens </h2>
 				<h3> Vice President </h3>
 			</div>
 		</div>
@@ -377,19 +387,19 @@ jQuery(document).ready(function($){
 		</div>
 		<div class = "circleHolder">
 			<button id = "Circle6" class = "Circle2">
-				<img src = "AlexEvans.jpg"/>
+				<img src = "AnnBoard.jpg"/>
 			</button>
 			<div class = "CircleText">
-				<h2> Alex Evans</h2>
+				<h2> Ann Li</h2>
 				<h3> Public Relations</h3>
 			</div>
 		</div>
 		<div class = "circleHolder">
 			<button id = "Circle7" class = "Circle2">	
-				<img src = "Aaryan.jpg"/>
+				<img src = "HelenBoard.jpg"/>
 			</button>
 			<div class = "CircleText">
-				<h2> Aaryan Jain </h2>
+				<h2> Helen Wu </h2>
 				<h3> Public Relations </h3>
 			</div>
 		</div>
@@ -412,8 +422,8 @@ jQuery(document).ready(function($){
 		<div class = "textModal">
 			<div class = "textHolder">
 				<h4>President</h4>
-				<h3>Vishwa KN</h3>
-				<p> Vishwa Kaniyur Neelakandan is a senior at Juanita High School and is part of Exothermic Evolution (10E). He is currently the president of Exothermic Robotics and has been doing VEX for 4 years now. His favorite part about VEX is getting a glimpse into the field of engineering. He also loves working with younger students to show them how informative, meaningful, and fun the program can be. </p>
+				<h3>Amol Vaidya</h3>
+				<p> Amol Vaidya is a senior at Redmond High School and is part of Exothermic Blaze (10B). He is currently the President of Exothermic Robotics and has been doing VEX for 4 years now. His favorite thing about the program is imagining, designing, and executing different designs and ideas for a robot. He enjoys the feeling of excitement and accomplishment when the robot ends up working as well as being able to hang out and work with friends on stuff they are all passionate about. </p>
 			</div>
 			<span class = "close">&times;</span>
 		</div>
@@ -426,8 +436,8 @@ jQuery(document).ready(function($){
 		<div class = "textModal2">
 			<div class = "textHolder2">
 				<h4>Vice President</h4>
-				<h3>Amol Vaidya</h3>
-				<p> Amol Vaidya is a junior at Redmond High School and is part of Exothermic Blaze (10B). He is currently the Vice President of Exothermic Robotics. Amol started VEX as a freshman and this is his third year of doing VEX. His favorite thing about the program is imagining, designing, and executing different designs and ideas for a robot. He enjoys the feeling of excitement and accomplishment when the robot ends up working as well as being able to hang out and work with friends on stuff they are all passionate about.</p>
+				<h3>Pascal Stevens</h3>
+				<p> Pascal Stevens is a sophomore at Redmond High School and is part of Exothermic Dusk (10D). He is currently the Vice President of Exothermic Robotics. Pascal started VEX IQ in 7th grade and moved up to playing in VRC his freshman year, making this his third year doing VEX. His favorite thing about the program is being able to work together with other passionate people and coming together to build a successful robot.</p>
 			</div>
 		<span class = "close2">&times;</span>
 	</div>
@@ -468,8 +478,8 @@ jQuery(document).ready(function($){
 		<div class = "textModal5">
 			<div class = "textHolder5">
 				<h4>Public Relations</h4>
-				<h3>Alex Evans</h3>
-				<p> Alex Evans is a senior at Juanita High School and is part of Exothermic Ion (10N). He is currently the Public Relations Officer for Exothermic Robotics. Alex started VEX as a junior and this is his second year of doing VEX. His favorite thing about the program is seeing his robot transform from a rough sketch into a fully functioning competitive robot. The VEX global community has also introduced him to many amazing and passionate people that he would not have met otherwise.</p>
+				<h3>Ann Li</h3>
+				<p> Ann Li is a sophomore at the International Community School and is part of Exothermic Creation (10C). She is currently the Public Relations Officer for Exothermic Robotics. Ann started VEX in 7th grade and competed in the Vex IQ program for two years. She moved up to the VRC program in her freshman year, making this her second year in the VRC program and fourth year total in VEX. Her favorite thing about the program is seeing her robot evolve throughout the season from just a simple idea to a complex, competitive robot. She also enjoys spending time and making friends with people with the same interest in robotics.</p>
 			</div>
 		<span class = "close5">&times;</span>
 	</div>
@@ -482,8 +492,8 @@ jQuery(document).ready(function($){
 		<div class = "textModal6">
 			<div class = "textHolder6">
 				<h4>Public Relations</h4>
-				<h3>Aaryan Jain</h3>
-				<p> Aaryan Jain is a sophomore at STEM High School and is part of Exothermic Apex (10A). He is currently the other Public Relations officer for Exothermic Robotics. Aaryan started VEX as a freshman and this is his second year of doing VEX. His favorite thing about the program is the large community that surrounds you the instant you begin. While there is competition from other teams, those teams also help when you need it, making for a very enriching and fulfilling experience.  </p>
+				<h3>Helen Wu</h3>
+				<p> Helen Wu is a senior at the International Community School and is part of Exothermic Blaze (10B). She is currently the other Public Relations Officer for Exothermic Robotics. Helen started VEX as a sophomore and this is her third year doing robotics. Her favorite thing abouts about the program is attending Worlds in her sophomore year. Additionally, she enjoys getting to know everyone better and learning about the mechanics and design of the robot.  </p>
 			</div>
 		<span class = "close6">&times;</span>
 	</div>

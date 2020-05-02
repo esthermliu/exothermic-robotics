@@ -569,11 +569,11 @@
 }
 
 .pictureHolder {
-	background-image: url("Vishwa.jpg");
+	background-image: url("Amol.jpg");
 }
 
 .pictureHolder2 {
-	background-image: url("Amol.jpg");
+	background-image: url("Pascal.png");
 }
 
 .pictureHolder3 {
@@ -585,11 +585,11 @@
 }
 
 .pictureHolder5 {
-	background-image: url("AlexEvans.jpg") !important;
+	background-image: url("AnnBoard.jpg") !important;
 }
 
 .pictureHolder6 {
-	background-image: url("Aaryan.jpg");
+	background-image: url("HelenBoard.jpg");
 }
 
 .pictureHolder7 {
@@ -798,6 +798,72 @@
 #news3 {
 	background-image: url("Gallery132.JPG") !important;
 }
- 
+
+.popup {
+	background-color: #e5e5e5;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-family: Roboto;
+	letter-spacing: 0.5px;
+	font-size: 15px;
+	text-align: center;
+}
+
+.popup {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popuptext {
+  visibility: hidden;
+  z-index: 101 !important;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  text-align: center;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popuptext a {
+	height: 80%;
+	padding-top: 30px;
+}
+
+.popuptext img {
+	height: 100%;
+}
+
+
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0.3s;
+  animation: fadeIn 0.3s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+	
  
  
