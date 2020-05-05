@@ -524,7 +524,7 @@
   border-color: rgb(213,220,59);
  }
  
- .modal, .modal2, .modal3, .modal4, .modal5, .modal6, .modal7 {
+ .modal, .modal2, .modal3, .modal4, .modal5, .modal6, .modal7, .modal8 {
 	display: none;
 	position: fixed;
 	z-index: 3;
@@ -537,13 +537,13 @@
 	align-items: center;
  }
 
- .modalContent, .modalContent2, .modalContent3, .modalContent4, .modalContent5, .modalContent6, .modalContent7 {
+ .modalContent, .modalContent2, .modalContent3, .modalContent4, .modalContent5, .modalContent6, .modalContent7, .modalContent8 {
 	background-color: white;
 	margin: 15% 25% 15% 25%;
 	display: flex;
  }
  
- .close, .close2, .close3, .close4, .close5, .close6, .close7 {
+ .close, .close2, .close3, .close4, .close5, .close6, .close7, .close8 {
 	color: #648058;
 	font-size: 40px;
 	font-weight: bold;
@@ -554,13 +554,13 @@
 	transition-duration: 0.2s;
  }
  
-.close:hover, .close:focus, .close2:hover, .close2:focus, .close3:hover, .close3:focus, .close4:hover, .close4:focus, .close5:hover, .close5:focus, .close6:hover, .close6:focus, .close7:hover, .close7:focus {
+.close:hover, .close:focus, .close2:hover, .close2:focus, .close3:hover, .close3:focus, .close4:hover, .close4:focus, .close5:hover, .close5:focus, .close6:hover, .close6:focus, .close7:hover, .close7:focus, .close8:hover, .close8:focus {
 	color: black;
 	cursor: pointer;
 	text-decoration: none;
 }	
 
-.pictureHolder, .pictureHolder2, .pictureHolder3, .pictureHolder4, .pictureHolder5, .pictureHolder6, .pictureHolder7 {
+.pictureHolder, .pictureHolder2, .pictureHolder3, .pictureHolder4, .pictureHolder5, .pictureHolder6, .pictureHolder7, .pictureHolder8 {
 	width: 50%;
 	background-image: url("FillerPicture.jpg");
 	background-repeat: no-repeat;
@@ -596,7 +596,11 @@
 	background-image: url("ShashankBoard.png");
 }
 
-.textModal, .textModal2, .textModal3, .textModal4, .textModal5, .textModal6, .textModal7 {
+.pictureHolder8 {
+	background-image: url("ArnavBoard.jpg");
+}
+
+.textModal, .textModal2, .textModal3, .textModal4, .textModal5, .textModal6, .textModal7, .textModal8 {
 	display: flex;
 	width: 50%;
 	justify-content: space-between;
@@ -604,7 +608,7 @@
 	height: 65vh;
 }
 
-.textHolder, .textHolder2, .textHolder3, .textHolder4, .textHolder5, .textHolder6, .textHolder7 {
+.textHolder, .textHolder2, .textHolder3, .textHolder4, .textHolder5, .textHolder6, .textHolder7, .textHolder8 {
 	background-color: white;
 	width: 100%;
 	padding: 8%;
@@ -613,7 +617,7 @@
 }
 
 
-.textHolder h4, .textHolder2 h4, .textHolder3 h4, .textHolder4 h4, .textHolder5 h4, .textHolder6 h4, .textHolder7 h4   {
+.textHolder h4, .textHolder2 h4, .textHolder3 h4, .textHolder4 h4, .textHolder5 h4, .textHolder6 h4, .textHolder7 h4,.textHolder8 h4   {
 	font-family: Thick, sans-serif;
 	line-height: 42px;
 	font-weight: 50;
@@ -622,21 +626,21 @@
 	font-size: 18px;
 }
 
-.textHolder h3, .textHolder2 h3, .textHolder3 h3, .textHolder4 h3, .textHolder5 h3, .textHolder6 h3, .textHolder7 h3 {
+.textHolder h3, .textHolder2 h3, .textHolder3 h3, .textHolder4 h3, .textHolder5 h3, .textHolder6 h3, .textHolder7 h3, .textHolder8 h3  {
 	font-family: "Roboto", sans-serif;
 	font-size: 45px;
 	font-weight: 50;
 	letter-spacing: 1.5px;
 }
 
-.textHolder p, .textHolder2 p, .textHolder3 p, .textHolder4 p, .textHolder5 p, .textHolder6 p, .textHolder7 p {
+.textHolder p, .textHolder2 p, .textHolder3 p, .textHolder4 p, .textHolder5 p, .textHolder6 p, .textHolder7 p, .textHolder8 p {
 	font-family: "Roboto", sans-serif;
 	line-height: 30px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
 
- .modal, .modal2, .modal3, .modal4, .modal5, .modal6, .modal7 {
+ .modal, .modal2, .modal3, .modal4, .modal5, .modal6, .modal7, .modal8 {
    animation: opac 0.3s;
  }
 

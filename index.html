@@ -214,7 +214,7 @@ jQuery(document).ready(function($){
 		<h2> Welcome! </h2>
 	</div> 
 	<div class = "aboutUsArticle">
-	<p> Hi there! We are Exothermic Robotics from Redmond, Washington. We are a student-run organization that currently participates in VEX EDR of the VEX Robotics program. Throughout our 13 years of history, we have experienced many successes that have made us one of the most prestigious robotics clubs in Washington State. </p>
+	<p> Hi there! We are Exothermic Robotics from Redmond, Washington. We are a student-run organization that currently participates in VRC of the VEX Robotics program. Throughout our 13 years of history, we have experienced many successes that have made us one of the most prestigious robotics clubs in Washington State. </p>
 	<p>Our club utilizes a senior-freshmen student mentorship program to help educate freshmen teams so they can create an effective robot. Additionally, we also host the Exothermic Winter Bash every year to help bring STEM and robotics to our community. We are delighted to have 8 teams this year! </p>
 	<div class = "imageHolder">
 		<img src = "AboutUsBackground.JPG"/>
@@ -245,7 +245,7 @@ jQuery(document).ready(function($){
 			</div>
 			<div class = "circleContainer">
 				<div class = "Circle">
-					<h2>15</h2>
+					<h2>14</h2>
 					<h3>Years</h3>
 				</div>
 				<div class = "Circle">
@@ -412,6 +412,15 @@ jQuery(document).ready(function($){
 				<h3> Parts Manager </h3>
 			</div>
 		</div>
+		<div class = "circleHolder">
+			<button id = "Circle9" class = "Circle2">
+				<img src = "ArnavBoard.jpg"/>
+			</button>
+			<div class = "CircleText">
+				<h2> Arnav Narula</h2>
+				<h3> Parts Manager </h3>
+			</div>
+		</div>
 		</div>
 	</div>
 </div>
@@ -513,6 +522,20 @@ jQuery(document).ready(function($){
 	</div>
 	</div>
 </div>
+<div id = "modal8" class = "modal8">
+	<div class = "modalContent8">
+		<div class = "pictureHolder8">
+		</div>
+		<div class = "textModal8">
+			<div class = "textHolder8">
+				<h4>Parts Manager</h4>
+				<h3>Arnav Narula</h3>
+				<p>Arnav Narula is a senior at Redmond High School and is part of Exothermic Blaze (10B). He is currently the Parts Manager for Exothermic Robotics. Arnav started VEX as a sophomore, and this is his third year doing VEX. His favorite things about the program are problem-solving alongside equally passionate team members and making Worlds his first year. Additionally, he enjoys watching his code spring to life after what he considers to be well-spent time debugging.</p>
+			</div>
+		<span class = "close8">&times;</span>
+	</div>
+	</div>
+</div>
 
 <div class = "sixthSection">
 <div class = "teamSection">
@@ -577,6 +600,7 @@ jQuery(document).ready(function($){
 	var modal5 = document.getElementById("modal5");
 	var modal6 = document.getElementById("modal6");
 	var modal7 = document.getElementById("modal7");
+	var modal8 = document.getElementById("modal8");
 	
 	var btn = document.getElementById("Circle2");
 	var btn2 = document.getElementById("Circle3");	
@@ -585,6 +609,7 @@ jQuery(document).ready(function($){
 	var btn5 = document.getElementById("Circle6");
 	var btn6 = document.getElementById("Circle7");
 	var btn7 = document.getElementById("Circle8");
+	var btn8 = document.getElementById("Circle9");
 	
 	var span = document.getElementsByClassName("close")[0];
 	var span2 = document.getElementsByClassName("close2")[0];
@@ -593,6 +618,7 @@ jQuery(document).ready(function($){
 	var span5 = document.getElementsByClassName("close5")[0];
 	var span6 = document.getElementsByClassName("close6")[0];
 	var span7 = document.getElementsByClassName("close7")[0];
+	var span8 = document.getElementsByClassName("close8")[0];
 	
 	btn.onclick = function() {
 		modal.style.display = "flex";
@@ -650,8 +676,16 @@ jQuery(document).ready(function($){
 		modal7.style.display = "none";
 	}
 	
+	btn8.onclick = function() {
+		modal8.style.display = "flex";
+	}
+	
+	span8.onclick = function() {
+		modal8.style.display = "none";
+	}
+	
 	window.onclick = function(event) {
-		if (event.target == modal || event.target == modal2 || event.target == modal3 || event.target == modal4|| event.target == modal5|| event.target == modal6|| event.target == modal7) {
+		if (event.target == modal || event.target == modal2 || event.target == modal3 || event.target == modal4|| event.target == modal5|| event.target == modal6|| event.target == modal7 || event.target == modal8) {
 			modal.style.display = "none";
 			modal2.style.display = "none";
 			modal3.style.display = "none";
@@ -659,6 +693,7 @@ jQuery(document).ready(function($){
 			modal5.style.display = "none";
 			modal6.style.display = "none";
 			modal7.style.display = "none";
+			modal8.style.display = "none";
 		}
 	}
 	
